@@ -10,12 +10,12 @@ torch>=2.1.0 # Required by transformers
 accelerate>=0.25.0 # Recommended for model loading/performance
 # bitsandbytes>=0.41.0 # Optional: For 8-bit/4-bit quantization (if needed for memory) - Linux/Windows only usually
 # sentencepiece # Often needed by tokenizers
-
+lxml
 bitsandbytes #  enable 4-bit quantization for limited memory (loads the model using lower precision (like 4-bit instead of 16-bit or 32-bit), significantly reducing the memory)
-
+pytz
 numpy<2.0 # Specify NumPy version constraint
 
-#llama-cpp-python>=0.2.18 # Or a specific newer version if desired
+llama-cpp-python>=0.2.18 # Or a specific newer version if desired
 
 #CMAKE_ARGS="-DLLAMA_METAL=on" pip install --force-reinstall --no-cache-dir llama-cpp-python -> run in terminal
 #(This tells the installer to compile the Metal-specific code).

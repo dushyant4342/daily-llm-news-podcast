@@ -1,133 +1,150 @@
 import logging
-import requests
-from bs4 import BeautifulSoup, NavigableString, Tag
 import re
-import os # Import os for path manipulation
-import tempfile # Import tempfile for saving html
+from bs4 import BeautifulSoup, Comment, NavigableString, Tag
 
 class ContentProcessor:
-    """Fetches web content, cleans it, extracts text more broadly,
-       saves raw HTML for debugging, and generates summaries using an LLM."""
+    """Cleans HTML email body content and generates summaries using an LLM."""
 
     def __init__(self, llm_instance):
+        """
+        Initializes the ContentProcessor.
+        Args:
+            llm_instance (LocalLLM): An instance of the LocalLLM class for summarization.
+        """
         self.llm = llm_instance
-        self.session = requests.Session()
-        self.session.headers.update({
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.5',
-        })
-        # Create a directory for saving HTML if it doesn't exist
-        self.debug_html_dir = os.path.join(tempfile.gettempdir(), "debug_html")
-        os.makedirs(self.debug_html_dir, exist_ok=True)
+        logging.info("ContentProcessor initialized for cleaning/summarizing email bodies.")
 
-
-    def _clean_fetched_text(self, text):
-        # (Keep the _clean_fetched_text method from the previous version)
-        if not text: return text
-        logging.debug("Attempting to clean fetched text...")
-        cleaned = text
-        patterns_to_remove = [
-            r"Member-only story", r"From .*? in .*?(?:Follow)?", r"Follow\s*$",
-            r"Share\s*$", r"\d+ min read", r"Listen\s*$", r"--\s*\d+\s*$", r"^\s*\d+\s*$",
-        ]
-        lines = cleaned.splitlines()
-        cleaned_lines = []
-        for line in lines:
-            original_line = line
-            line_lower = line.lower().strip()
-            should_remove = False
-            if len(line_lower) < 15 and not line_lower.endswith(('.', '?', '!')):
-                 if any(kw in line_lower for kw in ['follow', 'share', 'listen', 'clap', 'min read', 'member only']):
-                      should_remove = True
-            if not should_remove:
-                for pattern in patterns_to_remove:
-                    if re.search(pattern, line, re.IGNORECASE):
-                        logging.debug(f"Removing line matching pattern '{pattern}': {original_line}")
-                        should_remove = True
-                        break
-            if not should_remove:
-                cleaned_lines.append(original_line)
-        cleaned = "\n".join(cleaned_lines)
-        return cleaned.strip()
-
-
-    def fetch_article_text(self, url):
+    def _clean_html_body(self, html_content):
         """
-        Fetches HTML, saves it for debugging, extracts text from relevant tags,
-        cleans it, and logs a snippet.
+        Attempts to clean common boilerplate from HTML email content.
+        Returns the extracted and cleaned text content.
         """
-        html_content = None # Initialize variable
-        try:
-            logging.info(f"Fetching content from URL: {url}")
-            response = self.session.get(url, timeout=30)
-            response.raise_for_status()
-            html_content = response.text # Get the raw HTML text
+        if not html_content:
+            return ""
 
-            # --- Save Raw HTML for Debugging ---
+        logging.info("Parsing and cleaning HTML email body...")
+        try: # Add try block for BeautifulSoup parsing
+            soup = BeautifulSoup(html_content, 'lxml') # Use lxml parser if installed
+        except Exception as e:
+             logging.warning(f"BeautifulSoup parsing failed (install lxml?): {e}. Trying html.parser.")
+             try:
+                  soup = BeautifulSoup(html_content, 'html.parser')
+             except Exception as e_html:
+                  logging.error(f"HTML parsing failed completely: {e_html}")
+                  return "" # Cannot proceed if parsing fails
+
+
+        # --- Remove unwanted elements ---
+        # Scripts, styles, comments
+        for element in soup(["script", "style", "comment", "head", "meta", "title", "link"]):
+            element.decompose()
+
+        # Common footer/header patterns (selectors might need adjustment)
+        footer_texts = ["unsubscribe", "manage preferences", "view this email in your browser",
+                        "sent by", "mailing address", "terms of service", "privacy policy",
+                        "contact us", "help center", "no longer wish to receive", "update your preferences",
+                        "all rights reserved"]
+        elements_to_remove = []
+        # Find elements likely containing footer text (check parents too)
+        for text_pattern in footer_texts:
             try:
-                # Create a filename based on the URL
-                safe_filename = "debug_" + re.sub(r'[^a-zA-Z0-9_-]', '_', url.split("//")[-1])[:100] + ".html"
-                save_path = os.path.join(self.debug_html_dir, safe_filename)
-                with open(save_path, 'w', encoding='utf-8') as f:
-                    f.write(html_content)
-                logging.info(f"Saved raw HTML for debugging to: {save_path}")
-            except Exception as save_err:
-                logging.warning(f"Could not save debug HTML for {url}: {save_err}")
-            # ------------------------------------
+                found = soup.find_all(string=re.compile(re.escape(text_pattern), re.IGNORECASE))
+                for text_node in found:
+                    parent = text_node.find_parent(['p', 'td', 'div', 'span', 'font']) # Check common containers
+                    if parent and parent not in elements_to_remove:
+                         # Heuristic: remove if parent is small or looks like a footer block
+                         parent_text_len = len(parent.get_text(strip=True))
+                         if parent_text_len < 250 or parent.find_parent('footer'):
+                              elements_to_remove.append(parent)
+                         else:
+                              grandparent = parent.find_parent(['tr', 'table', 'div'])
+                              if grandparent and grandparent not in elements_to_remove and grandparent.name != 'body':
+                                   if len(grandparent.get_text(strip=True)) < 400:
+                                        elements_to_remove.append(grandparent)
+            except Exception as e:
+                logging.warning(f"Error during footer text search for '{text_pattern}': {e}")
 
-            # Proceed with parsing the fetched HTML
-            soup = BeautifulSoup(html_content, 'html.parser')
-            article_body = soup.find('article')
-            if not article_body: article_body = soup.find('main')
-            target_element = article_body if article_body else soup.body
-            if not target_element:
-                 logging.warning(f"Could not find <article>, <main>, or <body> tag in {url}.")
-                 return None
+        # Remove common social media link sections
+        social_domains = ["facebook.com", "twitter.com", "linkedin.com", "instagram.com", "youtube.com", "pinterest.com"]
+        for a_tag in soup.find_all('a', href=True):
+             try:
+                 href_lower = a_tag['href'].lower()
+                 if any(domain in href_lower for domain in social_domains):
+                      parent = a_tag.find_parent(['div', 'p', 'td', 'span'])
+                      if parent and parent not in elements_to_remove and len(parent.find_all('a')) < 8 and len(parent.get_text(strip=True)) < 100:
+                           elements_to_remove.append(parent)
+             except Exception as e:
+                  logging.warning(f"Error processing social link {a_tag.get('href')}: {e}")
 
-            content_tags = target_element.find_all(['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'li', 'pre', 'blockquote', 'td', 'th'])
-            extracted_text = []
-            for tag in content_tags:
+        # Remove the identified elements
+        removed_count = 0
+        for element in set(elements_to_remove):
+             try: element.decompose(); removed_count += 1
+             except Exception as e: logging.warning(f"Error decomposing element: {e}")
+        if removed_count > 0: logging.info(f"Removed {removed_count} potential boilerplate HTML elements.")
+
+        # --- Extract text from remaining relevant tags ---
+        body_element = soup.body if soup.body else soup
+        if not body_element: return ""
+
+        # Prioritize finding a main content div if possible (heuristic)
+        main_content = body_element.find(['article', 'main'])
+        # More heuristics: look for common container IDs/classes (highly variable)
+        if not main_content: main_content = body_element.find('div', id=re.compile(r'content|main|body', re.I))
+        if not main_content: main_content = body_element.find('table', id=re.compile(r'content|main|body', re.I))
+
+        target_element = main_content if main_content else body_element # Use found container or fallback to body
+
+        content_tags = target_element.find_all(['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'li', 'pre', 'blockquote', 'td', 'th'])
+
+        if len(content_tags) < 3: # If very few specific tags found in target, broaden search
+             logging.warning("Few specific content tags found, getting all text from target element.")
+             all_text = target_element.get_text(separator='\n', strip=True)
+             extracted_text_lines = [line.strip() for line in all_text.splitlines() if line.strip()]
+        else:
+             extracted_text_lines = []
+             for tag in content_tags:
                  tag_text = tag.get_text(separator='\n', strip=True)
-                 if tag_text: extracted_text.append(tag_text)
+                 if tag_text:
+                      extracted_text_lines.extend([line.strip() for line in tag_text.splitlines() if line.strip()])
 
-            full_text = "\n\n".join(extracted_text)
-            cleaned_text = '\n'.join([line.strip() for line in full_text.splitlines() if line.strip()])
+        # --- Final text cleaning ---
+        meaningful_lines = []
+        for line in extracted_text_lines:
+             # Remove very short lines unless they end with punctuation
+             if len(line) < 5 and not re.search(r'[.?!]$', line): continue
+             # Remove lines that look like typical unsubscribe/boilerplate again
+             line_lower = line.lower()
+             if any(phrase in line_lower for phrase in footer_texts): continue
+             meaningful_lines.append(line)
 
-            if not cleaned_text:
-                 logging.warning(f"Could not extract meaningful text from relevant tags in {url}.")
-                 return None
+        cleaned_text = "\n".join(meaningful_lines)
 
-            final_cleaned_text = self._clean_fetched_text(cleaned_text)
+        logging.info(f"Extracted {len(cleaned_text)} chars of cleaned text from email body.")
+        return cleaned_text
 
-            if not final_cleaned_text:
-                 logging.warning(f"Text became empty after cleaning boilerplate for {url}")
-                 return None
-
-            snippet_length = 500
-            text_snippet = final_cleaned_text[:snippet_length]
-            if len(final_cleaned_text) > snippet_length: text_snippet += "..."
-            logging.info(f"Fetched and cleaned text snippet (Length: {len(final_cleaned_text)} chars): {text_snippet}")
-
-            return final_cleaned_text
-
-        # Handle exceptions after trying to get html_content
-        except requests.exceptions.Timeout: logging.error(f"Timeout error fetching URL {url}"); return None
-        except requests.exceptions.RequestException as e: logging.error(f"HTTP error fetching URL {url}: {e}"); return None
-        except Exception as e: logging.error(f"Error parsing/cleaning content from {url}: {e}", exc_info=True); return None
-
-    # --- process_link method remains the same ---
-    def process_link(self, url):
+    def clean_and_summarize_email_body(self, email_body_html):
         """
-        Fetches cleaned content and generates a summary for a single link.
+        Cleans the HTML email body and generates a summary using the LLM.
+
+        Args:
+            email_body_html (str): The raw HTML content of the email body.
+
+        Returns:
+            tuple: (cleaned_text, summary_text) or (None, None) on failure.
         """
-        content = self.fetch_article_text(url) # Gets cleaned text now
-        if not content:
-            return None
+        cleaned_text = self._clean_html_body(email_body_html)
+
+        if not cleaned_text or len(cleaned_text) < 50:
+            logging.warning("Cleaned email content is too short to summarize meaningfully.")
+            return cleaned_text, "Error: Cleaned content too short for summary."
+
         summary = "Error: Summarization Failed"
         if self.llm and self.llm.llm:
-            summary = self.llm.summarize(content)
+            summary = self.llm.summarize(cleaned_text)
         else:
             summary = "Error: LLM not available for summarization."
-            logging.warning("LLM not available (check loading logs), cannot generate summary.")
-        return {"link": url, "summary": summary}
+            logging.warning("LLM not available, cannot generate summary.")
+
+        return cleaned_text, summary
+
