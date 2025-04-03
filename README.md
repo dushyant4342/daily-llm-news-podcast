@@ -5,6 +5,7 @@
 
 bitsandbytes #  enable 4-bit quantization for limited memory (loads the model using lower precision (like 4-bit instead of 16-bit or 32-bit), significantly reducing the memory)
 
+llama-cpp-python-> helps to run models on cpu
 
 Okay, so there are many limitations to fetch the complete blog from website like Medium, DailyDoseofDS etc using Beautifulsoup or even serpapi. Now, I will try to summarize the emails and then make it into a podcast.
 

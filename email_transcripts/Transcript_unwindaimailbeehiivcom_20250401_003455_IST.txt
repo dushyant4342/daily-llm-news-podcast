@@ -1,0 +1,1070 @@
+Subject: Build, Test & Deploy MCP Servers with NoCode
+From: unwindai@mail.beehiiv.com
+==================== CLEANED CONTENT ====================
+
+March 31, 2025   |
+Read Online
+Build, Test & Deploy MCP Servers with NoCode
+PLUS: Low code visual AI agent builder, Gemini 2.5 Pro available for free
+Shubham Saboo
+Gargi Gupta
+March 31, 2025
+In partnership with
+Today’s top AI Highlights:
+One platform to build, test, deploy, and discover MCP servers with no-code
+Fully managed PaaS for AI agents with a low-code visual builder
+Gemini 2.5 Pro now available to all free users
+A curated repo of 2500+ Awesome MCP servers
+Drop-in OpenAI Responses API alternative for any LLM
+& so much more!
+Read time: 3 mins
+AI Tutorials
+We've been stuck in text-based AI interfaces for too long. Sure, they work, but they're not the most natural way humans communicate. Now, with OpenAI's new Agents SDK and their recent text-to-speech models, we can build voice applications without drowning in complexity or code.
+In this tutorial, we'll build a
+Multi-agent Voice RAG
+system that speaks its answers aloud. We'll create a multi-agent workflow where specialized AI agents handle different parts of the process - one agent focuses on processing documentation content, another optimizes responses for natural speech, and finally OpenAI's text-to-speech model delivers the answer in a human-like voice.
+Our RAG app uses
+OpenAI Agents SDK
+to create and orchestrate these agents that handle different stages of the workflow. OpenAI’s new speech model GPT-4o-mini TTS enhances the overall user experience with a natural, emotion-rich voice. You can easily steer its voice characteristics like the tone, pacing, emotion, and personality traits with simple natural language instructions.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+Build a Voice RAG Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+Latest Developments
+Vibe Code Your MCP Server
+is a comprehensive platform to create, deploy, manage, and discover MCP servers. It removes the infrastructure headaches typically associated with running Model Context Protocol servers. Flow comes with a
+no-code MCP Studio
+, where you can vibe code MCP servers via a chat interface, publish on GitHub, and deploy them on Flow Cloud with a few clicks.
+The platform provides straightforward integration with Claude, Cursor IDE, and offers client libraries for both Python and JavaScript applications.
+Key Highlights:
+Develop and Test
+- Build MCP servers by describing requirements in natural language. The commands can be as simple as “Create an MCP server for iMDB using the following documentation «link». Once a server is created, you can inspect and validate it instantly with MCP’s Inspector tool.
+Deploy Anywhere
+- Publish your server directly to GitHub with one click, or instantly deploy to Flow Cloud without worrying about infrastructure setup. Simply select your deployment target and Flow handles the rest. Over 1,000 servers are already running on the platform.
+Easy integration with Clients
+- Connect servers to Claude with a simple URL command, add to Cursor IDE through the MCP settings panel, or use client libraries for programmatic access using Python and JavaScript.
+Standard communication protocol
+- Uses Server-Sent Events (SSE) for consistent communication between LLMs and MCP servers across different environments.
+Stop taking manual meeting notes
+Put your meetings on autopilot and wow your team and customers.
+Fellow
+is the AI meeting assistant that:
+✔️ Auto-joins your Zoom, Google Meet, and Teams calls to take notes for you.
+✔️ Tracks action items and decisions so nothing falls through the cracks.
+✔️ Answers questions about meetings and searches through your transcripts, like ChatGPT
+Try Fellow today and get unlimited AI meeting notes for 30 days.
+Get Started Free
+Build and Deploy Production-Grade AI Agents Visually
+Lamatic.ai
+is a fully managed PaaS providing a complete environment for building, deploying, and monitoring AI agents with a visual, low-code interface. The platform allows you to create AI agents by connecting modular nodes on a drag-and-drop interface, integrating data sources and models, and deploying to a serverless edge environment as GraphQL APIs or widgets - all while providing detailed observability tools to ensure reliable performance.
+The goal is faster development and reduced operational overhead, deploying in under 60 seconds.
+Key Highlights:
+Low-Code Visual Builder
+- Create sophisticated AI flows by connecting pre-built nodes in an intuitive interface. Teams can collaborate directly in the Studio environment with role-based permissions.
+Seamless Connections
+- Connect to various data sources, AI models, and third-party applications through drag-and-drop functionality. The platform handles authentication and integration complexities.
+Edge Deployment
+- Deploy your AI agents to a serverless edge environment in under a minute. Your applications are exposed as GraphQL APIs or embeddable widgets, with the platform handling scaling automatically while cutting response latency in half.
+Real-Time Observability
+- Monitor agent performance with detailed request logs, real-time tracing, and comprehensive usage reports. This visibility helps identify and fix issues quickly, ensuring your AI applications maintain high reliability in production.
+Quick Bites
+OpenAI has rolled out an updated version of GPT-4o
+in ChatGPT featuring enhanced instruction-following abilities, better handling of technical challenges, and improved creativity. The update is immediately available for all paid subscribers, while free users will gain access over the coming weeks.
+Google has made its latest reasoning model Gemini 2.5 Pro available to all free users
+. It also integrates with Canvas on the
+Gemini app
+. This is HUGE! The model tops the LMArena leaderboard, and Google giving this level of intelligence to everyone is a game-changer for AI accessibility.
+Anthropic has published two new papers on the inner workings of Claude
+. Using their "AI microscope" approach, they discovered that the model thinks in a universal language across different tongues, plans poetry rhymes several words in advance, and sometimes engages in motivated reasoning rather than faithful step-by-step thinking. These findings provide rare insights into how LLMs actually process information beneath the surface.
+Tools of the Trade
+MCP Link
+: Converts OpenAPI specifications into Model Context Protocol servers without modifying the original API code. It bridges existing web APIs with AI agents by generating fully-functional MCP interfaces that maintain all the original API endpoints and features.
+Awesome MCP Servers
+: A curated repository of over 2,500 MCP server implementations across domains like AI, business management, communication, and development tools.
+Open Responses
+: A self-hosted, open-source alternative to OpenAI's Responses API that works with any LLM backend, allowing you to use models like Claude, Qwen, and Deepseek R1 instead of being limited to OpenAI's models.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+Hot Takes
+> be openai
+> release cool product update
+> people resubscribe
+> everybody’s having fun
+> wait 24 hours
+> tweet about overwhelming demand
+> introduce restrictions
+> people complain
+> tell everybody you will fix it
+> ignore it
+> vague-post about agi
+> nerf model
+> hype next update
+> promise transparency
+> release AI safety post
+> repeat ~
+Dreaming Tulpa
+I no longer think you should learn to code. ~
+Amjad Masad
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+Subscribe now for FREE!
+If this email was forwarded to you,
+subscribe here
+to get email from Unwind AI daily for free!
+© 2025 unwind ai
+228 Park Ave S, #29976, New York, New York 10003, United States
+Powered by beehiiv
+March 31, 2025   |
+Read Online
+Build, Test & Deploy MCP Servers with NoCode
+PLUS: Low code visual AI agent builder, Gemini 2.5 Pro available for free
+Shubham Saboo
+Gargi Gupta
+March 31, 2025
+In partnership with
+Today’s top AI Highlights:
+One platform to build, test, deploy, and discover MCP servers with no-code
+Fully managed PaaS for AI agents with a low-code visual builder
+Gemini 2.5 Pro now available to all free users
+A curated repo of 2500+ Awesome MCP servers
+Drop-in OpenAI Responses API alternative for any LLM
+& so much more!
+Read time: 3 mins
+AI Tutorials
+We've been stuck in text-based AI interfaces for too long. Sure, they work, but they're not the most natural way humans communicate. Now, with OpenAI's new Agents SDK and their recent text-to-speech models, we can build voice applications without drowning in complexity or code.
+In this tutorial, we'll build a
+Multi-agent Voice RAG
+system that speaks its answers aloud. We'll create a multi-agent workflow where specialized AI agents handle different parts of the process - one agent focuses on processing documentation content, another optimizes responses for natural speech, and finally OpenAI's text-to-speech model delivers the answer in a human-like voice.
+Our RAG app uses
+OpenAI Agents SDK
+to create and orchestrate these agents that handle different stages of the workflow. OpenAI’s new speech model GPT-4o-mini TTS enhances the overall user experience with a natural, emotion-rich voice. You can easily steer its voice characteristics like the tone, pacing, emotion, and personality traits with simple natural language instructions.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+Build a Voice RAG Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+Latest Developments
+Vibe Code Your MCP Server
+is a comprehensive platform to create, deploy, manage, and discover MCP servers. It removes the infrastructure headaches typically associated with running Model Context Protocol servers. Flow comes with a
+no-code MCP Studio
+, where you can vibe code MCP servers via a chat interface, publish on GitHub, and deploy them on Flow Cloud with a few clicks.
+The platform provides straightforward integration with Claude, Cursor IDE, and offers client libraries for both Python and JavaScript applications.
+Key Highlights:
+Develop and Test
+- Build MCP servers by describing requirements in natural language. The commands can be as simple as “Create an MCP server for iMDB using the following documentation «link». Once a server is created, you can inspect and validate it instantly with MCP’s Inspector tool.
+Deploy Anywhere
+- Publish your server directly to GitHub with one click, or instantly deploy to Flow Cloud without worrying about infrastructure setup. Simply select your deployment target and Flow handles the rest. Over 1,000 servers are already running on the platform.
+Easy integration with Clients
+- Connect servers to Claude with a simple URL command, add to Cursor IDE through the MCP settings panel, or use client libraries for programmatic access using Python and JavaScript.
+Standard communication protocol
+- Uses Server-Sent Events (SSE) for consistent communication between LLMs and MCP servers across different environments.
+Stop taking manual meeting notes
+Put your meetings on autopilot and wow your team and customers.
+Fellow
+is the AI meeting assistant that:
+✔️ Auto-joins your Zoom, Google Meet, and Teams calls to take notes for you.
+✔️ Tracks action items and decisions so nothing falls through the cracks.
+✔️ Answers questions about meetings and searches through your transcripts, like ChatGPT
+Try Fellow today and get unlimited AI meeting notes for 30 days.
+Get Started Free
+Build and Deploy Production-Grade AI Agents Visually
+Lamatic.ai
+is a fully managed PaaS providing a complete environment for building, deploying, and monitoring AI agents with a visual, low-code interface. The platform allows you to create AI agents by connecting modular nodes on a drag-and-drop interface, integrating data sources and models, and deploying to a serverless edge environment as GraphQL APIs or widgets - all while providing detailed observability tools to ensure reliable performance.
+The goal is faster development and reduced operational overhead, deploying in under 60 seconds.
+Key Highlights:
+Low-Code Visual Builder
+- Create sophisticated AI flows by connecting pre-built nodes in an intuitive interface. Teams can collaborate directly in the Studio environment with role-based permissions.
+Seamless Connections
+- Connect to various data sources, AI models, and third-party applications through drag-and-drop functionality. The platform handles authentication and integration complexities.
+Edge Deployment
+- Deploy your AI agents to a serverless edge environment in under a minute. Your applications are exposed as GraphQL APIs or embeddable widgets, with the platform handling scaling automatically while cutting response latency in half.
+Real-Time Observability
+- Monitor agent performance with detailed request logs, real-time tracing, and comprehensive usage reports. This visibility helps identify and fix issues quickly, ensuring your AI applications maintain high reliability in production.
+Quick Bites
+OpenAI has rolled out an updated version of GPT-4o
+in ChatGPT featuring enhanced instruction-following abilities, better handling of technical challenges, and improved creativity. The update is immediately available for all paid subscribers, while free users will gain access over the coming weeks.
+Google has made its latest reasoning model Gemini 2.5 Pro available to all free users
+. It also integrates with Canvas on the
+Gemini app
+. This is HUGE! The model tops the LMArena leaderboard, and Google giving this level of intelligence to everyone is a game-changer for AI accessibility.
+Anthropic has published two new papers on the inner workings of Claude
+. Using their "AI microscope" approach, they discovered that the model thinks in a universal language across different tongues, plans poetry rhymes several words in advance, and sometimes engages in motivated reasoning rather than faithful step-by-step thinking. These findings provide rare insights into how LLMs actually process information beneath the surface.
+Tools of the Trade
+MCP Link
+: Converts OpenAPI specifications into Model Context Protocol servers without modifying the original API code. It bridges existing web APIs with AI agents by generating fully-functional MCP interfaces that maintain all the original API endpoints and features.
+Awesome MCP Servers
+: A curated repository of over 2,500 MCP server implementations across domains like AI, business management, communication, and development tools.
+Open Responses
+: A self-hosted, open-source alternative to OpenAI's Responses API that works with any LLM backend, allowing you to use models like Claude, Qwen, and Deepseek R1 instead of being limited to OpenAI's models.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+Hot Takes
+> be openai
+> release cool product update
+> people resubscribe
+> everybody’s having fun
+> wait 24 hours
+> tweet about overwhelming demand
+> introduce restrictions
+> people complain
+> tell everybody you will fix it
+> ignore it
+> vague-post about agi
+> nerf model
+> hype next update
+> promise transparency
+> release AI safety post
+> repeat ~
+Dreaming Tulpa
+I no longer think you should learn to code. ~
+Amjad Masad
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+Subscribe now for FREE!
+If this email was forwarded to you,
+subscribe here
+to get email from Unwind AI daily for free!
+© 2025 unwind ai
+228 Park Ave S, #29976, New York, New York 10003, United States
+Powered by beehiiv
+March 31, 2025   |
+Read Online
+Build, Test & Deploy MCP Servers with NoCode
+PLUS: Low code visual AI agent builder, Gemini 2.5 Pro available for free
+Shubham Saboo
+Gargi Gupta
+March 31, 2025
+In partnership with
+Today’s top AI Highlights:
+One platform to build, test, deploy, and discover MCP servers with no-code
+Fully managed PaaS for AI agents with a low-code visual builder
+Gemini 2.5 Pro now available to all free users
+A curated repo of 2500+ Awesome MCP servers
+Drop-in OpenAI Responses API alternative for any LLM
+& so much more!
+Read time: 3 mins
+AI Tutorials
+We've been stuck in text-based AI interfaces for too long. Sure, they work, but they're not the most natural way humans communicate. Now, with OpenAI's new Agents SDK and their recent text-to-speech models, we can build voice applications without drowning in complexity or code.
+In this tutorial, we'll build a
+Multi-agent Voice RAG
+system that speaks its answers aloud. We'll create a multi-agent workflow where specialized AI agents handle different parts of the process - one agent focuses on processing documentation content, another optimizes responses for natural speech, and finally OpenAI's text-to-speech model delivers the answer in a human-like voice.
+Our RAG app uses
+OpenAI Agents SDK
+to create and orchestrate these agents that handle different stages of the workflow. OpenAI’s new speech model GPT-4o-mini TTS enhances the overall user experience with a natural, emotion-rich voice. You can easily steer its voice characteristics like the tone, pacing, emotion, and personality traits with simple natural language instructions.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+Build a Voice RAG Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+Latest Developments
+Vibe Code Your MCP Server
+is a comprehensive platform to create, deploy, manage, and discover MCP servers. It removes the infrastructure headaches typically associated with running Model Context Protocol servers. Flow comes with a
+no-code MCP Studio
+, where you can vibe code MCP servers via a chat interface, publish on GitHub, and deploy them on Flow Cloud with a few clicks.
+The platform provides straightforward integration with Claude, Cursor IDE, and offers client libraries for both Python and JavaScript applications.
+Key Highlights:
+Develop and Test
+- Build MCP servers by describing requirements in natural language. The commands can be as simple as “Create an MCP server for iMDB using the following documentation «link». Once a server is created, you can inspect and validate it instantly with MCP’s Inspector tool.
+Deploy Anywhere
+- Publish your server directly to GitHub with one click, or instantly deploy to Flow Cloud without worrying about infrastructure setup. Simply select your deployment target and Flow handles the rest. Over 1,000 servers are already running on the platform.
+Easy integration with Clients
+- Connect servers to Claude with a simple URL command, add to Cursor IDE through the MCP settings panel, or use client libraries for programmatic access using Python and JavaScript.
+Standard communication protocol
+- Uses Server-Sent Events (SSE) for consistent communication between LLMs and MCP servers across different environments.
+Stop taking manual meeting notes
+Put your meetings on autopilot and wow your team and customers.
+Fellow
+is the AI meeting assistant that:
+✔️ Auto-joins your Zoom, Google Meet, and Teams calls to take notes for you.
+✔️ Tracks action items and decisions so nothing falls through the cracks.
+✔️ Answers questions about meetings and searches through your transcripts, like ChatGPT
+Try Fellow today and get unlimited AI meeting notes for 30 days.
+Get Started Free
+Build and Deploy Production-Grade AI Agents Visually
+Lamatic.ai
+is a fully managed PaaS providing a complete environment for building, deploying, and monitoring AI agents with a visual, low-code interface. The platform allows you to create AI agents by connecting modular nodes on a drag-and-drop interface, integrating data sources and models, and deploying to a serverless edge environment as GraphQL APIs or widgets - all while providing detailed observability tools to ensure reliable performance.
+The goal is faster development and reduced operational overhead, deploying in under 60 seconds.
+Key Highlights:
+Low-Code Visual Builder
+- Create sophisticated AI flows by connecting pre-built nodes in an intuitive interface. Teams can collaborate directly in the Studio environment with role-based permissions.
+Seamless Connections
+- Connect to various data sources, AI models, and third-party applications through drag-and-drop functionality. The platform handles authentication and integration complexities.
+Edge Deployment
+- Deploy your AI agents to a serverless edge environment in under a minute. Your applications are exposed as GraphQL APIs or embeddable widgets, with the platform handling scaling automatically while cutting response latency in half.
+Real-Time Observability
+- Monitor agent performance with detailed request logs, real-time tracing, and comprehensive usage reports. This visibility helps identify and fix issues quickly, ensuring your AI applications maintain high reliability in production.
+Quick Bites
+OpenAI has rolled out an updated version of GPT-4o
+in ChatGPT featuring enhanced instruction-following abilities, better handling of technical challenges, and improved creativity. The update is immediately available for all paid subscribers, while free users will gain access over the coming weeks.
+Google has made its latest reasoning model Gemini 2.5 Pro available to all free users
+. It also integrates with Canvas on the
+Gemini app
+. This is HUGE! The model tops the LMArena leaderboard, and Google giving this level of intelligence to everyone is a game-changer for AI accessibility.
+Anthropic has published two new papers on the inner workings of Claude
+. Using their "AI microscope" approach, they discovered that the model thinks in a universal language across different tongues, plans poetry rhymes several words in advance, and sometimes engages in motivated reasoning rather than faithful step-by-step thinking. These findings provide rare insights into how LLMs actually process information beneath the surface.
+Tools of the Trade
+MCP Link
+: Converts OpenAPI specifications into Model Context Protocol servers without modifying the original API code. It bridges existing web APIs with AI agents by generating fully-functional MCP interfaces that maintain all the original API endpoints and features.
+Awesome MCP Servers
+: A curated repository of over 2,500 MCP server implementations across domains like AI, business management, communication, and development tools.
+Open Responses
+: A self-hosted, open-source alternative to OpenAI's Responses API that works with any LLM backend, allowing you to use models like Claude, Qwen, and Deepseek R1 instead of being limited to OpenAI's models.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+Hot Takes
+> be openai
+> release cool product update
+> people resubscribe
+> everybody’s having fun
+> wait 24 hours
+> tweet about overwhelming demand
+> introduce restrictions
+> people complain
+> tell everybody you will fix it
+> ignore it
+> vague-post about agi
+> nerf model
+> hype next update
+> promise transparency
+> release AI safety post
+> repeat ~
+Dreaming Tulpa
+I no longer think you should learn to code. ~
+Amjad Masad
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+Subscribe now for FREE!
+March 31, 2025   |
+Read Online
+Build, Test & Deploy MCP Servers with NoCode
+PLUS: Low code visual AI agent builder, Gemini 2.5 Pro available for free
+Shubham Saboo
+Gargi Gupta
+March 31, 2025
+March 31, 2025   |
+Read Online
+March 31, 2025   |
+Read Online
+Build, Test & Deploy MCP Servers with NoCode
+PLUS: Low code visual AI agent builder, Gemini 2.5 Pro available for free
+Build, Test & Deploy MCP Servers with NoCode
+PLUS: Low code visual AI agent builder, Gemini 2.5 Pro available for free
+Build, Test & Deploy MCP Servers with NoCode
+PLUS: Low code visual AI agent builder, Gemini 2.5 Pro available for free
+Shubham Saboo
+Gargi Gupta
+March 31, 2025
+Shubham Saboo
+Gargi Gupta
+March 31, 2025
+Shubham Saboo
+Gargi Gupta
+March 31, 2025
+Shubham Saboo
+Gargi Gupta
+March 31, 2025
+Shubham Saboo
+Gargi Gupta
+March 31, 2025
+In partnership with
+Today’s top AI Highlights:
+One platform to build, test, deploy, and discover MCP servers with no-code
+Fully managed PaaS for AI agents with a low-code visual builder
+Gemini 2.5 Pro now available to all free users
+A curated repo of 2500+ Awesome MCP servers
+Drop-in OpenAI Responses API alternative for any LLM
+& so much more!
+Read time: 3 mins
+AI Tutorials
+We've been stuck in text-based AI interfaces for too long. Sure, they work, but they're not the most natural way humans communicate. Now, with OpenAI's new Agents SDK and their recent text-to-speech models, we can build voice applications without drowning in complexity or code.
+In this tutorial, we'll build a
+Multi-agent Voice RAG
+system that speaks its answers aloud. We'll create a multi-agent workflow where specialized AI agents handle different parts of the process - one agent focuses on processing documentation content, another optimizes responses for natural speech, and finally OpenAI's text-to-speech model delivers the answer in a human-like voice.
+Our RAG app uses
+OpenAI Agents SDK
+to create and orchestrate these agents that handle different stages of the workflow. OpenAI’s new speech model GPT-4o-mini TTS enhances the overall user experience with a natural, emotion-rich voice. You can easily steer its voice characteristics like the tone, pacing, emotion, and personality traits with simple natural language instructions.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+Build a Voice RAG Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+Latest Developments
+Vibe Code Your MCP Server
+is a comprehensive platform to create, deploy, manage, and discover MCP servers. It removes the infrastructure headaches typically associated with running Model Context Protocol servers. Flow comes with a
+no-code MCP Studio
+, where you can vibe code MCP servers via a chat interface, publish on GitHub, and deploy them on Flow Cloud with a few clicks.
+The platform provides straightforward integration with Claude, Cursor IDE, and offers client libraries for both Python and JavaScript applications.
+Key Highlights:
+Develop and Test
+- Build MCP servers by describing requirements in natural language. The commands can be as simple as “Create an MCP server for iMDB using the following documentation «link». Once a server is created, you can inspect and validate it instantly with MCP’s Inspector tool.
+Deploy Anywhere
+- Publish your server directly to GitHub with one click, or instantly deploy to Flow Cloud without worrying about infrastructure setup. Simply select your deployment target and Flow handles the rest. Over 1,000 servers are already running on the platform.
+Easy integration with Clients
+- Connect servers to Claude with a simple URL command, add to Cursor IDE through the MCP settings panel, or use client libraries for programmatic access using Python and JavaScript.
+Standard communication protocol
+- Uses Server-Sent Events (SSE) for consistent communication between LLMs and MCP servers across different environments.
+Stop taking manual meeting notes
+Put your meetings on autopilot and wow your team and customers.
+Fellow
+is the AI meeting assistant that:
+✔️ Auto-joins your Zoom, Google Meet, and Teams calls to take notes for you.
+✔️ Tracks action items and decisions so nothing falls through the cracks.
+✔️ Answers questions about meetings and searches through your transcripts, like ChatGPT
+Try Fellow today and get unlimited AI meeting notes for 30 days.
+Get Started Free
+Build and Deploy Production-Grade AI Agents Visually
+Lamatic.ai
+is a fully managed PaaS providing a complete environment for building, deploying, and monitoring AI agents with a visual, low-code interface. The platform allows you to create AI agents by connecting modular nodes on a drag-and-drop interface, integrating data sources and models, and deploying to a serverless edge environment as GraphQL APIs or widgets - all while providing detailed observability tools to ensure reliable performance.
+The goal is faster development and reduced operational overhead, deploying in under 60 seconds.
+Key Highlights:
+Low-Code Visual Builder
+- Create sophisticated AI flows by connecting pre-built nodes in an intuitive interface. Teams can collaborate directly in the Studio environment with role-based permissions.
+Seamless Connections
+- Connect to various data sources, AI models, and third-party applications through drag-and-drop functionality. The platform handles authentication and integration complexities.
+Edge Deployment
+- Deploy your AI agents to a serverless edge environment in under a minute. Your applications are exposed as GraphQL APIs or embeddable widgets, with the platform handling scaling automatically while cutting response latency in half.
+Real-Time Observability
+- Monitor agent performance with detailed request logs, real-time tracing, and comprehensive usage reports. This visibility helps identify and fix issues quickly, ensuring your AI applications maintain high reliability in production.
+Quick Bites
+OpenAI has rolled out an updated version of GPT-4o
+in ChatGPT featuring enhanced instruction-following abilities, better handling of technical challenges, and improved creativity. The update is immediately available for all paid subscribers, while free users will gain access over the coming weeks.
+Google has made its latest reasoning model Gemini 2.5 Pro available to all free users
+. It also integrates with Canvas on the
+Gemini app
+. This is HUGE! The model tops the LMArena leaderboard, and Google giving this level of intelligence to everyone is a game-changer for AI accessibility.
+Anthropic has published two new papers on the inner workings of Claude
+. Using their "AI microscope" approach, they discovered that the model thinks in a universal language across different tongues, plans poetry rhymes several words in advance, and sometimes engages in motivated reasoning rather than faithful step-by-step thinking. These findings provide rare insights into how LLMs actually process information beneath the surface.
+Tools of the Trade
+MCP Link
+: Converts OpenAPI specifications into Model Context Protocol servers without modifying the original API code. It bridges existing web APIs with AI agents by generating fully-functional MCP interfaces that maintain all the original API endpoints and features.
+Awesome MCP Servers
+: A curated repository of over 2,500 MCP server implementations across domains like AI, business management, communication, and development tools.
+Open Responses
+: A self-hosted, open-source alternative to OpenAI's Responses API that works with any LLM backend, allowing you to use models like Claude, Qwen, and Deepseek R1 instead of being limited to OpenAI's models.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+Hot Takes
+> be openai
+> release cool product update
+> people resubscribe
+> everybody’s having fun
+> wait 24 hours
+> tweet about overwhelming demand
+> introduce restrictions
+> people complain
+> tell everybody you will fix it
+> ignore it
+> vague-post about agi
+> nerf model
+> hype next update
+> promise transparency
+> release AI safety post
+> repeat ~
+Dreaming Tulpa
+I no longer think you should learn to code. ~
+Amjad Masad
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+Subscribe now for FREE!
+In partnership with
+In partnership with
+In partnership with
+Today’s top AI Highlights:
+One platform to build, test, deploy, and discover MCP servers with no-code
+Fully managed PaaS for AI agents with a low-code visual builder
+Gemini 2.5 Pro now available to all free users
+A curated repo of 2500+ Awesome MCP servers
+Drop-in OpenAI Responses API alternative for any LLM
+& so much more!
+Read time: 3 mins
+Today’s top AI Highlights:
+One platform to build, test, deploy, and discover MCP servers with no-code
+Fully managed PaaS for AI agents with a low-code visual builder
+Gemini 2.5 Pro now available to all free users
+A curated repo of 2500+ Awesome MCP servers
+Drop-in OpenAI Responses API alternative for any LLM
+& so much more!
+Read time: 3 mins
+Today’s top AI Highlights:
+Today’s top AI Highlights:
+One platform to build, test, deploy, and discover MCP servers with no-code
+Fully managed PaaS for AI agents with a low-code visual builder
+Gemini 2.5 Pro now available to all free users
+A curated repo of 2500+ Awesome MCP servers
+Drop-in OpenAI Responses API alternative for any LLM
+One platform to build, test, deploy, and discover MCP servers with no-code
+One platform to build, test, deploy, and discover MCP servers with no-code
+Fully managed PaaS for AI agents with a low-code visual builder
+Fully managed PaaS for AI agents with a low-code visual builder
+Gemini 2.5 Pro now available to all free users
+Gemini 2.5 Pro now available to all free users
+A curated repo of 2500+ Awesome MCP servers
+A curated repo of 2500+ Awesome MCP servers
+Drop-in OpenAI Responses API alternative for any LLM
+Drop-in OpenAI Responses API alternative for any LLM
+& so much more!
+& so much more!
+Read time: 3 mins
+Read time: 3 mins
+AI Tutorials
+AI Tutorials
+AI Tutorials
+AI Tutorials
+We've been stuck in text-based AI interfaces for too long. Sure, they work, but they're not the most natural way humans communicate. Now, with OpenAI's new Agents SDK and their recent text-to-speech models, we can build voice applications without drowning in complexity or code.
+In this tutorial, we'll build a
+Multi-agent Voice RAG
+system that speaks its answers aloud. We'll create a multi-agent workflow where specialized AI agents handle different parts of the process - one agent focuses on processing documentation content, another optimizes responses for natural speech, and finally OpenAI's text-to-speech model delivers the answer in a human-like voice.
+Our RAG app uses
+OpenAI Agents SDK
+to create and orchestrate these agents that handle different stages of the workflow. OpenAI’s new speech model GPT-4o-mini TTS enhances the overall user experience with a natural, emotion-rich voice. You can easily steer its voice characteristics like the tone, pacing, emotion, and personality traits with simple natural language instructions.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+Build a Voice RAG Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+We've been stuck in text-based AI interfaces for too long. Sure, they work, but they're not the most natural way humans communicate. Now, with OpenAI's new Agents SDK and their recent text-to-speech models, we can build voice applications without drowning in complexity or code.
+In this tutorial, we'll build a
+Multi-agent Voice RAG
+system that speaks its answers aloud. We'll create a multi-agent workflow where specialized AI agents handle different parts of the process - one agent focuses on processing documentation content, another optimizes responses for natural speech, and finally OpenAI's text-to-speech model delivers the answer in a human-like voice.
+Our RAG app uses
+OpenAI Agents SDK
+to create and orchestrate these agents that handle different stages of the workflow. OpenAI’s new speech model GPT-4o-mini TTS enhances the overall user experience with a natural, emotion-rich voice. You can easily steer its voice characteristics like the tone, pacing, emotion, and personality traits with simple natural language instructions.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+Build a Voice RAG Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+We've been stuck in text-based AI interfaces for too long. Sure, they work, but they're not the most natural way humans communicate. Now, with OpenAI's new Agents SDK and their recent text-to-speech models, we can build voice applications without drowning in complexity or code.
+We've been stuck in text-based AI interfaces for too long. Sure, they work, but they're not the most natural way humans communicate. Now, with OpenAI's new Agents SDK and their recent text-to-speech models, we can build voice applications without drowning in complexity or code.
+In this tutorial, we'll build a
+Multi-agent Voice RAG
+system that speaks its answers aloud. We'll create a multi-agent workflow where specialized AI agents handle different parts of the process - one agent focuses on processing documentation content, another optimizes responses for natural speech, and finally OpenAI's text-to-speech model delivers the answer in a human-like voice.
+In this tutorial, we'll build a
+Multi-agent Voice RAG
+system that speaks its answers aloud. We'll create a multi-agent workflow where specialized AI agents handle different parts of the process - one agent focuses on processing documentation content, another optimizes responses for natural speech, and finally OpenAI's text-to-speech model delivers the answer in a human-like voice.
+Our RAG app uses
+OpenAI Agents SDK
+to create and orchestrate these agents that handle different stages of the workflow. OpenAI’s new speech model GPT-4o-mini TTS enhances the overall user experience with a natural, emotion-rich voice. You can easily steer its voice characteristics like the tone, pacing, emotion, and personality traits with simple natural language instructions.
+Our RAG app uses
+OpenAI Agents SDK
+to create and orchestrate these agents that handle different stages of the workflow. OpenAI’s new speech model GPT-4o-mini TTS enhances the overall user experience with a natural, emotion-rich voice. You can easily steer its voice characteristics like the tone, pacing, emotion, and personality traits with simple natural language instructions.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+Build a Voice RAG Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Build a Voice RAG Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Build a Voice RAG Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Build a Voice RAG Agent
+Build a Voice RAG Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+Latest Developments
+Latest Developments
+Latest Developments
+Latest Developments
+Vibe Code Your MCP Server
+is a comprehensive platform to create, deploy, manage, and discover MCP servers. It removes the infrastructure headaches typically associated with running Model Context Protocol servers. Flow comes with a
+no-code MCP Studio
+, where you can vibe code MCP servers via a chat interface, publish on GitHub, and deploy them on Flow Cloud with a few clicks.
+The platform provides straightforward integration with Claude, Cursor IDE, and offers client libraries for both Python and JavaScript applications.
+Key Highlights:
+Develop and Test
+- Build MCP servers by describing requirements in natural language. The commands can be as simple as “Create an MCP server for iMDB using the following documentation «link». Once a server is created, you can inspect and validate it instantly with MCP’s Inspector tool.
+Deploy Anywhere
+- Publish your server directly to GitHub with one click, or instantly deploy to Flow Cloud without worrying about infrastructure setup. Simply select your deployment target and Flow handles the rest. Over 1,000 servers are already running on the platform.
+Easy integration with Clients
+- Connect servers to Claude with a simple URL command, add to Cursor IDE through the MCP settings panel, or use client libraries for programmatic access using Python and JavaScript.
+Standard communication protocol
+- Uses Server-Sent Events (SSE) for consistent communication between LLMs and MCP servers across different environments.
+Vibe Code Your MCP Server
+is a comprehensive platform to create, deploy, manage, and discover MCP servers. It removes the infrastructure headaches typically associated with running Model Context Protocol servers. Flow comes with a
+no-code MCP Studio
+, where you can vibe code MCP servers via a chat interface, publish on GitHub, and deploy them on Flow Cloud with a few clicks.
+The platform provides straightforward integration with Claude, Cursor IDE, and offers client libraries for both Python and JavaScript applications.
+Key Highlights:
+Develop and Test
+- Build MCP servers by describing requirements in natural language. The commands can be as simple as “Create an MCP server for iMDB using the following documentation «link». Once a server is created, you can inspect and validate it instantly with MCP’s Inspector tool.
+Deploy Anywhere
+- Publish your server directly to GitHub with one click, or instantly deploy to Flow Cloud without worrying about infrastructure setup. Simply select your deployment target and Flow handles the rest. Over 1,000 servers are already running on the platform.
+Easy integration with Clients
+- Connect servers to Claude with a simple URL command, add to Cursor IDE through the MCP settings panel, or use client libraries for programmatic access using Python and JavaScript.
+Standard communication protocol
+- Uses Server-Sent Events (SSE) for consistent communication between LLMs and MCP servers across different environments.
+Vibe Code Your MCP Server
+Vibe Code Your MCP Server
+is a comprehensive platform to create, deploy, manage, and discover MCP servers. It removes the infrastructure headaches typically associated with running Model Context Protocol servers. Flow comes with a
+no-code MCP Studio
+, where you can vibe code MCP servers via a chat interface, publish on GitHub, and deploy them on Flow Cloud with a few clicks.
+is a comprehensive platform to create, deploy, manage, and discover MCP servers. It removes the infrastructure headaches typically associated with running Model Context Protocol servers. Flow comes with a
+no-code MCP Studio
+, where you can vibe code MCP servers via a chat interface, publish on GitHub, and deploy them on Flow Cloud with a few clicks.
+The platform provides straightforward integration with Claude, Cursor IDE, and offers client libraries for both Python and JavaScript applications.
+The platform provides straightforward integration with Claude, Cursor IDE, and offers client libraries for both Python and JavaScript applications.
+Key Highlights:
+Key Highlights:
+Develop and Test
+- Build MCP servers by describing requirements in natural language. The commands can be as simple as “Create an MCP server for iMDB using the following documentation «link». Once a server is created, you can inspect and validate it instantly with MCP’s Inspector tool.
+Deploy Anywhere
+- Publish your server directly to GitHub with one click, or instantly deploy to Flow Cloud without worrying about infrastructure setup. Simply select your deployment target and Flow handles the rest. Over 1,000 servers are already running on the platform.
+Easy integration with Clients
+- Connect servers to Claude with a simple URL command, add to Cursor IDE through the MCP settings panel, or use client libraries for programmatic access using Python and JavaScript.
+Standard communication protocol
+- Uses Server-Sent Events (SSE) for consistent communication between LLMs and MCP servers across different environments.
+Develop and Test
+- Build MCP servers by describing requirements in natural language. The commands can be as simple as “Create an MCP server for iMDB using the following documentation «link». Once a server is created, you can inspect and validate it instantly with MCP’s Inspector tool.
+Develop and Test
+- Build MCP servers by describing requirements in natural language. The commands can be as simple as “Create an MCP server for iMDB using the following documentation «link». Once a server is created, you can inspect and validate it instantly with MCP’s Inspector tool.
+Deploy Anywhere
+- Publish your server directly to GitHub with one click, or instantly deploy to Flow Cloud without worrying about infrastructure setup. Simply select your deployment target and Flow handles the rest. Over 1,000 servers are already running on the platform.
+Deploy Anywhere
+- Publish your server directly to GitHub with one click, or instantly deploy to Flow Cloud without worrying about infrastructure setup. Simply select your deployment target and Flow handles the rest. Over 1,000 servers are already running on the platform.
+Easy integration with Clients
+- Connect servers to Claude with a simple URL command, add to Cursor IDE through the MCP settings panel, or use client libraries for programmatic access using Python and JavaScript.
+Easy integration with Clients
+- Connect servers to Claude with a simple URL command, add to Cursor IDE through the MCP settings panel, or use client libraries for programmatic access using Python and JavaScript.
+Standard communication protocol
+- Uses Server-Sent Events (SSE) for consistent communication between LLMs and MCP servers across different environments.
+Standard communication protocol
+- Uses Server-Sent Events (SSE) for consistent communication between LLMs and MCP servers across different environments.
+Stop taking manual meeting notes
+Put your meetings on autopilot and wow your team and customers.
+Fellow
+is the AI meeting assistant that:
+✔️ Auto-joins your Zoom, Google Meet, and Teams calls to take notes for you.
+✔️ Tracks action items and decisions so nothing falls through the cracks.
+✔️ Answers questions about meetings and searches through your transcripts, like ChatGPT
+Try Fellow today and get unlimited AI meeting notes for 30 days.
+Get Started Free
+Stop taking manual meeting notes
+Put your meetings on autopilot and wow your team and customers.
+Fellow
+is the AI meeting assistant that:
+✔️ Auto-joins your Zoom, Google Meet, and Teams calls to take notes for you.
+✔️ Tracks action items and decisions so nothing falls through the cracks.
+✔️ Answers questions about meetings and searches through your transcripts, like ChatGPT
+Try Fellow today and get unlimited AI meeting notes for 30 days.
+Get Started Free
+Stop taking manual meeting notes
+Stop taking manual meeting notes
+Put your meetings on autopilot and wow your team and customers.
+Put your meetings on autopilot and wow your team and customers.
+Fellow
+is the AI meeting assistant that:
+Fellow
+is the AI meeting assistant that:
+✔️ Auto-joins your Zoom, Google Meet, and Teams calls to take notes for you.
+✔️ Tracks action items and decisions so nothing falls through the cracks.
+✔️ Answers questions about meetings and searches through your transcripts, like ChatGPT
+✔️ Auto-joins your Zoom, Google Meet, and Teams calls to take notes for you.
+✔️ Tracks action items and decisions so nothing falls through the cracks.
+✔️ Answers questions about meetings and searches through your transcripts, like ChatGPT
+Try Fellow today and get unlimited AI meeting notes for 30 days.
+Try Fellow today and get unlimited AI meeting notes for 30 days.
+Get Started Free
+Get Started Free
+Build and Deploy Production-Grade AI Agents Visually
+Lamatic.ai
+is a fully managed PaaS providing a complete environment for building, deploying, and monitoring AI agents with a visual, low-code interface. The platform allows you to create AI agents by connecting modular nodes on a drag-and-drop interface, integrating data sources and models, and deploying to a serverless edge environment as GraphQL APIs or widgets - all while providing detailed observability tools to ensure reliable performance.
+The goal is faster development and reduced operational overhead, deploying in under 60 seconds.
+Key Highlights:
+Low-Code Visual Builder
+- Create sophisticated AI flows by connecting pre-built nodes in an intuitive interface. Teams can collaborate directly in the Studio environment with role-based permissions.
+Seamless Connections
+- Connect to various data sources, AI models, and third-party applications through drag-and-drop functionality. The platform handles authentication and integration complexities.
+Edge Deployment
+- Deploy your AI agents to a serverless edge environment in under a minute. Your applications are exposed as GraphQL APIs or embeddable widgets, with the platform handling scaling automatically while cutting response latency in half.
+Real-Time Observability
+- Monitor agent performance with detailed request logs, real-time tracing, and comprehensive usage reports. This visibility helps identify and fix issues quickly, ensuring your AI applications maintain high reliability in production.
+Build and Deploy Production-Grade AI Agents Visually
+Lamatic.ai
+is a fully managed PaaS providing a complete environment for building, deploying, and monitoring AI agents with a visual, low-code interface. The platform allows you to create AI agents by connecting modular nodes on a drag-and-drop interface, integrating data sources and models, and deploying to a serverless edge environment as GraphQL APIs or widgets - all while providing detailed observability tools to ensure reliable performance.
+The goal is faster development and reduced operational overhead, deploying in under 60 seconds.
+Key Highlights:
+Low-Code Visual Builder
+- Create sophisticated AI flows by connecting pre-built nodes in an intuitive interface. Teams can collaborate directly in the Studio environment with role-based permissions.
+Seamless Connections
+- Connect to various data sources, AI models, and third-party applications through drag-and-drop functionality. The platform handles authentication and integration complexities.
+Edge Deployment
+- Deploy your AI agents to a serverless edge environment in under a minute. Your applications are exposed as GraphQL APIs or embeddable widgets, with the platform handling scaling automatically while cutting response latency in half.
+Real-Time Observability
+- Monitor agent performance with detailed request logs, real-time tracing, and comprehensive usage reports. This visibility helps identify and fix issues quickly, ensuring your AI applications maintain high reliability in production.
+Build and Deploy Production-Grade AI Agents Visually
+Build and Deploy Production-Grade AI Agents Visually
+Lamatic.ai
+is a fully managed PaaS providing a complete environment for building, deploying, and monitoring AI agents with a visual, low-code interface. The platform allows you to create AI agents by connecting modular nodes on a drag-and-drop interface, integrating data sources and models, and deploying to a serverless edge environment as GraphQL APIs or widgets - all while providing detailed observability tools to ensure reliable performance.
+Lamatic.ai
+is a fully managed PaaS providing a complete environment for building, deploying, and monitoring AI agents with a visual, low-code interface. The platform allows you to create AI agents by connecting modular nodes on a drag-and-drop interface, integrating data sources and models, and deploying to a serverless edge environment as GraphQL APIs or widgets - all while providing detailed observability tools to ensure reliable performance.
+The goal is faster development and reduced operational overhead, deploying in under 60 seconds.
+The goal is faster development and reduced operational overhead, deploying in under 60 seconds.
+Key Highlights:
+Key Highlights:
+Low-Code Visual Builder
+- Create sophisticated AI flows by connecting pre-built nodes in an intuitive interface. Teams can collaborate directly in the Studio environment with role-based permissions.
+Seamless Connections
+- Connect to various data sources, AI models, and third-party applications through drag-and-drop functionality. The platform handles authentication and integration complexities.
+Edge Deployment
+- Deploy your AI agents to a serverless edge environment in under a minute. Your applications are exposed as GraphQL APIs or embeddable widgets, with the platform handling scaling automatically while cutting response latency in half.
+Real-Time Observability
+- Monitor agent performance with detailed request logs, real-time tracing, and comprehensive usage reports. This visibility helps identify and fix issues quickly, ensuring your AI applications maintain high reliability in production.
+Low-Code Visual Builder
+- Create sophisticated AI flows by connecting pre-built nodes in an intuitive interface. Teams can collaborate directly in the Studio environment with role-based permissions.
+Low-Code Visual Builder
+- Create sophisticated AI flows by connecting pre-built nodes in an intuitive interface. Teams can collaborate directly in the Studio environment with role-based permissions.
+Seamless Connections
+- Connect to various data sources, AI models, and third-party applications through drag-and-drop functionality. The platform handles authentication and integration complexities.
+Seamless Connections
+- Connect to various data sources, AI models, and third-party applications through drag-and-drop functionality. The platform handles authentication and integration complexities.
+Edge Deployment
+- Deploy your AI agents to a serverless edge environment in under a minute. Your applications are exposed as GraphQL APIs or embeddable widgets, with the platform handling scaling automatically while cutting response latency in half.
+Edge Deployment
+- Deploy your AI agents to a serverless edge environment in under a minute. Your applications are exposed as GraphQL APIs or embeddable widgets, with the platform handling scaling automatically while cutting response latency in half.
+Real-Time Observability
+- Monitor agent performance with detailed request logs, real-time tracing, and comprehensive usage reports. This visibility helps identify and fix issues quickly, ensuring your AI applications maintain high reliability in production.
+Real-Time Observability
+- Monitor agent performance with detailed request logs, real-time tracing, and comprehensive usage reports. This visibility helps identify and fix issues quickly, ensuring your AI applications maintain high reliability in production.
+Quick Bites
+Quick Bites
+Quick Bites
+Quick Bites
+OpenAI has rolled out an updated version of GPT-4o
+in ChatGPT featuring enhanced instruction-following abilities, better handling of technical challenges, and improved creativity. The update is immediately available for all paid subscribers, while free users will gain access over the coming weeks.
+Google has made its latest reasoning model Gemini 2.5 Pro available to all free users
+. It also integrates with Canvas on the
+Gemini app
+. This is HUGE! The model tops the LMArena leaderboard, and Google giving this level of intelligence to everyone is a game-changer for AI accessibility.
+Anthropic has published two new papers on the inner workings of Claude
+. Using their "AI microscope" approach, they discovered that the model thinks in a universal language across different tongues, plans poetry rhymes several words in advance, and sometimes engages in motivated reasoning rather than faithful step-by-step thinking. These findings provide rare insights into how LLMs actually process information beneath the surface.
+OpenAI has rolled out an updated version of GPT-4o
+in ChatGPT featuring enhanced instruction-following abilities, better handling of technical challenges, and improved creativity. The update is immediately available for all paid subscribers, while free users will gain access over the coming weeks.
+Google has made its latest reasoning model Gemini 2.5 Pro available to all free users
+. It also integrates with Canvas on the
+Gemini app
+. This is HUGE! The model tops the LMArena leaderboard, and Google giving this level of intelligence to everyone is a game-changer for AI accessibility.
+Anthropic has published two new papers on the inner workings of Claude
+. Using their "AI microscope" approach, they discovered that the model thinks in a universal language across different tongues, plans poetry rhymes several words in advance, and sometimes engages in motivated reasoning rather than faithful step-by-step thinking. These findings provide rare insights into how LLMs actually process information beneath the surface.
+OpenAI has rolled out an updated version of GPT-4o
+in ChatGPT featuring enhanced instruction-following abilities, better handling of technical challenges, and improved creativity. The update is immediately available for all paid subscribers, while free users will gain access over the coming weeks.
+OpenAI has rolled out an updated version of GPT-4o
+in ChatGPT featuring enhanced instruction-following abilities, better handling of technical challenges, and improved creativity. The update is immediately available for all paid subscribers, while free users will gain access over the coming weeks.
+Google has made its latest reasoning model Gemini 2.5 Pro available to all free users
+. It also integrates with Canvas on the
+Gemini app
+. This is HUGE! The model tops the LMArena leaderboard, and Google giving this level of intelligence to everyone is a game-changer for AI accessibility.
+Google has made its latest reasoning model Gemini 2.5 Pro available to all free users
+. It also integrates with Canvas on the
+Gemini app
+. This is HUGE! The model tops the LMArena leaderboard, and Google giving this level of intelligence to everyone is a game-changer for AI accessibility.
+Anthropic has published two new papers on the inner workings of Claude
+. Using their "AI microscope" approach, they discovered that the model thinks in a universal language across different tongues, plans poetry rhymes several words in advance, and sometimes engages in motivated reasoning rather than faithful step-by-step thinking. These findings provide rare insights into how LLMs actually process information beneath the surface.
+Anthropic has published two new papers on the inner workings of Claude
+. Using their "AI microscope" approach, they discovered that the model thinks in a universal language across different tongues, plans poetry rhymes several words in advance, and sometimes engages in motivated reasoning rather than faithful step-by-step thinking. These findings provide rare insights into how LLMs actually process information beneath the surface.
+Tools of the Trade
+Tools of the Trade
+Tools of the Trade
+Tools of the Trade
+MCP Link
+: Converts OpenAPI specifications into Model Context Protocol servers without modifying the original API code. It bridges existing web APIs with AI agents by generating fully-functional MCP interfaces that maintain all the original API endpoints and features.
+Awesome MCP Servers
+: A curated repository of over 2,500 MCP server implementations across domains like AI, business management, communication, and development tools.
+Open Responses
+: A self-hosted, open-source alternative to OpenAI's Responses API that works with any LLM backend, allowing you to use models like Claude, Qwen, and Deepseek R1 instead of being limited to OpenAI's models.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+MCP Link
+: Converts OpenAPI specifications into Model Context Protocol servers without modifying the original API code. It bridges existing web APIs with AI agents by generating fully-functional MCP interfaces that maintain all the original API endpoints and features.
+Awesome MCP Servers
+: A curated repository of over 2,500 MCP server implementations across domains like AI, business management, communication, and development tools.
+Open Responses
+: A self-hosted, open-source alternative to OpenAI's Responses API that works with any LLM backend, allowing you to use models like Claude, Qwen, and Deepseek R1 instead of being limited to OpenAI's models.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+MCP Link
+: Converts OpenAPI specifications into Model Context Protocol servers without modifying the original API code. It bridges existing web APIs with AI agents by generating fully-functional MCP interfaces that maintain all the original API endpoints and features.
+Awesome MCP Servers
+: A curated repository of over 2,500 MCP server implementations across domains like AI, business management, communication, and development tools.
+Open Responses
+: A self-hosted, open-source alternative to OpenAI's Responses API that works with any LLM backend, allowing you to use models like Claude, Qwen, and Deepseek R1 instead of being limited to OpenAI's models.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+MCP Link
+: Converts OpenAPI specifications into Model Context Protocol servers without modifying the original API code. It bridges existing web APIs with AI agents by generating fully-functional MCP interfaces that maintain all the original API endpoints and features.
+MCP Link
+: Converts OpenAPI specifications into Model Context Protocol servers without modifying the original API code. It bridges existing web APIs with AI agents by generating fully-functional MCP interfaces that maintain all the original API endpoints and features.
+Awesome MCP Servers
+: A curated repository of over 2,500 MCP server implementations across domains like AI, business management, communication, and development tools.
+Awesome MCP Servers
+: A curated repository of over 2,500 MCP server implementations across domains like AI, business management, communication, and development tools.
+Open Responses
+: A self-hosted, open-source alternative to OpenAI's Responses API that works with any LLM backend, allowing you to use models like Claude, Qwen, and Deepseek R1 instead of being limited to OpenAI's models.
+Open Responses
+: A self-hosted, open-source alternative to OpenAI's Responses API that works with any LLM backend, allowing you to use models like Claude, Qwen, and Deepseek R1 instead of being limited to OpenAI's models.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+Hot Takes
+Hot Takes
+Hot Takes
+Hot Takes
+> be openai
+> release cool product update
+> people resubscribe
+> everybody’s having fun
+> wait 24 hours
+> tweet about overwhelming demand
+> introduce restrictions
+> people complain
+> tell everybody you will fix it
+> ignore it
+> vague-post about agi
+> nerf model
+> hype next update
+> promise transparency
+> release AI safety post
+> repeat ~
+Dreaming Tulpa
+I no longer think you should learn to code. ~
+Amjad Masad
+> be openai
+> release cool product update
+> people resubscribe
+> everybody’s having fun
+> wait 24 hours
+> tweet about overwhelming demand
+> introduce restrictions
+> people complain
+> tell everybody you will fix it
+> ignore it
+> vague-post about agi
+> nerf model
+> hype next update
+> promise transparency
+> release AI safety post
+> repeat ~
+Dreaming Tulpa
+I no longer think you should learn to code. ~
+Amjad Masad
+> be openai
+> release cool product update
+> people resubscribe
+> everybody’s having fun
+> wait 24 hours
+> tweet about overwhelming demand
+> introduce restrictions
+> people complain
+> tell everybody you will fix it
+> ignore it
+> vague-post about agi
+> nerf model
+> hype next update
+> promise transparency
+> release AI safety post
+> repeat ~
+Dreaming Tulpa
+I no longer think you should learn to code. ~
+Amjad Masad
+> be openai
+> release cool product update
+> people resubscribe
+> everybody’s having fun
+> wait 24 hours
+> tweet about overwhelming demand
+> introduce restrictions
+> people complain
+> tell everybody you will fix it
+> ignore it
+> vague-post about agi
+> nerf model
+> hype next update
+> promise transparency
+> release AI safety post
+> repeat ~
+Dreaming Tulpa
+> be openai
+> release cool product update
+> people resubscribe
+> everybody’s having fun
+> wait 24 hours
+> tweet about overwhelming demand
+> introduce restrictions
+> people complain
+> tell everybody you will fix it
+> ignore it
+> vague-post about agi
+> nerf model
+> hype next update
+> promise transparency
+> release AI safety post
+> repeat ~
+Dreaming Tulpa
+I no longer think you should learn to code. ~
+Amjad Masad
+I no longer think you should learn to code. ~
+Amjad Masad
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+That’s all for today! See you tomorrow with more such AI-filled content.
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+Subscribe now for FREE!
+Subscribe now for FREE!
+If this email was forwarded to you,
+subscribe here
+to get email from Unwind AI daily for free!
+© 2025 unwind ai
+228 Park Ave S, #29976, New York, New York 10003, United States
+Powered by beehiiv
+If this email was forwarded to you,
+subscribe here
+to get email from Unwind AI daily for free!
+© 2025 unwind ai
+228 Park Ave S, #29976, New York, New York 10003, United States
+Powered by beehiiv
+If this email was forwarded to you,
+subscribe here
+to get email from Unwind AI daily for free!
+If this email was forwarded to you,
+subscribe here
+to get email from Unwind AI daily for free!
+© 2025 unwind ai
+228 Park Ave S, #29976, New York, New York 10003, United States
+Powered by beehiiv
+© 2025 unwind ai
+228 Park Ave S, #29976, New York, New York 10003, United States
+© 2025 unwind ai
+228 Park Ave S, #29976, New York, New York 10003, United States
+Powered by beehiiv
+Powered by beehiiv

@@ -139,7 +139,5 @@ class EmailReader:
         elif plain_text_body: return plain_text_body.strip()
         elif html_body: return html_body.strip()
         else: return ""
-    # --------------------------------------------------------------------------
 
-    # --- Link extraction/filtering methods REMOVED ---
 

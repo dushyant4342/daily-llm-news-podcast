@@ -64,7 +64,7 @@ class OutputManager:
             safe_subject = re.sub(r'[\\/*?:"<>|]', "", subject)[:50]
             safe_sender = re.sub(r'[\\/*?:"<>|@.]', "", sender)
             # --- Use report_date_str and timestamp_str in filename ---
-            filename = f"Transcript_{report_date_str}_{safe_sender}_{safe_subject}_{timestamp_str}.txt"
+            filename = f"Transcript_{safe_sender}_{timestamp_str}.txt"
             # -------------------------------------------------------
             filepath = os.path.join(self.transcript_dir, filename)
 

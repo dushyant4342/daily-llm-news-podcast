@@ -1,0 +1,1037 @@
+Subject: Opensource Qwen2.5 Omni with Real-time Video
+From: unwindai@mail.beehiiv.com
+==================== CLEANED CONTENT ====================
+
+March 27, 2025   |
+Read Online
+Opensource Qwen2.5 Omni with Real-time Video
+PLUS: AI agent frameworks that support MCP servers, Grok available on Telegram
+Shubham Saboo
+Gargi Gupta
+March 27, 2025
+Today’s top AI Highlights:
+Build and deploy AI Agents in minutes, with observability and MCP
+Opensource Qwen2.5 Omni with Realtime video and voice chat
+Agno opensources its sleek Agent UI to run the interface locally
+Telegram users can now chat with Elon's "Non-Woke" AI chatbot Grok
+AI agent frameworks that support MCP servers
+& so much more!
+Read time: 3 mins
+AI Tutorials
+We've been stuck in text-based AI interfaces for too long. Sure, they work, but they're not the most natural way humans communicate. Now, with OpenAI's new Agents SDK and their recent text-to-speech models, we can build voice applications without drowning in complexity or code.
+In this tutorial, we'll build a
+Multi-agent Voice RAG
+system that speaks its answers aloud. We'll create a multi-agent workflow where specialized AI agents handle different parts of the process - one agent focuses on processing documentation content, another optimizes responses for natural speech, and finally OpenAI's text-to-speech model delivers the answer in a human-like voice.
+Our RAG app uses
+OpenAI Agents SDK
+to create and orchestrate these agents that handle different stages of the workflow. OpenAI’s new speech model GPT-4o-mini TTS enhances the overall user experience with a natural, emotion-rich voice. You can easily steer its voice characteristics like the tone, pacing, emotion, and personality traits with simple natural language instructions.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+Build a Voice RAG Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+Latest Developments
+Build, Observe, and Optimize AI agents at Speed
+🕵️‍♀️
+SpinAI
+is a new TypeScript framework to build, deploy, and monitor AI agents with minimal setup. The open-source toolkit focuses on simplifying agent development while offering built-in observability features that track queries, responses, and costs without requiring additional code.
+SpinAI supports MCP (Model Context Protocol) for agents to access external data sources without custom integrations. With a command as simple as
+npx create-spinai
+, you can set up a working agent in minutes, complete with state management and a standardized action system. It supports all models available via the AI SDK by Vercel.
+Key Highlights:
+MCP Integration
+- SpinAI supports Model Context Protocol out of the box, letting developers install MCPs from providers like Smithery and convert them to SpinAI actions, enabling access to external data sources without writing custom code.
+Robust State Management
+- The framework includes a persistent state system that maintains information between action calls, with clear separation between dynamic parameters (determined by the LLM) and persistent state variables (managed by developers).
+Built-in Observability
+- Every agent interaction automatically logs token usage, costs, and decision paths with no additional code required, accessible through a dedicated dashboard at
+app.spinai.dev
+.
+Streamlined Action System
+- Actions are defined using type-safe schemas for parameters and can be composed together, allowing the LLM to determine which actions to execute and when, including parallel execution when possible.
+Voice Chat + Video Chat with Qwen2.5 Omni
+Qwen just dropped something big:
+Qwen2.5-Omni
+, their brand-new flagship multimodal model with voice and video chat, all wrapped up in a neat open-source package. This can power your next app that understands text, audio, images, and video, responding in real-time with both text
+natural-sounding speech.
+You can even hop on a voice or video call
+directly
+with the model through Qwen Chat to see it in action. And unlike some other big players' Realtime APIs, Qwen2.5-Omni lets you skip the cloud and run it all locally. Qwen2.5 Omni is licensed under
+Apache 2.0, with complete code access and technical documentation available on GitHub, Hugging Face, and ModelScope.
+Key Highlights:
+Unique Thinker-Talker Architecture
+- The model uses a dual-component system where the Thinker processes multiple input modalities while the Talker generates speech output in a streaming fashion, enabling real-time interactions with latency suitable for natural conversations.
+Real-Time Responsiveness
+- Qwen2.5-Omni is engineered for streaming, chunked input, and immediate output. Build real-time applications without the lag. This opens up the door for more fluid and engaging user experiences.
+Open Source and Local-Ready
+- This isn't just a cloud API—download the entire model and run it locally. Customize it, fine-tune it, and integrate it without vendor lock-in. You can play around and not have to worry about your usage costs. This makes it possible for anyone to integrate advanced AI without cloud dependency.
+Voice Control that's Natural
+- Qwen2.5-Omni excels in speech generation, promising more natural and robust output compared to existing alternatives. Fine-tune the speech for your own projects, like customer support bots, voice apps, or even real-time translators. You can even change voice types to male or female.
+Quick Bites
+Anthropic is releasing new updates to their Model Context Protocol
+(MCP) specification, introducing an OAuth 2.1-based authorization framework and replacing the previous HTTP+SSE transport with a more flexible Streamable HTTP transport. The revision also adds support for JSON-RPC batching and comprehensive tool annotations that better describe tool behaviors. SDK updates are already in development to help you quickly implement these improvements.
+Agno has open-sourced their Agent UI
+so you can now self-host the interface. The sleek Next.js and TypeScript-based UI enables you to chat with your multimodal AI agents while maintaining complete data privacy, as all agent sessions are stored locally in SQLite with nothing sent to external servers. Get started immediately with a simple
+npx create-agent-ui
+command to deploy your own customizable interface.
+X has partnered with Telegram to make its Grok chatbot available
+outside its own platform for the first time. Users subscribed to both Telegram Premium and X Premium can now chat with Grok directly in their Telegram conversations. This expansion comes as xAI's massive "Colossus" data center, housing around 200,000 Nvidia H100 units.
+Tools of the Trade
+Connect AI agents to 1000s of external tools without any API integration. AI agent frameworks that support MCP servers:
+OpenAI Agents SDK
+: OpenAI has now integrated MCP support into its Agents SDK to seamlessly connect MCP servers as tools for OpenAI agents. It supports access to external data sources through both local stdio servers and remote HTTP over SSE servers. OpenAI is working on MCP support for the OpenAI API and ChatGPT desktop app.
+Camel AI
+: Camel AI has released its MCP Toolkit to seamlessly connect with external tools and services. The new toolkit supports both stdio and SSE connection modes while dynamically generating functions from tool definitions. It can also handle various content types including text, images, and embedded resources.
+fast-agent
+: fast-agent is the first framework with complete, end-to-end tested MCP feature support. Build and deploy AI agents in minutes with just a few lines of Python code.
+: Agno lets you build multimodal multi-agent systems that can connect to external tools via their MCP toolkit. Agent receives a query from the user > Determines which MCP tools to use > Calls the appropriate MCP server > Processes the information and provides a response.
+mcp-agent
+: mcp-agent Python framework handles the pesky business of managing the lifecycle of MCP server connections and provides ready-to-use patterns for common agent designs. Connect to file systems, databases, APIs, or any other MCP server with just a few lines of code.
+Bee AI
+: BeeAI Framework is an open-source framework for building, deploying, and serving powerful agentic workflows at scale. The framework includes the MCP Tool, a native feature that simplifies the integration of MCP servers into agentic workflows.
+SpinAI
+covered above.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+Hot Takes
+Hey Google, how about actually shipping Gemini 2.5?
+It will be a shame if no one uses it at scale and GPT-5 ships before you productionize 2.5
+Why not bump this up to the highest priority? Seems like a no brainer! ~
+Bindu Reddy
+llms.txt and MCP feels like the beginning of the AI internet protocol stack.
+As these conventions proliferate, the network gets more powerful and intelligent, and a lot more applications become possible. ~
+Guillermo Rauch
+Unpopular Opinion: If Google DeepMind hadn’t released Gemini’s native image generation first , OpenAI would have made everyone wait another year.
+Ashutosh Shrivastava
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+Subscribe now for FREE!
+If this email was forwarded to you,
+subscribe here
+to get email from Unwind AI daily for free!
+© 2025 unwind ai
+228 Park Ave S, #29976, New York, New York 10003, United States
+Powered by beehiiv
+March 27, 2025   |
+Read Online
+Opensource Qwen2.5 Omni with Real-time Video
+PLUS: AI agent frameworks that support MCP servers, Grok available on Telegram
+Shubham Saboo
+Gargi Gupta
+March 27, 2025
+Today’s top AI Highlights:
+Build and deploy AI Agents in minutes, with observability and MCP
+Opensource Qwen2.5 Omni with Realtime video and voice chat
+Agno opensources its sleek Agent UI to run the interface locally
+Telegram users can now chat with Elon's "Non-Woke" AI chatbot Grok
+AI agent frameworks that support MCP servers
+& so much more!
+Read time: 3 mins
+AI Tutorials
+We've been stuck in text-based AI interfaces for too long. Sure, they work, but they're not the most natural way humans communicate. Now, with OpenAI's new Agents SDK and their recent text-to-speech models, we can build voice applications without drowning in complexity or code.
+In this tutorial, we'll build a
+Multi-agent Voice RAG
+system that speaks its answers aloud. We'll create a multi-agent workflow where specialized AI agents handle different parts of the process - one agent focuses on processing documentation content, another optimizes responses for natural speech, and finally OpenAI's text-to-speech model delivers the answer in a human-like voice.
+Our RAG app uses
+OpenAI Agents SDK
+to create and orchestrate these agents that handle different stages of the workflow. OpenAI’s new speech model GPT-4o-mini TTS enhances the overall user experience with a natural, emotion-rich voice. You can easily steer its voice characteristics like the tone, pacing, emotion, and personality traits with simple natural language instructions.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+Build a Voice RAG Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+Latest Developments
+Build, Observe, and Optimize AI agents at Speed
+🕵️‍♀️
+SpinAI
+is a new TypeScript framework to build, deploy, and monitor AI agents with minimal setup. The open-source toolkit focuses on simplifying agent development while offering built-in observability features that track queries, responses, and costs without requiring additional code.
+SpinAI supports MCP (Model Context Protocol) for agents to access external data sources without custom integrations. With a command as simple as
+npx create-spinai
+, you can set up a working agent in minutes, complete with state management and a standardized action system. It supports all models available via the AI SDK by Vercel.
+Key Highlights:
+MCP Integration
+- SpinAI supports Model Context Protocol out of the box, letting developers install MCPs from providers like Smithery and convert them to SpinAI actions, enabling access to external data sources without writing custom code.
+Robust State Management
+- The framework includes a persistent state system that maintains information between action calls, with clear separation between dynamic parameters (determined by the LLM) and persistent state variables (managed by developers).
+Built-in Observability
+- Every agent interaction automatically logs token usage, costs, and decision paths with no additional code required, accessible through a dedicated dashboard at
+app.spinai.dev
+.
+Streamlined Action System
+- Actions are defined using type-safe schemas for parameters and can be composed together, allowing the LLM to determine which actions to execute and when, including parallel execution when possible.
+Voice Chat + Video Chat with Qwen2.5 Omni
+Qwen just dropped something big:
+Qwen2.5-Omni
+, their brand-new flagship multimodal model with voice and video chat, all wrapped up in a neat open-source package. This can power your next app that understands text, audio, images, and video, responding in real-time with both text
+natural-sounding speech.
+You can even hop on a voice or video call
+directly
+with the model through Qwen Chat to see it in action. And unlike some other big players' Realtime APIs, Qwen2.5-Omni lets you skip the cloud and run it all locally. Qwen2.5 Omni is licensed under
+Apache 2.0, with complete code access and technical documentation available on GitHub, Hugging Face, and ModelScope.
+Key Highlights:
+Unique Thinker-Talker Architecture
+- The model uses a dual-component system where the Thinker processes multiple input modalities while the Talker generates speech output in a streaming fashion, enabling real-time interactions with latency suitable for natural conversations.
+Real-Time Responsiveness
+- Qwen2.5-Omni is engineered for streaming, chunked input, and immediate output. Build real-time applications without the lag. This opens up the door for more fluid and engaging user experiences.
+Open Source and Local-Ready
+- This isn't just a cloud API—download the entire model and run it locally. Customize it, fine-tune it, and integrate it without vendor lock-in. You can play around and not have to worry about your usage costs. This makes it possible for anyone to integrate advanced AI without cloud dependency.
+Voice Control that's Natural
+- Qwen2.5-Omni excels in speech generation, promising more natural and robust output compared to existing alternatives. Fine-tune the speech for your own projects, like customer support bots, voice apps, or even real-time translators. You can even change voice types to male or female.
+Quick Bites
+Anthropic is releasing new updates to their Model Context Protocol
+(MCP) specification, introducing an OAuth 2.1-based authorization framework and replacing the previous HTTP+SSE transport with a more flexible Streamable HTTP transport. The revision also adds support for JSON-RPC batching and comprehensive tool annotations that better describe tool behaviors. SDK updates are already in development to help you quickly implement these improvements.
+Agno has open-sourced their Agent UI
+so you can now self-host the interface. The sleek Next.js and TypeScript-based UI enables you to chat with your multimodal AI agents while maintaining complete data privacy, as all agent sessions are stored locally in SQLite with nothing sent to external servers. Get started immediately with a simple
+npx create-agent-ui
+command to deploy your own customizable interface.
+X has partnered with Telegram to make its Grok chatbot available
+outside its own platform for the first time. Users subscribed to both Telegram Premium and X Premium can now chat with Grok directly in their Telegram conversations. This expansion comes as xAI's massive "Colossus" data center, housing around 200,000 Nvidia H100 units.
+Tools of the Trade
+Connect AI agents to 1000s of external tools without any API integration. AI agent frameworks that support MCP servers:
+OpenAI Agents SDK
+: OpenAI has now integrated MCP support into its Agents SDK to seamlessly connect MCP servers as tools for OpenAI agents. It supports access to external data sources through both local stdio servers and remote HTTP over SSE servers. OpenAI is working on MCP support for the OpenAI API and ChatGPT desktop app.
+Camel AI
+: Camel AI has released its MCP Toolkit to seamlessly connect with external tools and services. The new toolkit supports both stdio and SSE connection modes while dynamically generating functions from tool definitions. It can also handle various content types including text, images, and embedded resources.
+fast-agent
+: fast-agent is the first framework with complete, end-to-end tested MCP feature support. Build and deploy AI agents in minutes with just a few lines of Python code.
+: Agno lets you build multimodal multi-agent systems that can connect to external tools via their MCP toolkit. Agent receives a query from the user > Determines which MCP tools to use > Calls the appropriate MCP server > Processes the information and provides a response.
+mcp-agent
+: mcp-agent Python framework handles the pesky business of managing the lifecycle of MCP server connections and provides ready-to-use patterns for common agent designs. Connect to file systems, databases, APIs, or any other MCP server with just a few lines of code.
+Bee AI
+: BeeAI Framework is an open-source framework for building, deploying, and serving powerful agentic workflows at scale. The framework includes the MCP Tool, a native feature that simplifies the integration of MCP servers into agentic workflows.
+SpinAI
+covered above.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+Hot Takes
+Hey Google, how about actually shipping Gemini 2.5?
+It will be a shame if no one uses it at scale and GPT-5 ships before you productionize 2.5
+Why not bump this up to the highest priority? Seems like a no brainer! ~
+Bindu Reddy
+llms.txt and MCP feels like the beginning of the AI internet protocol stack.
+As these conventions proliferate, the network gets more powerful and intelligent, and a lot more applications become possible. ~
+Guillermo Rauch
+Unpopular Opinion: If Google DeepMind hadn’t released Gemini’s native image generation first , OpenAI would have made everyone wait another year.
+Ashutosh Shrivastava
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+Subscribe now for FREE!
+If this email was forwarded to you,
+subscribe here
+to get email from Unwind AI daily for free!
+© 2025 unwind ai
+228 Park Ave S, #29976, New York, New York 10003, United States
+Powered by beehiiv
+March 27, 2025   |
+Read Online
+Opensource Qwen2.5 Omni with Real-time Video
+PLUS: AI agent frameworks that support MCP servers, Grok available on Telegram
+Shubham Saboo
+Gargi Gupta
+March 27, 2025
+Today’s top AI Highlights:
+Build and deploy AI Agents in minutes, with observability and MCP
+Opensource Qwen2.5 Omni with Realtime video and voice chat
+Agno opensources its sleek Agent UI to run the interface locally
+Telegram users can now chat with Elon's "Non-Woke" AI chatbot Grok
+AI agent frameworks that support MCP servers
+& so much more!
+Read time: 3 mins
+AI Tutorials
+We've been stuck in text-based AI interfaces for too long. Sure, they work, but they're not the most natural way humans communicate. Now, with OpenAI's new Agents SDK and their recent text-to-speech models, we can build voice applications without drowning in complexity or code.
+In this tutorial, we'll build a
+Multi-agent Voice RAG
+system that speaks its answers aloud. We'll create a multi-agent workflow where specialized AI agents handle different parts of the process - one agent focuses on processing documentation content, another optimizes responses for natural speech, and finally OpenAI's text-to-speech model delivers the answer in a human-like voice.
+Our RAG app uses
+OpenAI Agents SDK
+to create and orchestrate these agents that handle different stages of the workflow. OpenAI’s new speech model GPT-4o-mini TTS enhances the overall user experience with a natural, emotion-rich voice. You can easily steer its voice characteristics like the tone, pacing, emotion, and personality traits with simple natural language instructions.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+Build a Voice RAG Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+Latest Developments
+Build, Observe, and Optimize AI agents at Speed
+🕵️‍♀️
+SpinAI
+is a new TypeScript framework to build, deploy, and monitor AI agents with minimal setup. The open-source toolkit focuses on simplifying agent development while offering built-in observability features that track queries, responses, and costs without requiring additional code.
+SpinAI supports MCP (Model Context Protocol) for agents to access external data sources without custom integrations. With a command as simple as
+npx create-spinai
+, you can set up a working agent in minutes, complete with state management and a standardized action system. It supports all models available via the AI SDK by Vercel.
+Key Highlights:
+MCP Integration
+- SpinAI supports Model Context Protocol out of the box, letting developers install MCPs from providers like Smithery and convert them to SpinAI actions, enabling access to external data sources without writing custom code.
+Robust State Management
+- The framework includes a persistent state system that maintains information between action calls, with clear separation between dynamic parameters (determined by the LLM) and persistent state variables (managed by developers).
+Built-in Observability
+- Every agent interaction automatically logs token usage, costs, and decision paths with no additional code required, accessible through a dedicated dashboard at
+app.spinai.dev
+.
+Streamlined Action System
+- Actions are defined using type-safe schemas for parameters and can be composed together, allowing the LLM to determine which actions to execute and when, including parallel execution when possible.
+Voice Chat + Video Chat with Qwen2.5 Omni
+Qwen just dropped something big:
+Qwen2.5-Omni
+, their brand-new flagship multimodal model with voice and video chat, all wrapped up in a neat open-source package. This can power your next app that understands text, audio, images, and video, responding in real-time with both text
+natural-sounding speech.
+You can even hop on a voice or video call
+directly
+with the model through Qwen Chat to see it in action. And unlike some other big players' Realtime APIs, Qwen2.5-Omni lets you skip the cloud and run it all locally. Qwen2.5 Omni is licensed under
+Apache 2.0, with complete code access and technical documentation available on GitHub, Hugging Face, and ModelScope.
+Key Highlights:
+Unique Thinker-Talker Architecture
+- The model uses a dual-component system where the Thinker processes multiple input modalities while the Talker generates speech output in a streaming fashion, enabling real-time interactions with latency suitable for natural conversations.
+Real-Time Responsiveness
+- Qwen2.5-Omni is engineered for streaming, chunked input, and immediate output. Build real-time applications without the lag. This opens up the door for more fluid and engaging user experiences.
+Open Source and Local-Ready
+- This isn't just a cloud API—download the entire model and run it locally. Customize it, fine-tune it, and integrate it without vendor lock-in. You can play around and not have to worry about your usage costs. This makes it possible for anyone to integrate advanced AI without cloud dependency.
+Voice Control that's Natural
+- Qwen2.5-Omni excels in speech generation, promising more natural and robust output compared to existing alternatives. Fine-tune the speech for your own projects, like customer support bots, voice apps, or even real-time translators. You can even change voice types to male or female.
+Quick Bites
+Anthropic is releasing new updates to their Model Context Protocol
+(MCP) specification, introducing an OAuth 2.1-based authorization framework and replacing the previous HTTP+SSE transport with a more flexible Streamable HTTP transport. The revision also adds support for JSON-RPC batching and comprehensive tool annotations that better describe tool behaviors. SDK updates are already in development to help you quickly implement these improvements.
+Agno has open-sourced their Agent UI
+so you can now self-host the interface. The sleek Next.js and TypeScript-based UI enables you to chat with your multimodal AI agents while maintaining complete data privacy, as all agent sessions are stored locally in SQLite with nothing sent to external servers. Get started immediately with a simple
+npx create-agent-ui
+command to deploy your own customizable interface.
+X has partnered with Telegram to make its Grok chatbot available
+outside its own platform for the first time. Users subscribed to both Telegram Premium and X Premium can now chat with Grok directly in their Telegram conversations. This expansion comes as xAI's massive "Colossus" data center, housing around 200,000 Nvidia H100 units.
+Tools of the Trade
+Connect AI agents to 1000s of external tools without any API integration. AI agent frameworks that support MCP servers:
+OpenAI Agents SDK
+: OpenAI has now integrated MCP support into its Agents SDK to seamlessly connect MCP servers as tools for OpenAI agents. It supports access to external data sources through both local stdio servers and remote HTTP over SSE servers. OpenAI is working on MCP support for the OpenAI API and ChatGPT desktop app.
+Camel AI
+: Camel AI has released its MCP Toolkit to seamlessly connect with external tools and services. The new toolkit supports both stdio and SSE connection modes while dynamically generating functions from tool definitions. It can also handle various content types including text, images, and embedded resources.
+fast-agent
+: fast-agent is the first framework with complete, end-to-end tested MCP feature support. Build and deploy AI agents in minutes with just a few lines of Python code.
+: Agno lets you build multimodal multi-agent systems that can connect to external tools via their MCP toolkit. Agent receives a query from the user > Determines which MCP tools to use > Calls the appropriate MCP server > Processes the information and provides a response.
+mcp-agent
+: mcp-agent Python framework handles the pesky business of managing the lifecycle of MCP server connections and provides ready-to-use patterns for common agent designs. Connect to file systems, databases, APIs, or any other MCP server with just a few lines of code.
+Bee AI
+: BeeAI Framework is an open-source framework for building, deploying, and serving powerful agentic workflows at scale. The framework includes the MCP Tool, a native feature that simplifies the integration of MCP servers into agentic workflows.
+SpinAI
+covered above.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+Hot Takes
+Hey Google, how about actually shipping Gemini 2.5?
+It will be a shame if no one uses it at scale and GPT-5 ships before you productionize 2.5
+Why not bump this up to the highest priority? Seems like a no brainer! ~
+Bindu Reddy
+llms.txt and MCP feels like the beginning of the AI internet protocol stack.
+As these conventions proliferate, the network gets more powerful and intelligent, and a lot more applications become possible. ~
+Guillermo Rauch
+Unpopular Opinion: If Google DeepMind hadn’t released Gemini’s native image generation first , OpenAI would have made everyone wait another year.
+Ashutosh Shrivastava
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+Subscribe now for FREE!
+If this email was forwarded to you,
+subscribe here
+to get email from Unwind AI daily for free!
+© 2025 unwind ai
+228 Park Ave S, #29976, New York, New York 10003, United States
+Powered by beehiiv
+March 27, 2025   |
+Read Online
+March 27, 2025   |
+Read Online
+Opensource Qwen2.5 Omni with Real-time Video
+PLUS: AI agent frameworks that support MCP servers, Grok available on Telegram
+Opensource Qwen2.5 Omni with Real-time Video
+PLUS: AI agent frameworks that support MCP servers, Grok available on Telegram
+Opensource Qwen2.5 Omni with Real-time Video
+PLUS: AI agent frameworks that support MCP servers, Grok available on Telegram
+Shubham Saboo
+Gargi Gupta
+March 27, 2025
+Shubham Saboo
+Gargi Gupta
+March 27, 2025
+Shubham Saboo
+Gargi Gupta
+March 27, 2025
+Shubham Saboo
+Gargi Gupta
+March 27, 2025
+Shubham Saboo
+Gargi Gupta
+March 27, 2025
+Today’s top AI Highlights:
+Build and deploy AI Agents in minutes, with observability and MCP
+Opensource Qwen2.5 Omni with Realtime video and voice chat
+Agno opensources its sleek Agent UI to run the interface locally
+Telegram users can now chat with Elon's "Non-Woke" AI chatbot Grok
+AI agent frameworks that support MCP servers
+& so much more!
+Read time: 3 mins
+AI Tutorials
+We've been stuck in text-based AI interfaces for too long. Sure, they work, but they're not the most natural way humans communicate. Now, with OpenAI's new Agents SDK and their recent text-to-speech models, we can build voice applications without drowning in complexity or code.
+In this tutorial, we'll build a
+Multi-agent Voice RAG
+system that speaks its answers aloud. We'll create a multi-agent workflow where specialized AI agents handle different parts of the process - one agent focuses on processing documentation content, another optimizes responses for natural speech, and finally OpenAI's text-to-speech model delivers the answer in a human-like voice.
+Our RAG app uses
+OpenAI Agents SDK
+to create and orchestrate these agents that handle different stages of the workflow. OpenAI’s new speech model GPT-4o-mini TTS enhances the overall user experience with a natural, emotion-rich voice. You can easily steer its voice characteristics like the tone, pacing, emotion, and personality traits with simple natural language instructions.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+Build a Voice RAG Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+Latest Developments
+Build, Observe, and Optimize AI agents at Speed
+🕵️‍♀️
+SpinAI
+is a new TypeScript framework to build, deploy, and monitor AI agents with minimal setup. The open-source toolkit focuses on simplifying agent development while offering built-in observability features that track queries, responses, and costs without requiring additional code.
+SpinAI supports MCP (Model Context Protocol) for agents to access external data sources without custom integrations. With a command as simple as
+npx create-spinai
+, you can set up a working agent in minutes, complete with state management and a standardized action system. It supports all models available via the AI SDK by Vercel.
+Key Highlights:
+MCP Integration
+- SpinAI supports Model Context Protocol out of the box, letting developers install MCPs from providers like Smithery and convert them to SpinAI actions, enabling access to external data sources without writing custom code.
+Robust State Management
+- The framework includes a persistent state system that maintains information between action calls, with clear separation between dynamic parameters (determined by the LLM) and persistent state variables (managed by developers).
+Built-in Observability
+- Every agent interaction automatically logs token usage, costs, and decision paths with no additional code required, accessible through a dedicated dashboard at
+app.spinai.dev
+.
+Streamlined Action System
+- Actions are defined using type-safe schemas for parameters and can be composed together, allowing the LLM to determine which actions to execute and when, including parallel execution when possible.
+Voice Chat + Video Chat with Qwen2.5 Omni
+Qwen just dropped something big:
+Qwen2.5-Omni
+, their brand-new flagship multimodal model with voice and video chat, all wrapped up in a neat open-source package. This can power your next app that understands text, audio, images, and video, responding in real-time with both text
+natural-sounding speech.
+You can even hop on a voice or video call
+directly
+with the model through Qwen Chat to see it in action. And unlike some other big players' Realtime APIs, Qwen2.5-Omni lets you skip the cloud and run it all locally. Qwen2.5 Omni is licensed under
+Apache 2.0, with complete code access and technical documentation available on GitHub, Hugging Face, and ModelScope.
+Key Highlights:
+Unique Thinker-Talker Architecture
+- The model uses a dual-component system where the Thinker processes multiple input modalities while the Talker generates speech output in a streaming fashion, enabling real-time interactions with latency suitable for natural conversations.
+Real-Time Responsiveness
+- Qwen2.5-Omni is engineered for streaming, chunked input, and immediate output. Build real-time applications without the lag. This opens up the door for more fluid and engaging user experiences.
+Open Source and Local-Ready
+- This isn't just a cloud API—download the entire model and run it locally. Customize it, fine-tune it, and integrate it without vendor lock-in. You can play around and not have to worry about your usage costs. This makes it possible for anyone to integrate advanced AI without cloud dependency.
+Voice Control that's Natural
+- Qwen2.5-Omni excels in speech generation, promising more natural and robust output compared to existing alternatives. Fine-tune the speech for your own projects, like customer support bots, voice apps, or even real-time translators. You can even change voice types to male or female.
+Quick Bites
+Anthropic is releasing new updates to their Model Context Protocol
+(MCP) specification, introducing an OAuth 2.1-based authorization framework and replacing the previous HTTP+SSE transport with a more flexible Streamable HTTP transport. The revision also adds support for JSON-RPC batching and comprehensive tool annotations that better describe tool behaviors. SDK updates are already in development to help you quickly implement these improvements.
+Agno has open-sourced their Agent UI
+so you can now self-host the interface. The sleek Next.js and TypeScript-based UI enables you to chat with your multimodal AI agents while maintaining complete data privacy, as all agent sessions are stored locally in SQLite with nothing sent to external servers. Get started immediately with a simple
+npx create-agent-ui
+command to deploy your own customizable interface.
+X has partnered with Telegram to make its Grok chatbot available
+outside its own platform for the first time. Users subscribed to both Telegram Premium and X Premium can now chat with Grok directly in their Telegram conversations. This expansion comes as xAI's massive "Colossus" data center, housing around 200,000 Nvidia H100 units.
+Tools of the Trade
+Connect AI agents to 1000s of external tools without any API integration. AI agent frameworks that support MCP servers:
+OpenAI Agents SDK
+: OpenAI has now integrated MCP support into its Agents SDK to seamlessly connect MCP servers as tools for OpenAI agents. It supports access to external data sources through both local stdio servers and remote HTTP over SSE servers. OpenAI is working on MCP support for the OpenAI API and ChatGPT desktop app.
+Camel AI
+: Camel AI has released its MCP Toolkit to seamlessly connect with external tools and services. The new toolkit supports both stdio and SSE connection modes while dynamically generating functions from tool definitions. It can also handle various content types including text, images, and embedded resources.
+fast-agent
+: fast-agent is the first framework with complete, end-to-end tested MCP feature support. Build and deploy AI agents in minutes with just a few lines of Python code.
+: Agno lets you build multimodal multi-agent systems that can connect to external tools via their MCP toolkit. Agent receives a query from the user > Determines which MCP tools to use > Calls the appropriate MCP server > Processes the information and provides a response.
+mcp-agent
+: mcp-agent Python framework handles the pesky business of managing the lifecycle of MCP server connections and provides ready-to-use patterns for common agent designs. Connect to file systems, databases, APIs, or any other MCP server with just a few lines of code.
+Bee AI
+: BeeAI Framework is an open-source framework for building, deploying, and serving powerful agentic workflows at scale. The framework includes the MCP Tool, a native feature that simplifies the integration of MCP servers into agentic workflows.
+SpinAI
+covered above.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+Hot Takes
+Hey Google, how about actually shipping Gemini 2.5?
+It will be a shame if no one uses it at scale and GPT-5 ships before you productionize 2.5
+Why not bump this up to the highest priority? Seems like a no brainer! ~
+Bindu Reddy
+llms.txt and MCP feels like the beginning of the AI internet protocol stack.
+As these conventions proliferate, the network gets more powerful and intelligent, and a lot more applications become possible. ~
+Guillermo Rauch
+Unpopular Opinion: If Google DeepMind hadn’t released Gemini’s native image generation first , OpenAI would have made everyone wait another year.
+Ashutosh Shrivastava
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+Subscribe now for FREE!
+Today’s top AI Highlights:
+Build and deploy AI Agents in minutes, with observability and MCP
+Opensource Qwen2.5 Omni with Realtime video and voice chat
+Agno opensources its sleek Agent UI to run the interface locally
+Telegram users can now chat with Elon's "Non-Woke" AI chatbot Grok
+AI agent frameworks that support MCP servers
+& so much more!
+Read time: 3 mins
+Today’s top AI Highlights:
+Build and deploy AI Agents in minutes, with observability and MCP
+Opensource Qwen2.5 Omni with Realtime video and voice chat
+Agno opensources its sleek Agent UI to run the interface locally
+Telegram users can now chat with Elon's "Non-Woke" AI chatbot Grok
+AI agent frameworks that support MCP servers
+& so much more!
+Read time: 3 mins
+Today’s top AI Highlights:
+Today’s top AI Highlights:
+Build and deploy AI Agents in minutes, with observability and MCP
+Opensource Qwen2.5 Omni with Realtime video and voice chat
+Agno opensources its sleek Agent UI to run the interface locally
+Telegram users can now chat with Elon's "Non-Woke" AI chatbot Grok
+AI agent frameworks that support MCP servers
+Build and deploy AI Agents in minutes, with observability and MCP
+Build and deploy AI Agents in minutes, with observability and MCP
+Opensource Qwen2.5 Omni with Realtime video and voice chat
+Opensource Qwen2.5 Omni with Realtime video and voice chat
+Agno opensources its sleek Agent UI to run the interface locally
+Agno opensources its sleek Agent UI to run the interface locally
+Telegram users can now chat with Elon's "Non-Woke" AI chatbot Grok
+Telegram users can now chat with Elon's "Non-Woke" AI chatbot Grok
+AI agent frameworks that support MCP servers
+AI agent frameworks that support MCP servers
+& so much more!
+& so much more!
+Read time: 3 mins
+Read time: 3 mins
+AI Tutorials
+AI Tutorials
+AI Tutorials
+AI Tutorials
+We've been stuck in text-based AI interfaces for too long. Sure, they work, but they're not the most natural way humans communicate. Now, with OpenAI's new Agents SDK and their recent text-to-speech models, we can build voice applications without drowning in complexity or code.
+In this tutorial, we'll build a
+Multi-agent Voice RAG
+system that speaks its answers aloud. We'll create a multi-agent workflow where specialized AI agents handle different parts of the process - one agent focuses on processing documentation content, another optimizes responses for natural speech, and finally OpenAI's text-to-speech model delivers the answer in a human-like voice.
+Our RAG app uses
+OpenAI Agents SDK
+to create and orchestrate these agents that handle different stages of the workflow. OpenAI’s new speech model GPT-4o-mini TTS enhances the overall user experience with a natural, emotion-rich voice. You can easily steer its voice characteristics like the tone, pacing, emotion, and personality traits with simple natural language instructions.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+Build a Voice RAG Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+We've been stuck in text-based AI interfaces for too long. Sure, they work, but they're not the most natural way humans communicate. Now, with OpenAI's new Agents SDK and their recent text-to-speech models, we can build voice applications without drowning in complexity or code.
+In this tutorial, we'll build a
+Multi-agent Voice RAG
+system that speaks its answers aloud. We'll create a multi-agent workflow where specialized AI agents handle different parts of the process - one agent focuses on processing documentation content, another optimizes responses for natural speech, and finally OpenAI's text-to-speech model delivers the answer in a human-like voice.
+Our RAG app uses
+OpenAI Agents SDK
+to create and orchestrate these agents that handle different stages of the workflow. OpenAI’s new speech model GPT-4o-mini TTS enhances the overall user experience with a natural, emotion-rich voice. You can easily steer its voice characteristics like the tone, pacing, emotion, and personality traits with simple natural language instructions.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+Build a Voice RAG Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+We've been stuck in text-based AI interfaces for too long. Sure, they work, but they're not the most natural way humans communicate. Now, with OpenAI's new Agents SDK and their recent text-to-speech models, we can build voice applications without drowning in complexity or code.
+We've been stuck in text-based AI interfaces for too long. Sure, they work, but they're not the most natural way humans communicate. Now, with OpenAI's new Agents SDK and their recent text-to-speech models, we can build voice applications without drowning in complexity or code.
+In this tutorial, we'll build a
+Multi-agent Voice RAG
+system that speaks its answers aloud. We'll create a multi-agent workflow where specialized AI agents handle different parts of the process - one agent focuses on processing documentation content, another optimizes responses for natural speech, and finally OpenAI's text-to-speech model delivers the answer in a human-like voice.
+In this tutorial, we'll build a
+Multi-agent Voice RAG
+system that speaks its answers aloud. We'll create a multi-agent workflow where specialized AI agents handle different parts of the process - one agent focuses on processing documentation content, another optimizes responses for natural speech, and finally OpenAI's text-to-speech model delivers the answer in a human-like voice.
+Our RAG app uses
+OpenAI Agents SDK
+to create and orchestrate these agents that handle different stages of the workflow. OpenAI’s new speech model GPT-4o-mini TTS enhances the overall user experience with a natural, emotion-rich voice. You can easily steer its voice characteristics like the tone, pacing, emotion, and personality traits with simple natural language instructions.
+Our RAG app uses
+OpenAI Agents SDK
+to create and orchestrate these agents that handle different stages of the workflow. OpenAI’s new speech model GPT-4o-mini TTS enhances the overall user experience with a natural, emotion-rich voice. You can easily steer its voice characteristics like the tone, pacing, emotion, and personality traits with simple natural language instructions.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+Build a Voice RAG Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Build a Voice RAG Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Build a Voice RAG Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Build a Voice RAG Agent
+Build a Voice RAG Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+Latest Developments
+Latest Developments
+Latest Developments
+Latest Developments
+Build, Observe, and Optimize AI agents at Speed
+🕵️‍♀️
+SpinAI
+is a new TypeScript framework to build, deploy, and monitor AI agents with minimal setup. The open-source toolkit focuses on simplifying agent development while offering built-in observability features that track queries, responses, and costs without requiring additional code.
+SpinAI supports MCP (Model Context Protocol) for agents to access external data sources without custom integrations. With a command as simple as
+npx create-spinai
+, you can set up a working agent in minutes, complete with state management and a standardized action system. It supports all models available via the AI SDK by Vercel.
+Key Highlights:
+MCP Integration
+- SpinAI supports Model Context Protocol out of the box, letting developers install MCPs from providers like Smithery and convert them to SpinAI actions, enabling access to external data sources without writing custom code.
+Robust State Management
+- The framework includes a persistent state system that maintains information between action calls, with clear separation between dynamic parameters (determined by the LLM) and persistent state variables (managed by developers).
+Built-in Observability
+- Every agent interaction automatically logs token usage, costs, and decision paths with no additional code required, accessible through a dedicated dashboard at
+app.spinai.dev
+.
+Streamlined Action System
+- Actions are defined using type-safe schemas for parameters and can be composed together, allowing the LLM to determine which actions to execute and when, including parallel execution when possible.
+Build, Observe, and Optimize AI agents at Speed
+🕵️‍♀️
+SpinAI
+is a new TypeScript framework to build, deploy, and monitor AI agents with minimal setup. The open-source toolkit focuses on simplifying agent development while offering built-in observability features that track queries, responses, and costs without requiring additional code.
+SpinAI supports MCP (Model Context Protocol) for agents to access external data sources without custom integrations. With a command as simple as
+npx create-spinai
+, you can set up a working agent in minutes, complete with state management and a standardized action system. It supports all models available via the AI SDK by Vercel.
+Key Highlights:
+MCP Integration
+- SpinAI supports Model Context Protocol out of the box, letting developers install MCPs from providers like Smithery and convert them to SpinAI actions, enabling access to external data sources without writing custom code.
+Robust State Management
+- The framework includes a persistent state system that maintains information between action calls, with clear separation between dynamic parameters (determined by the LLM) and persistent state variables (managed by developers).
+Built-in Observability
+- Every agent interaction automatically logs token usage, costs, and decision paths with no additional code required, accessible through a dedicated dashboard at
+app.spinai.dev
+.
+Streamlined Action System
+- Actions are defined using type-safe schemas for parameters and can be composed together, allowing the LLM to determine which actions to execute and when, including parallel execution when possible.
+Build, Observe, and Optimize AI agents at Speed
+🕵️‍♀️
+Build, Observe, and Optimize AI agents at Speed
+🕵️‍♀️
+SpinAI
+is a new TypeScript framework to build, deploy, and monitor AI agents with minimal setup. The open-source toolkit focuses on simplifying agent development while offering built-in observability features that track queries, responses, and costs without requiring additional code.
+SpinAI
+is a new TypeScript framework to build, deploy, and monitor AI agents with minimal setup. The open-source toolkit focuses on simplifying agent development while offering built-in observability features that track queries, responses, and costs without requiring additional code.
+SpinAI supports MCP (Model Context Protocol) for agents to access external data sources without custom integrations. With a command as simple as
+npx create-spinai
+, you can set up a working agent in minutes, complete with state management and a standardized action system. It supports all models available via the AI SDK by Vercel.
+SpinAI supports MCP (Model Context Protocol) for agents to access external data sources without custom integrations. With a command as simple as
+npx create-spinai
+, you can set up a working agent in minutes, complete with state management and a standardized action system. It supports all models available via the AI SDK by Vercel.
+Key Highlights:
+Key Highlights:
+MCP Integration
+- SpinAI supports Model Context Protocol out of the box, letting developers install MCPs from providers like Smithery and convert them to SpinAI actions, enabling access to external data sources without writing custom code.
+Robust State Management
+- The framework includes a persistent state system that maintains information between action calls, with clear separation between dynamic parameters (determined by the LLM) and persistent state variables (managed by developers).
+Built-in Observability
+- Every agent interaction automatically logs token usage, costs, and decision paths with no additional code required, accessible through a dedicated dashboard at
+app.spinai.dev
+.
+Streamlined Action System
+- Actions are defined using type-safe schemas for parameters and can be composed together, allowing the LLM to determine which actions to execute and when, including parallel execution when possible.
+MCP Integration
+- SpinAI supports Model Context Protocol out of the box, letting developers install MCPs from providers like Smithery and convert them to SpinAI actions, enabling access to external data sources without writing custom code.
+MCP Integration
+- SpinAI supports Model Context Protocol out of the box, letting developers install MCPs from providers like Smithery and convert them to SpinAI actions, enabling access to external data sources without writing custom code.
+Robust State Management
+- The framework includes a persistent state system that maintains information between action calls, with clear separation between dynamic parameters (determined by the LLM) and persistent state variables (managed by developers).
+Robust State Management
+- The framework includes a persistent state system that maintains information between action calls, with clear separation between dynamic parameters (determined by the LLM) and persistent state variables (managed by developers).
+Built-in Observability
+- Every agent interaction automatically logs token usage, costs, and decision paths with no additional code required, accessible through a dedicated dashboard at
+app.spinai.dev
+.
+Built-in Observability
+- Every agent interaction automatically logs token usage, costs, and decision paths with no additional code required, accessible through a dedicated dashboard at
+app.spinai.dev
+.
+Streamlined Action System
+- Actions are defined using type-safe schemas for parameters and can be composed together, allowing the LLM to determine which actions to execute and when, including parallel execution when possible.
+Streamlined Action System
+- Actions are defined using type-safe schemas for parameters and can be composed together, allowing the LLM to determine which actions to execute and when, including parallel execution when possible.
+Voice Chat + Video Chat with Qwen2.5 Omni
+Qwen just dropped something big:
+Qwen2.5-Omni
+, their brand-new flagship multimodal model with voice and video chat, all wrapped up in a neat open-source package. This can power your next app that understands text, audio, images, and video, responding in real-time with both text
+natural-sounding speech.
+You can even hop on a voice or video call
+directly
+with the model through Qwen Chat to see it in action. And unlike some other big players' Realtime APIs, Qwen2.5-Omni lets you skip the cloud and run it all locally. Qwen2.5 Omni is licensed under
+Apache 2.0, with complete code access and technical documentation available on GitHub, Hugging Face, and ModelScope.
+Key Highlights:
+Unique Thinker-Talker Architecture
+- The model uses a dual-component system where the Thinker processes multiple input modalities while the Talker generates speech output in a streaming fashion, enabling real-time interactions with latency suitable for natural conversations.
+Real-Time Responsiveness
+- Qwen2.5-Omni is engineered for streaming, chunked input, and immediate output. Build real-time applications without the lag. This opens up the door for more fluid and engaging user experiences.
+Open Source and Local-Ready
+- This isn't just a cloud API—download the entire model and run it locally. Customize it, fine-tune it, and integrate it without vendor lock-in. You can play around and not have to worry about your usage costs. This makes it possible for anyone to integrate advanced AI without cloud dependency.
+Voice Control that's Natural
+- Qwen2.5-Omni excels in speech generation, promising more natural and robust output compared to existing alternatives. Fine-tune the speech for your own projects, like customer support bots, voice apps, or even real-time translators. You can even change voice types to male or female.
+Voice Chat + Video Chat with Qwen2.5 Omni
+Qwen just dropped something big:
+Qwen2.5-Omni
+, their brand-new flagship multimodal model with voice and video chat, all wrapped up in a neat open-source package. This can power your next app that understands text, audio, images, and video, responding in real-time with both text
+natural-sounding speech.
+You can even hop on a voice or video call
+directly
+with the model through Qwen Chat to see it in action. And unlike some other big players' Realtime APIs, Qwen2.5-Omni lets you skip the cloud and run it all locally. Qwen2.5 Omni is licensed under
+Apache 2.0, with complete code access and technical documentation available on GitHub, Hugging Face, and ModelScope.
+Key Highlights:
+Unique Thinker-Talker Architecture
+- The model uses a dual-component system where the Thinker processes multiple input modalities while the Talker generates speech output in a streaming fashion, enabling real-time interactions with latency suitable for natural conversations.
+Real-Time Responsiveness
+- Qwen2.5-Omni is engineered for streaming, chunked input, and immediate output. Build real-time applications without the lag. This opens up the door for more fluid and engaging user experiences.
+Open Source and Local-Ready
+- This isn't just a cloud API—download the entire model and run it locally. Customize it, fine-tune it, and integrate it without vendor lock-in. You can play around and not have to worry about your usage costs. This makes it possible for anyone to integrate advanced AI without cloud dependency.
+Voice Control that's Natural
+- Qwen2.5-Omni excels in speech generation, promising more natural and robust output compared to existing alternatives. Fine-tune the speech for your own projects, like customer support bots, voice apps, or even real-time translators. You can even change voice types to male or female.
+Voice Chat + Video Chat with Qwen2.5 Omni
+Voice Chat + Video Chat with Qwen2.5 Omni
+Qwen just dropped something big:
+Qwen2.5-Omni
+, their brand-new flagship multimodal model with voice and video chat, all wrapped up in a neat open-source package. This can power your next app that understands text, audio, images, and video, responding in real-time with both text
+natural-sounding speech.
+Qwen just dropped something big:
+Qwen2.5-Omni
+, their brand-new flagship multimodal model with voice and video chat, all wrapped up in a neat open-source package. This can power your next app that understands text, audio, images, and video, responding in real-time with both text
+natural-sounding speech.
+You can even hop on a voice or video call
+directly
+with the model through Qwen Chat to see it in action. And unlike some other big players' Realtime APIs, Qwen2.5-Omni lets you skip the cloud and run it all locally. Qwen2.5 Omni is licensed under
+Apache 2.0, with complete code access and technical documentation available on GitHub, Hugging Face, and ModelScope.
+You can even hop on a voice or video call
+directly
+with the model through Qwen Chat to see it in action. And unlike some other big players' Realtime APIs, Qwen2.5-Omni lets you skip the cloud and run it all locally. Qwen2.5 Omni is licensed under
+Apache 2.0, with complete code access and technical documentation available on GitHub, Hugging Face, and ModelScope.
+Key Highlights:
+Key Highlights:
+Unique Thinker-Talker Architecture
+- The model uses a dual-component system where the Thinker processes multiple input modalities while the Talker generates speech output in a streaming fashion, enabling real-time interactions with latency suitable for natural conversations.
+Real-Time Responsiveness
+- Qwen2.5-Omni is engineered for streaming, chunked input, and immediate output. Build real-time applications without the lag. This opens up the door for more fluid and engaging user experiences.
+Open Source and Local-Ready
+- This isn't just a cloud API—download the entire model and run it locally. Customize it, fine-tune it, and integrate it without vendor lock-in. You can play around and not have to worry about your usage costs. This makes it possible for anyone to integrate advanced AI without cloud dependency.
+Voice Control that's Natural
+- Qwen2.5-Omni excels in speech generation, promising more natural and robust output compared to existing alternatives. Fine-tune the speech for your own projects, like customer support bots, voice apps, or even real-time translators. You can even change voice types to male or female.
+Unique Thinker-Talker Architecture
+- The model uses a dual-component system where the Thinker processes multiple input modalities while the Talker generates speech output in a streaming fashion, enabling real-time interactions with latency suitable for natural conversations.
+Unique Thinker-Talker Architecture
+- The model uses a dual-component system where the Thinker processes multiple input modalities while the Talker generates speech output in a streaming fashion, enabling real-time interactions with latency suitable for natural conversations.
+Real-Time Responsiveness
+- Qwen2.5-Omni is engineered for streaming, chunked input, and immediate output. Build real-time applications without the lag. This opens up the door for more fluid and engaging user experiences.
+Real-Time Responsiveness
+- Qwen2.5-Omni is engineered for streaming, chunked input, and immediate output. Build real-time applications without the lag. This opens up the door for more fluid and engaging user experiences.
+Open Source and Local-Ready
+- This isn't just a cloud API—download the entire model and run it locally. Customize it, fine-tune it, and integrate it without vendor lock-in. You can play around and not have to worry about your usage costs. This makes it possible for anyone to integrate advanced AI without cloud dependency.
+Open Source and Local-Ready
+- This isn't just a cloud API—download the entire model and run it locally. Customize it, fine-tune it, and integrate it without vendor lock-in. You can play around and not have to worry about your usage costs. This makes it possible for anyone to integrate advanced AI without cloud dependency.
+Voice Control that's Natural
+- Qwen2.5-Omni excels in speech generation, promising more natural and robust output compared to existing alternatives. Fine-tune the speech for your own projects, like customer support bots, voice apps, or even real-time translators. You can even change voice types to male or female.
+Voice Control that's Natural
+- Qwen2.5-Omni excels in speech generation, promising more natural and robust output compared to existing alternatives. Fine-tune the speech for your own projects, like customer support bots, voice apps, or even real-time translators. You can even change voice types to male or female.
+Quick Bites
+Quick Bites
+Quick Bites
+Quick Bites
+Anthropic is releasing new updates to their Model Context Protocol
+(MCP) specification, introducing an OAuth 2.1-based authorization framework and replacing the previous HTTP+SSE transport with a more flexible Streamable HTTP transport. The revision also adds support for JSON-RPC batching and comprehensive tool annotations that better describe tool behaviors. SDK updates are already in development to help you quickly implement these improvements.
+Agno has open-sourced their Agent UI
+so you can now self-host the interface. The sleek Next.js and TypeScript-based UI enables you to chat with your multimodal AI agents while maintaining complete data privacy, as all agent sessions are stored locally in SQLite with nothing sent to external servers. Get started immediately with a simple
+npx create-agent-ui
+command to deploy your own customizable interface.
+X has partnered with Telegram to make its Grok chatbot available
+outside its own platform for the first time. Users subscribed to both Telegram Premium and X Premium can now chat with Grok directly in their Telegram conversations. This expansion comes as xAI's massive "Colossus" data center, housing around 200,000 Nvidia H100 units.
+Anthropic is releasing new updates to their Model Context Protocol
+(MCP) specification, introducing an OAuth 2.1-based authorization framework and replacing the previous HTTP+SSE transport with a more flexible Streamable HTTP transport. The revision also adds support for JSON-RPC batching and comprehensive tool annotations that better describe tool behaviors. SDK updates are already in development to help you quickly implement these improvements.
+Agno has open-sourced their Agent UI
+so you can now self-host the interface. The sleek Next.js and TypeScript-based UI enables you to chat with your multimodal AI agents while maintaining complete data privacy, as all agent sessions are stored locally in SQLite with nothing sent to external servers. Get started immediately with a simple
+npx create-agent-ui
+command to deploy your own customizable interface.
+X has partnered with Telegram to make its Grok chatbot available
+outside its own platform for the first time. Users subscribed to both Telegram Premium and X Premium can now chat with Grok directly in their Telegram conversations. This expansion comes as xAI's massive "Colossus" data center, housing around 200,000 Nvidia H100 units.
+Anthropic is releasing new updates to their Model Context Protocol
+(MCP) specification, introducing an OAuth 2.1-based authorization framework and replacing the previous HTTP+SSE transport with a more flexible Streamable HTTP transport. The revision also adds support for JSON-RPC batching and comprehensive tool annotations that better describe tool behaviors. SDK updates are already in development to help you quickly implement these improvements.
+Anthropic is releasing new updates to their Model Context Protocol
+(MCP) specification, introducing an OAuth 2.1-based authorization framework and replacing the previous HTTP+SSE transport with a more flexible Streamable HTTP transport. The revision also adds support for JSON-RPC batching and comprehensive tool annotations that better describe tool behaviors. SDK updates are already in development to help you quickly implement these improvements.
+Agno has open-sourced their Agent UI
+so you can now self-host the interface. The sleek Next.js and TypeScript-based UI enables you to chat with your multimodal AI agents while maintaining complete data privacy, as all agent sessions are stored locally in SQLite with nothing sent to external servers. Get started immediately with a simple
+npx create-agent-ui
+command to deploy your own customizable interface.
+Agno has open-sourced their Agent UI
+so you can now self-host the interface. The sleek Next.js and TypeScript-based UI enables you to chat with your multimodal AI agents while maintaining complete data privacy, as all agent sessions are stored locally in SQLite with nothing sent to external servers. Get started immediately with a simple
+npx create-agent-ui
+command to deploy your own customizable interface.
+X has partnered with Telegram to make its Grok chatbot available
+outside its own platform for the first time. Users subscribed to both Telegram Premium and X Premium can now chat with Grok directly in their Telegram conversations. This expansion comes as xAI's massive "Colossus" data center, housing around 200,000 Nvidia H100 units.
+X has partnered with Telegram to make its Grok chatbot available
+outside its own platform for the first time. Users subscribed to both Telegram Premium and X Premium can now chat with Grok directly in their Telegram conversations. This expansion comes as xAI's massive "Colossus" data center, housing around 200,000 Nvidia H100 units.
+Tools of the Trade
+Tools of the Trade
+Tools of the Trade
+Tools of the Trade
+Connect AI agents to 1000s of external tools without any API integration. AI agent frameworks that support MCP servers:
+OpenAI Agents SDK
+: OpenAI has now integrated MCP support into its Agents SDK to seamlessly connect MCP servers as tools for OpenAI agents. It supports access to external data sources through both local stdio servers and remote HTTP over SSE servers. OpenAI is working on MCP support for the OpenAI API and ChatGPT desktop app.
+Camel AI
+: Camel AI has released its MCP Toolkit to seamlessly connect with external tools and services. The new toolkit supports both stdio and SSE connection modes while dynamically generating functions from tool definitions. It can also handle various content types including text, images, and embedded resources.
+fast-agent
+: fast-agent is the first framework with complete, end-to-end tested MCP feature support. Build and deploy AI agents in minutes with just a few lines of Python code.
+: Agno lets you build multimodal multi-agent systems that can connect to external tools via their MCP toolkit. Agent receives a query from the user > Determines which MCP tools to use > Calls the appropriate MCP server > Processes the information and provides a response.
+mcp-agent
+: mcp-agent Python framework handles the pesky business of managing the lifecycle of MCP server connections and provides ready-to-use patterns for common agent designs. Connect to file systems, databases, APIs, or any other MCP server with just a few lines of code.
+Bee AI
+: BeeAI Framework is an open-source framework for building, deploying, and serving powerful agentic workflows at scale. The framework includes the MCP Tool, a native feature that simplifies the integration of MCP servers into agentic workflows.
+SpinAI
+covered above.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+Connect AI agents to 1000s of external tools without any API integration. AI agent frameworks that support MCP servers:
+OpenAI Agents SDK
+: OpenAI has now integrated MCP support into its Agents SDK to seamlessly connect MCP servers as tools for OpenAI agents. It supports access to external data sources through both local stdio servers and remote HTTP over SSE servers. OpenAI is working on MCP support for the OpenAI API and ChatGPT desktop app.
+Camel AI
+: Camel AI has released its MCP Toolkit to seamlessly connect with external tools and services. The new toolkit supports both stdio and SSE connection modes while dynamically generating functions from tool definitions. It can also handle various content types including text, images, and embedded resources.
+fast-agent
+: fast-agent is the first framework with complete, end-to-end tested MCP feature support. Build and deploy AI agents in minutes with just a few lines of Python code.
+: Agno lets you build multimodal multi-agent systems that can connect to external tools via their MCP toolkit. Agent receives a query from the user > Determines which MCP tools to use > Calls the appropriate MCP server > Processes the information and provides a response.
+mcp-agent
+: mcp-agent Python framework handles the pesky business of managing the lifecycle of MCP server connections and provides ready-to-use patterns for common agent designs. Connect to file systems, databases, APIs, or any other MCP server with just a few lines of code.
+Bee AI
+: BeeAI Framework is an open-source framework for building, deploying, and serving powerful agentic workflows at scale. The framework includes the MCP Tool, a native feature that simplifies the integration of MCP servers into agentic workflows.
+SpinAI
+covered above.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+Connect AI agents to 1000s of external tools without any API integration. AI agent frameworks that support MCP servers:
+Connect AI agents to 1000s of external tools without any API integration. AI agent frameworks that support MCP servers:
+OpenAI Agents SDK
+: OpenAI has now integrated MCP support into its Agents SDK to seamlessly connect MCP servers as tools for OpenAI agents. It supports access to external data sources through both local stdio servers and remote HTTP over SSE servers. OpenAI is working on MCP support for the OpenAI API and ChatGPT desktop app.
+Camel AI
+: Camel AI has released its MCP Toolkit to seamlessly connect with external tools and services. The new toolkit supports both stdio and SSE connection modes while dynamically generating functions from tool definitions. It can also handle various content types including text, images, and embedded resources.
+fast-agent
+: fast-agent is the first framework with complete, end-to-end tested MCP feature support. Build and deploy AI agents in minutes with just a few lines of Python code.
+: Agno lets you build multimodal multi-agent systems that can connect to external tools via their MCP toolkit. Agent receives a query from the user > Determines which MCP tools to use > Calls the appropriate MCP server > Processes the information and provides a response.
+mcp-agent
+: mcp-agent Python framework handles the pesky business of managing the lifecycle of MCP server connections and provides ready-to-use patterns for common agent designs. Connect to file systems, databases, APIs, or any other MCP server with just a few lines of code.
+Bee AI
+: BeeAI Framework is an open-source framework for building, deploying, and serving powerful agentic workflows at scale. The framework includes the MCP Tool, a native feature that simplifies the integration of MCP servers into agentic workflows.
+SpinAI
+covered above.
+OpenAI Agents SDK
+: OpenAI has now integrated MCP support into its Agents SDK to seamlessly connect MCP servers as tools for OpenAI agents. It supports access to external data sources through both local stdio servers and remote HTTP over SSE servers. OpenAI is working on MCP support for the OpenAI API and ChatGPT desktop app.
+OpenAI Agents SDK
+: OpenAI has now integrated MCP support into its Agents SDK to seamlessly connect MCP servers as tools for OpenAI agents. It supports access to external data sources through both local stdio servers and remote HTTP over SSE servers. OpenAI is working on MCP support for the OpenAI API and ChatGPT desktop app.
+Camel AI
+: Camel AI has released its MCP Toolkit to seamlessly connect with external tools and services. The new toolkit supports both stdio and SSE connection modes while dynamically generating functions from tool definitions. It can also handle various content types including text, images, and embedded resources.
+Camel AI
+: Camel AI has released its MCP Toolkit to seamlessly connect with external tools and services. The new toolkit supports both stdio and SSE connection modes while dynamically generating functions from tool definitions. It can also handle various content types including text, images, and embedded resources.
+fast-agent
+: fast-agent is the first framework with complete, end-to-end tested MCP feature support. Build and deploy AI agents in minutes with just a few lines of Python code.
+fast-agent
+: fast-agent is the first framework with complete, end-to-end tested MCP feature support. Build and deploy AI agents in minutes with just a few lines of Python code.
+: Agno lets you build multimodal multi-agent systems that can connect to external tools via their MCP toolkit. Agent receives a query from the user > Determines which MCP tools to use > Calls the appropriate MCP server > Processes the information and provides a response.
+: Agno lets you build multimodal multi-agent systems that can connect to external tools via their MCP toolkit. Agent receives a query from the user > Determines which MCP tools to use > Calls the appropriate MCP server > Processes the information and provides a response.
+mcp-agent
+: mcp-agent Python framework handles the pesky business of managing the lifecycle of MCP server connections and provides ready-to-use patterns for common agent designs. Connect to file systems, databases, APIs, or any other MCP server with just a few lines of code.
+mcp-agent
+: mcp-agent Python framework handles the pesky business of managing the lifecycle of MCP server connections and provides ready-to-use patterns for common agent designs. Connect to file systems, databases, APIs, or any other MCP server with just a few lines of code.
+Bee AI
+: BeeAI Framework is an open-source framework for building, deploying, and serving powerful agentic workflows at scale. The framework includes the MCP Tool, a native feature that simplifies the integration of MCP servers into agentic workflows.
+Bee AI
+: BeeAI Framework is an open-source framework for building, deploying, and serving powerful agentic workflows at scale. The framework includes the MCP Tool, a native feature that simplifies the integration of MCP servers into agentic workflows.
+SpinAI
+covered above.
+SpinAI
+covered above.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+Hot Takes
+Hot Takes
+Hot Takes
+Hot Takes
+Hey Google, how about actually shipping Gemini 2.5?
+It will be a shame if no one uses it at scale and GPT-5 ships before you productionize 2.5
+Why not bump this up to the highest priority? Seems like a no brainer! ~
+Bindu Reddy
+llms.txt and MCP feels like the beginning of the AI internet protocol stack.
+As these conventions proliferate, the network gets more powerful and intelligent, and a lot more applications become possible. ~
+Guillermo Rauch
+Unpopular Opinion: If Google DeepMind hadn’t released Gemini’s native image generation first , OpenAI would have made everyone wait another year.
+Ashutosh Shrivastava
+Hey Google, how about actually shipping Gemini 2.5?
+It will be a shame if no one uses it at scale and GPT-5 ships before you productionize 2.5
+Why not bump this up to the highest priority? Seems like a no brainer! ~
+Bindu Reddy
+llms.txt and MCP feels like the beginning of the AI internet protocol stack.
+As these conventions proliferate, the network gets more powerful and intelligent, and a lot more applications become possible. ~
+Guillermo Rauch
+Unpopular Opinion: If Google DeepMind hadn’t released Gemini’s native image generation first , OpenAI would have made everyone wait another year.
+Ashutosh Shrivastava
+Hey Google, how about actually shipping Gemini 2.5?
+It will be a shame if no one uses it at scale and GPT-5 ships before you productionize 2.5
+Why not bump this up to the highest priority? Seems like a no brainer! ~
+Bindu Reddy
+llms.txt and MCP feels like the beginning of the AI internet protocol stack.
+As these conventions proliferate, the network gets more powerful and intelligent, and a lot more applications become possible. ~
+Guillermo Rauch
+Unpopular Opinion: If Google DeepMind hadn’t released Gemini’s native image generation first , OpenAI would have made everyone wait another year.
+Ashutosh Shrivastava
+Hey Google, how about actually shipping Gemini 2.5?
+It will be a shame if no one uses it at scale and GPT-5 ships before you productionize 2.5
+Why not bump this up to the highest priority? Seems like a no brainer! ~
+Bindu Reddy
+Hey Google, how about actually shipping Gemini 2.5?
+It will be a shame if no one uses it at scale and GPT-5 ships before you productionize 2.5
+Why not bump this up to the highest priority? Seems like a no brainer! ~
+Bindu Reddy
+llms.txt and MCP feels like the beginning of the AI internet protocol stack.
+As these conventions proliferate, the network gets more powerful and intelligent, and a lot more applications become possible. ~
+Guillermo Rauch
+llms.txt and MCP feels like the beginning of the AI internet protocol stack.
+As these conventions proliferate, the network gets more powerful and intelligent, and a lot more applications become possible. ~
+Guillermo Rauch
+Unpopular Opinion: If Google DeepMind hadn’t released Gemini’s native image generation first , OpenAI would have made everyone wait another year.
+Ashutosh Shrivastava
+Unpopular Opinion: If Google DeepMind hadn’t released Gemini’s native image generation first , OpenAI would have made everyone wait another year.
+Ashutosh Shrivastava
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+That’s all for today! See you tomorrow with more such AI-filled content.
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+Subscribe now for FREE!
+Subscribe now for FREE!
+If this email was forwarded to you,
+subscribe here
+to get email from Unwind AI daily for free!
+© 2025 unwind ai
+228 Park Ave S, #29976, New York, New York 10003, United States
+Powered by beehiiv
+If this email was forwarded to you,
+subscribe here
+to get email from Unwind AI daily for free!
+If this email was forwarded to you,
+subscribe here
+to get email from Unwind AI daily for free!
+© 2025 unwind ai
+228 Park Ave S, #29976, New York, New York 10003, United States
+Powered by beehiiv
+© 2025 unwind ai
+228 Park Ave S, #29976, New York, New York 10003, United States
+© 2025 unwind ai
+228 Park Ave S, #29976, New York, New York 10003, United States
+Powered by beehiiv
+Powered by beehiiv

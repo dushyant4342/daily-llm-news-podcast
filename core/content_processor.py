@@ -1,6 +1,7 @@
 import logging
 import re
 from bs4 import BeautifulSoup, Comment, NavigableString, Tag
+from utils.helpers import *
 
 class ContentProcessor:
     """Cleans HTML email body content and generates summaries using an LLM."""
@@ -123,7 +124,7 @@ class ContentProcessor:
         logging.info(f"Extracted {len(cleaned_text)} chars of cleaned text from email body.")
         return cleaned_text
 
-    def clean_and_summarize_email_body(self, email_body_html):
+    def clean_and_summarize_email_body(self, email_body_html, char_length):
         """
         Cleans the HTML email body and generates a summary using the LLM.
 
@@ -141,7 +142,8 @@ class ContentProcessor:
 
         summary = "Error: Summarization Failed"
         if self.llm and self.llm.llm:
-            summary = self.llm.summarize(cleaned_text)
+            print(f'Summarizing part of cleaned text: {cleaned_text[:char_length]}...')  # Debugging output
+            summary = self.llm.summarize(cleaned_text[:char_length])
         else:
             summary = "Error: LLM not available for summarization."
             logging.warning("LLM not available, cannot generate summary.")

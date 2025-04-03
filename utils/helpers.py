@@ -94,6 +94,7 @@ def load_config():
         "local_model_path": os.getenv("LOCAL_MODEL_PATH"),
         "transcript_save_dir": os.getenv("TRANSCRIPT_SAVE_DIR", "./email_transcripts"),
         "target_date": target_date, # Store the date object
+        "char_length": os.getenv("char_length", 1000)
     }
 
     # --- Validation ---

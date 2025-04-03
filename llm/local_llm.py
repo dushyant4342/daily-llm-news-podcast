@@ -23,7 +23,7 @@ class LocalLLM:
         if not os.path.isfile(self.model_path):
              logging.error(f"Path '{self.model_path}' is not a GGUF file."); return
         try:
-            n_ctx = 22048; n_gpu_layers = 0; verbose = True
+            n_ctx = 2048; n_gpu_layers = 0; verbose = True
             logging.info(f"Loading GGUF model from: {self.model_path}")
             logging.warning(f"Forcing CPU execution with n_gpu_layers={n_gpu_layers}.")
             self.llm = Llama(model_path=self.model_path, n_ctx=n_ctx, n_gpu_layers=n_gpu_layers, verbose=verbose)
@@ -39,10 +39,15 @@ class LocalLLM:
         if not text or not text.strip(): return "Error: No text provided."
 
         # --- Prompt for Email Content ---
-        prompt = f"""[INST] Provide a comprehensive and detailed summary of the main content of the following email text. Ignore greetings, sign-offs, unsubscribe links, author promotions, and other boilerplate:
+        prompt = (
+        f"[INST] Summarize the following email content. Only include the main product updates, tutorials, or announcements. Clean the text as the best as you can to avoid *,!@#$%^&*() etc. so it can be readable easily and can be converted into a transcript, make sure to clean the text in a good way before summarizing so the generated speech is more clearer and have all the details. "
+        f"Do not include greetings, dates like March 31, 2025, Read Online,  sender details, dates, or links.\n\n{text}\n\n[/INST]"
+        )
 
-Text: "{text}" [/INST]
-Summary:"""
+        print("="*80)
+        print(f'prompt: {prompt}')
+
+#         prompt = f"""[INST] Provide a comprehensive and detailed summary of the main content of the following email text. #          Read the content provided and give summary which relevant to read ignore everything which is not important. #          Ignore greetings, sign-offs, unsubscribe links, author promotions, and other boilerplate: # Text: "{text}" [/INST] # Summary:"""
         # --------------------------------
 
         stop_sequences = ["</s>", "[/INST]"]
@@ -62,6 +67,11 @@ Summary:"""
             word_count = len(summary.split()) if isinstance(summary, str) else 0
             logging.info(f"llama.cpp CPU Inference time: {inference_time:.2f} seconds")
             logging.info(f"Summary generated (length: {len(summary)} chars, ~{word_count} words).")
+            
+
+            print("=" * 80)
+            print(f'Generated summary: ', summary)
+
 
             return summary if summary else "Summary generation resulted in empty output."
 

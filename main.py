@@ -28,6 +28,8 @@ def daily_workflow(config):
     # --- Get Target Date and Generate Timestamps ---
     target_date = config['target_date'] # Date object from config (defaults to yesterday)
     report_date_str = target_date.strftime("%Y-%m-%d") # For reporting (e.g., 2025-03-29)
+    
+    char_length = config['char_length']
 
     ist_tz = pytz.timezone('Asia/Kolkata')
     now_ist = datetime.now(ist_tz)
@@ -81,7 +83,7 @@ def daily_workflow(config):
             logging.info(f"--- Processing email {email_count}/{len(emails_to_process)} from: {sender} | Subject: {subject} ---")
             if not raw_body: logging.warning("Empty body. Skipping."); continue
 
-            cleaned_body, summary_text = content_processor.clean_and_summarize_email_body(raw_body)
+            cleaned_body, summary_text = content_processor.clean_and_summarize_email_body(raw_body, int(char_length))
 
             if not cleaned_body:
                  logging.warning(f"Cleaning failed/empty for email from {sender}. Skipping.")
