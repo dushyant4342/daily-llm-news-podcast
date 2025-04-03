@@ -1,0 +1,1109 @@
+Subject: First Local Computer-use AI Agent
+From: unwindai@mail.beehiiv.com
+==================== CLEANED CONTENT ====================
+
+April 02, 2025   |
+Read Online
+First Local Computer-use AI Agent
+PLUS: LLM and AI agents in Apache Airflow, Build web AI agents in one line of code
+Shubham Saboo
+Gargi Gupta
+April 02, 2025
+Today’s top AI Highlights:
+Build AI agents directly in Airflow with the new AI SDK
+Opensource framework to build Computer-use agents that run locally
+Web AI agents with OpenAI and Anthropic CUA in just one line of code
+AI coding agent combines OpenAI o1 and Caude 3.7 Sonnet to top SWE-bench
+Semantic engine for MCP clients and AI agents
+& so much more!
+Read time: 3 mins
+AI Tutorials
+Voice is the most natural and accessible way for users to interact with any application and we see it being used the most for customer support usecases. But building a voice agent that can access your knowledge base can be complex and time-consuming.
+In this tutorial, we'll build a
+Customer Support Voice Agent
+using OpenAI's SDK that combines GPT-4o with their latest TTS (text-to-speech) model. Our application will crawl documentation websites, process the content into a searchable knowledge base, and provide both text and voice responses to user queries through a clean Streamlit interface.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+Build a Customer Support Voice Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+Latest Developments
+Use LLMs and AI Agents Directly in Airflow Pipelines
+Apache Airflow now has an AI SDK that lets you integrate LLMs directly into your data workflows. The airflow-ai-sdk combines Apache Airflow's scheduling power with language models using Pydantic AI under the hood, enabling you to call LLMs and orchestrate AI agents right inside your pipelines through familiar decorator-based tasks. You can execute everything from simple model calls to complex reasoning chains while leveraging Airflow's robust scheduling, error handling, and monitoring capabilities that data teams have relied on for years.
+Key Highlights:
+LLM tasks made simple
+- Use the
+@task.llm
+decorator to call any language model supported by Pydantic AI (OpenAI, Anthropic, Gemini, Ollama, and others) directly in your workflows. The SDK handles all the communication details while you focus on what matters - getting answers from your models.
+Agent capabilities
+- Need more complex AI reasoning? The
+@task.agent
+decorator lets you create tasks that use AI agents with custom tools. Your agents can search the web, process files, or interact with other systems - all orchestrated by Airflow's battle-tested workflow engine.
+Branching for dynamic workflows
+- The
+@task.llm_branch
+decorator enables your DAGs to adapt based on AI outputs. Route support tickets, choose processing paths, or make decisions within your pipeline using natural language responses - perfect for creating workflows that respond intelligently to your data.
+Structured outputs
+- Get well-formatted, validated responses by specifying Pydantic models as return types. The SDK handles parsing and validation, so you'll never have to deal with malformed JSON or unexpected formats again when working with LLM outputs.
+The gold standard of business news
+Morning Brew
+is transforming the way working professionals consume business news.
+They skip the jargon and lengthy stories, and instead serve up the news impacting your life and career with a hint of wit and humor. This way, you’ll actually enjoy reading the news—and the information sticks.
+Best part?
+Morning Brew’s
+newsletter is completely free. Sign up in just 10 seconds and if you realize that you prefer long, dense, and boring business news—you can always go back to it.
+Join 4.3 Million Readers Now
+First Locally Deployable Computer-use Agent on MacOS
+is an open-source framework for Apple Silicon Macs that offers high-performance virtualization and AI agent capabilities. It creates secure, isolated environments where AI systems can safely interact with desktop applications. Their newly released
+Computer-use agent framework
+lets you run complex workflows across multiple apps in isolated macOS/Linux sandboxes.
+It supports models from OpenAI, Anthropic, and even local VLMs using OmniParser. You can easily switch between different agent loops and models depending on your project needs, all while keeping your main system protected through comprehensive sandboxing.
+Key Highlights:
+Seamless Virtualization
+- Create and run macOS/Linux virtual machines on Apple Silicon with up to 90% of native performance using Apple's Virtualization.Framework. You can spin up a preconfigured macOS image in just one command:
+lume run macos-sequoia-vanilla:latest
+.
+Flexible LLM Support
+- Work with your preferred models without vendor lock-in - deploy with OpenAI's CUA, Claude Computer-Use, or local models. Mix different agent loops (OpenAI/Claude/OmniParser) for specific tasks and easily switch between them with minimal code changes. Support for Ollama coming soon.
+Production-Ready Features
+- Get detailed trajectory logs for debugging, structured responses compatible with other tools, and comprehensive sandbox isolation to protect your main system. The framework handles complex workflows across multiple applications without breaking down.
+Simple Implementation
+- Start building in minutes with straightforward Python code. Install with
+pip install "cua-agent[all]"
+or choose specific providers like
+pip install "cua-agent[openai]"
+and have your first agent running in under 10 lines of code.
+Quick Bites
+Browserbase has released Stagehand V2 that lets you
+build web AI agents with OpenAI and Anthropic's computer use models using just one line of code
+. The new
+stagehand.agent
+primitive removes the complexity of browser automation while maintaining full control over the interaction. This comes alongside faster performance and cross-browser compatibility.
+The future of software development is agentic, and the rapid progress of LLMs is making AI coding agents increasingly capable. Whether it's improved reasoning through "Thinking" modes or just raw power, these agents are starting to seriously rival human developers. Recent benchmark results highlight this progress, with two impressive announcements this week from
+Refact.ai
+Augment Code
+.
+Refact.ai
+Powered by Claude 3.7 Sonnet,
+Refact.ai
+'s agent scored an unprecedented 93.3% (with thinking mode) and 92.9% (without thinking) on Aider's Polyglot Benchmark, establishing a 20-point lead over previous top performers.
+Their agent works fully autonomously with 30-step task completion capability, handling planning, execution, testing, and self-correction across six programming languages without human intervention.
+Augment Code
+Augment Code achieved a 65.4% success rate on SWE-bench Verified through a hybrid approach combining Claude 3.7 Sonnet and OpenAI's O1 models, securing the highest published score for an open-source solution.
+Their SWE-bench solution has been fully open-sourced on GitHub. It includes the technique of using "sequential thinking" tools and simple majority voting ensembling with the O1 model.
+DeepSeek V3 0324 now ranks #5 on the LMArena leaderboard
+, surpassing DeepSeek-R1 and every other open model. It's the #1 opensource model, 2x cheaper than DeepSeek-R1, and top-5 across all categories.
+Tools of the Trade
+Wren Engine
+: A semantic engine for MCP clients and AI agents for LLMs to accurately access and interpret enterprise data from various sources with business context. It creates a semantic layer between the AI and structured business data in cloud warehouses, relational databases, and secure filesystems.
+: Build full-stack web apps with React, Node.js, and Prisma with minimal code and zero configuration. It functions as a Rails-like framework where you can create and deploy production-ready web apps with concise, declarative code and a single CLI command.
+GitDiagram
+: Turn any GitHub repository into an interactive diagram for visualization. Just give a repo’s URL or replace 'hub' with 'diagram' in any Github URL. Click on components to navigate directly to source files and relevant directories. Powered by Claude 3.5 Sonnet.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+Hot Takes
+I no longer think you need to learn how to drive
+Amjad Masad
+don’t learn to code. don’t waste ur time.
+llms are great. you can vibe-code anything. everyone is a builder!
+why waste your time with code, then?
+and don’t worry about mistakes: a few of us already know to code, so we’ll clean after you.
+for a price. ~
+Santiago
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+Subscribe now for FREE!
+If this email was forwarded to you,
+subscribe here
+to get email from Unwind AI daily for free!
+© 2025 unwind ai
+228 Park Ave S, #29976, New York, New York 10003, United States
+Powered by beehiiv
+April 02, 2025   |
+Read Online
+First Local Computer-use AI Agent
+PLUS: LLM and AI agents in Apache Airflow, Build web AI agents in one line of code
+Shubham Saboo
+Gargi Gupta
+April 02, 2025
+Today’s top AI Highlights:
+Build AI agents directly in Airflow with the new AI SDK
+Opensource framework to build Computer-use agents that run locally
+Web AI agents with OpenAI and Anthropic CUA in just one line of code
+AI coding agent combines OpenAI o1 and Caude 3.7 Sonnet to top SWE-bench
+Semantic engine for MCP clients and AI agents
+& so much more!
+Read time: 3 mins
+AI Tutorials
+Voice is the most natural and accessible way for users to interact with any application and we see it being used the most for customer support usecases. But building a voice agent that can access your knowledge base can be complex and time-consuming.
+In this tutorial, we'll build a
+Customer Support Voice Agent
+using OpenAI's SDK that combines GPT-4o with their latest TTS (text-to-speech) model. Our application will crawl documentation websites, process the content into a searchable knowledge base, and provide both text and voice responses to user queries through a clean Streamlit interface.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+Build a Customer Support Voice Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+Latest Developments
+Use LLMs and AI Agents Directly in Airflow Pipelines
+Apache Airflow now has an AI SDK that lets you integrate LLMs directly into your data workflows. The airflow-ai-sdk combines Apache Airflow's scheduling power with language models using Pydantic AI under the hood, enabling you to call LLMs and orchestrate AI agents right inside your pipelines through familiar decorator-based tasks. You can execute everything from simple model calls to complex reasoning chains while leveraging Airflow's robust scheduling, error handling, and monitoring capabilities that data teams have relied on for years.
+Key Highlights:
+LLM tasks made simple
+- Use the
+@task.llm
+decorator to call any language model supported by Pydantic AI (OpenAI, Anthropic, Gemini, Ollama, and others) directly in your workflows. The SDK handles all the communication details while you focus on what matters - getting answers from your models.
+Agent capabilities
+- Need more complex AI reasoning? The
+@task.agent
+decorator lets you create tasks that use AI agents with custom tools. Your agents can search the web, process files, or interact with other systems - all orchestrated by Airflow's battle-tested workflow engine.
+Branching for dynamic workflows
+- The
+@task.llm_branch
+decorator enables your DAGs to adapt based on AI outputs. Route support tickets, choose processing paths, or make decisions within your pipeline using natural language responses - perfect for creating workflows that respond intelligently to your data.
+Structured outputs
+- Get well-formatted, validated responses by specifying Pydantic models as return types. The SDK handles parsing and validation, so you'll never have to deal with malformed JSON or unexpected formats again when working with LLM outputs.
+The gold standard of business news
+Morning Brew
+is transforming the way working professionals consume business news.
+They skip the jargon and lengthy stories, and instead serve up the news impacting your life and career with a hint of wit and humor. This way, you’ll actually enjoy reading the news—and the information sticks.
+Best part?
+Morning Brew’s
+newsletter is completely free. Sign up in just 10 seconds and if you realize that you prefer long, dense, and boring business news—you can always go back to it.
+Join 4.3 Million Readers Now
+First Locally Deployable Computer-use Agent on MacOS
+is an open-source framework for Apple Silicon Macs that offers high-performance virtualization and AI agent capabilities. It creates secure, isolated environments where AI systems can safely interact with desktop applications. Their newly released
+Computer-use agent framework
+lets you run complex workflows across multiple apps in isolated macOS/Linux sandboxes.
+It supports models from OpenAI, Anthropic, and even local VLMs using OmniParser. You can easily switch between different agent loops and models depending on your project needs, all while keeping your main system protected through comprehensive sandboxing.
+Key Highlights:
+Seamless Virtualization
+- Create and run macOS/Linux virtual machines on Apple Silicon with up to 90% of native performance using Apple's Virtualization.Framework. You can spin up a preconfigured macOS image in just one command:
+lume run macos-sequoia-vanilla:latest
+.
+Flexible LLM Support
+- Work with your preferred models without vendor lock-in - deploy with OpenAI's CUA, Claude Computer-Use, or local models. Mix different agent loops (OpenAI/Claude/OmniParser) for specific tasks and easily switch between them with minimal code changes. Support for Ollama coming soon.
+Production-Ready Features
+- Get detailed trajectory logs for debugging, structured responses compatible with other tools, and comprehensive sandbox isolation to protect your main system. The framework handles complex workflows across multiple applications without breaking down.
+Simple Implementation
+- Start building in minutes with straightforward Python code. Install with
+pip install "cua-agent[all]"
+or choose specific providers like
+pip install "cua-agent[openai]"
+and have your first agent running in under 10 lines of code.
+Quick Bites
+Browserbase has released Stagehand V2 that lets you
+build web AI agents with OpenAI and Anthropic's computer use models using just one line of code
+. The new
+stagehand.agent
+primitive removes the complexity of browser automation while maintaining full control over the interaction. This comes alongside faster performance and cross-browser compatibility.
+The future of software development is agentic, and the rapid progress of LLMs is making AI coding agents increasingly capable. Whether it's improved reasoning through "Thinking" modes or just raw power, these agents are starting to seriously rival human developers. Recent benchmark results highlight this progress, with two impressive announcements this week from
+Refact.ai
+Augment Code
+.
+Refact.ai
+Powered by Claude 3.7 Sonnet,
+Refact.ai
+'s agent scored an unprecedented 93.3% (with thinking mode) and 92.9% (without thinking) on Aider's Polyglot Benchmark, establishing a 20-point lead over previous top performers.
+Their agent works fully autonomously with 30-step task completion capability, handling planning, execution, testing, and self-correction across six programming languages without human intervention.
+Augment Code
+Augment Code achieved a 65.4% success rate on SWE-bench Verified through a hybrid approach combining Claude 3.7 Sonnet and OpenAI's O1 models, securing the highest published score for an open-source solution.
+Their SWE-bench solution has been fully open-sourced on GitHub. It includes the technique of using "sequential thinking" tools and simple majority voting ensembling with the O1 model.
+DeepSeek V3 0324 now ranks #5 on the LMArena leaderboard
+, surpassing DeepSeek-R1 and every other open model. It's the #1 opensource model, 2x cheaper than DeepSeek-R1, and top-5 across all categories.
+Tools of the Trade
+Wren Engine
+: A semantic engine for MCP clients and AI agents for LLMs to accurately access and interpret enterprise data from various sources with business context. It creates a semantic layer between the AI and structured business data in cloud warehouses, relational databases, and secure filesystems.
+: Build full-stack web apps with React, Node.js, and Prisma with minimal code and zero configuration. It functions as a Rails-like framework where you can create and deploy production-ready web apps with concise, declarative code and a single CLI command.
+GitDiagram
+: Turn any GitHub repository into an interactive diagram for visualization. Just give a repo’s URL or replace 'hub' with 'diagram' in any Github URL. Click on components to navigate directly to source files and relevant directories. Powered by Claude 3.5 Sonnet.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+Hot Takes
+I no longer think you need to learn how to drive
+Amjad Masad
+don’t learn to code. don’t waste ur time.
+llms are great. you can vibe-code anything. everyone is a builder!
+why waste your time with code, then?
+and don’t worry about mistakes: a few of us already know to code, so we’ll clean after you.
+for a price. ~
+Santiago
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+Subscribe now for FREE!
+If this email was forwarded to you,
+subscribe here
+to get email from Unwind AI daily for free!
+© 2025 unwind ai
+228 Park Ave S, #29976, New York, New York 10003, United States
+Powered by beehiiv
+April 02, 2025   |
+Read Online
+First Local Computer-use AI Agent
+PLUS: LLM and AI agents in Apache Airflow, Build web AI agents in one line of code
+Shubham Saboo
+Gargi Gupta
+April 02, 2025
+Today’s top AI Highlights:
+Build AI agents directly in Airflow with the new AI SDK
+Opensource framework to build Computer-use agents that run locally
+Web AI agents with OpenAI and Anthropic CUA in just one line of code
+AI coding agent combines OpenAI o1 and Caude 3.7 Sonnet to top SWE-bench
+Semantic engine for MCP clients and AI agents
+& so much more!
+Read time: 3 mins
+AI Tutorials
+Voice is the most natural and accessible way for users to interact with any application and we see it being used the most for customer support usecases. But building a voice agent that can access your knowledge base can be complex and time-consuming.
+In this tutorial, we'll build a
+Customer Support Voice Agent
+using OpenAI's SDK that combines GPT-4o with their latest TTS (text-to-speech) model. Our application will crawl documentation websites, process the content into a searchable knowledge base, and provide both text and voice responses to user queries through a clean Streamlit interface.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+Build a Customer Support Voice Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+Latest Developments
+Use LLMs and AI Agents Directly in Airflow Pipelines
+Apache Airflow now has an AI SDK that lets you integrate LLMs directly into your data workflows. The airflow-ai-sdk combines Apache Airflow's scheduling power with language models using Pydantic AI under the hood, enabling you to call LLMs and orchestrate AI agents right inside your pipelines through familiar decorator-based tasks. You can execute everything from simple model calls to complex reasoning chains while leveraging Airflow's robust scheduling, error handling, and monitoring capabilities that data teams have relied on for years.
+Key Highlights:
+LLM tasks made simple
+- Use the
+@task.llm
+decorator to call any language model supported by Pydantic AI (OpenAI, Anthropic, Gemini, Ollama, and others) directly in your workflows. The SDK handles all the communication details while you focus on what matters - getting answers from your models.
+Agent capabilities
+- Need more complex AI reasoning? The
+@task.agent
+decorator lets you create tasks that use AI agents with custom tools. Your agents can search the web, process files, or interact with other systems - all orchestrated by Airflow's battle-tested workflow engine.
+Branching for dynamic workflows
+- The
+@task.llm_branch
+decorator enables your DAGs to adapt based on AI outputs. Route support tickets, choose processing paths, or make decisions within your pipeline using natural language responses - perfect for creating workflows that respond intelligently to your data.
+Structured outputs
+- Get well-formatted, validated responses by specifying Pydantic models as return types. The SDK handles parsing and validation, so you'll never have to deal with malformed JSON or unexpected formats again when working with LLM outputs.
+The gold standard of business news
+Morning Brew
+is transforming the way working professionals consume business news.
+They skip the jargon and lengthy stories, and instead serve up the news impacting your life and career with a hint of wit and humor. This way, you’ll actually enjoy reading the news—and the information sticks.
+Best part?
+Morning Brew’s
+newsletter is completely free. Sign up in just 10 seconds and if you realize that you prefer long, dense, and boring business news—you can always go back to it.
+Join 4.3 Million Readers Now
+First Locally Deployable Computer-use Agent on MacOS
+is an open-source framework for Apple Silicon Macs that offers high-performance virtualization and AI agent capabilities. It creates secure, isolated environments where AI systems can safely interact with desktop applications. Their newly released
+Computer-use agent framework
+lets you run complex workflows across multiple apps in isolated macOS/Linux sandboxes.
+It supports models from OpenAI, Anthropic, and even local VLMs using OmniParser. You can easily switch between different agent loops and models depending on your project needs, all while keeping your main system protected through comprehensive sandboxing.
+Key Highlights:
+Seamless Virtualization
+- Create and run macOS/Linux virtual machines on Apple Silicon with up to 90% of native performance using Apple's Virtualization.Framework. You can spin up a preconfigured macOS image in just one command:
+lume run macos-sequoia-vanilla:latest
+.
+Flexible LLM Support
+- Work with your preferred models without vendor lock-in - deploy with OpenAI's CUA, Claude Computer-Use, or local models. Mix different agent loops (OpenAI/Claude/OmniParser) for specific tasks and easily switch between them with minimal code changes. Support for Ollama coming soon.
+Production-Ready Features
+- Get detailed trajectory logs for debugging, structured responses compatible with other tools, and comprehensive sandbox isolation to protect your main system. The framework handles complex workflows across multiple applications without breaking down.
+Simple Implementation
+- Start building in minutes with straightforward Python code. Install with
+pip install "cua-agent[all]"
+or choose specific providers like
+pip install "cua-agent[openai]"
+and have your first agent running in under 10 lines of code.
+Quick Bites
+Browserbase has released Stagehand V2 that lets you
+build web AI agents with OpenAI and Anthropic's computer use models using just one line of code
+. The new
+stagehand.agent
+primitive removes the complexity of browser automation while maintaining full control over the interaction. This comes alongside faster performance and cross-browser compatibility.
+The future of software development is agentic, and the rapid progress of LLMs is making AI coding agents increasingly capable. Whether it's improved reasoning through "Thinking" modes or just raw power, these agents are starting to seriously rival human developers. Recent benchmark results highlight this progress, with two impressive announcements this week from
+Refact.ai
+Augment Code
+.
+Refact.ai
+Powered by Claude 3.7 Sonnet,
+Refact.ai
+'s agent scored an unprecedented 93.3% (with thinking mode) and 92.9% (without thinking) on Aider's Polyglot Benchmark, establishing a 20-point lead over previous top performers.
+Their agent works fully autonomously with 30-step task completion capability, handling planning, execution, testing, and self-correction across six programming languages without human intervention.
+Augment Code
+Augment Code achieved a 65.4% success rate on SWE-bench Verified through a hybrid approach combining Claude 3.7 Sonnet and OpenAI's O1 models, securing the highest published score for an open-source solution.
+Their SWE-bench solution has been fully open-sourced on GitHub. It includes the technique of using "sequential thinking" tools and simple majority voting ensembling with the O1 model.
+DeepSeek V3 0324 now ranks #5 on the LMArena leaderboard
+, surpassing DeepSeek-R1 and every other open model. It's the #1 opensource model, 2x cheaper than DeepSeek-R1, and top-5 across all categories.
+Tools of the Trade
+Wren Engine
+: A semantic engine for MCP clients and AI agents for LLMs to accurately access and interpret enterprise data from various sources with business context. It creates a semantic layer between the AI and structured business data in cloud warehouses, relational databases, and secure filesystems.
+: Build full-stack web apps with React, Node.js, and Prisma with minimal code and zero configuration. It functions as a Rails-like framework where you can create and deploy production-ready web apps with concise, declarative code and a single CLI command.
+GitDiagram
+: Turn any GitHub repository into an interactive diagram for visualization. Just give a repo’s URL or replace 'hub' with 'diagram' in any Github URL. Click on components to navigate directly to source files and relevant directories. Powered by Claude 3.5 Sonnet.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+Hot Takes
+I no longer think you need to learn how to drive
+Amjad Masad
+don’t learn to code. don’t waste ur time.
+llms are great. you can vibe-code anything. everyone is a builder!
+why waste your time with code, then?
+and don’t worry about mistakes: a few of us already know to code, so we’ll clean after you.
+for a price. ~
+Santiago
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+Subscribe now for FREE!
+April 02, 2025   |
+Read Online
+First Local Computer-use AI Agent
+PLUS: LLM and AI agents in Apache Airflow, Build web AI agents in one line of code
+Shubham Saboo
+Gargi Gupta
+April 02, 2025
+April 02, 2025   |
+Read Online
+April 02, 2025   |
+Read Online
+First Local Computer-use AI Agent
+PLUS: LLM and AI agents in Apache Airflow, Build web AI agents in one line of code
+First Local Computer-use AI Agent
+PLUS: LLM and AI agents in Apache Airflow, Build web AI agents in one line of code
+First Local Computer-use AI Agent
+PLUS: LLM and AI agents in Apache Airflow, Build web AI agents in one line of code
+Shubham Saboo
+Gargi Gupta
+April 02, 2025
+Shubham Saboo
+Gargi Gupta
+April 02, 2025
+Shubham Saboo
+Gargi Gupta
+April 02, 2025
+Shubham Saboo
+Gargi Gupta
+April 02, 2025
+Shubham Saboo
+Gargi Gupta
+April 02, 2025
+Today’s top AI Highlights:
+Build AI agents directly in Airflow with the new AI SDK
+Opensource framework to build Computer-use agents that run locally
+Web AI agents with OpenAI and Anthropic CUA in just one line of code
+AI coding agent combines OpenAI o1 and Caude 3.7 Sonnet to top SWE-bench
+Semantic engine for MCP clients and AI agents
+& so much more!
+Read time: 3 mins
+AI Tutorials
+Voice is the most natural and accessible way for users to interact with any application and we see it being used the most for customer support usecases. But building a voice agent that can access your knowledge base can be complex and time-consuming.
+In this tutorial, we'll build a
+Customer Support Voice Agent
+using OpenAI's SDK that combines GPT-4o with their latest TTS (text-to-speech) model. Our application will crawl documentation websites, process the content into a searchable knowledge base, and provide both text and voice responses to user queries through a clean Streamlit interface.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+Build a Customer Support Voice Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+Latest Developments
+Use LLMs and AI Agents Directly in Airflow Pipelines
+Apache Airflow now has an AI SDK that lets you integrate LLMs directly into your data workflows. The airflow-ai-sdk combines Apache Airflow's scheduling power with language models using Pydantic AI under the hood, enabling you to call LLMs and orchestrate AI agents right inside your pipelines through familiar decorator-based tasks. You can execute everything from simple model calls to complex reasoning chains while leveraging Airflow's robust scheduling, error handling, and monitoring capabilities that data teams have relied on for years.
+Key Highlights:
+LLM tasks made simple
+- Use the
+@task.llm
+decorator to call any language model supported by Pydantic AI (OpenAI, Anthropic, Gemini, Ollama, and others) directly in your workflows. The SDK handles all the communication details while you focus on what matters - getting answers from your models.
+Agent capabilities
+- Need more complex AI reasoning? The
+@task.agent
+decorator lets you create tasks that use AI agents with custom tools. Your agents can search the web, process files, or interact with other systems - all orchestrated by Airflow's battle-tested workflow engine.
+Branching for dynamic workflows
+- The
+@task.llm_branch
+decorator enables your DAGs to adapt based on AI outputs. Route support tickets, choose processing paths, or make decisions within your pipeline using natural language responses - perfect for creating workflows that respond intelligently to your data.
+Structured outputs
+- Get well-formatted, validated responses by specifying Pydantic models as return types. The SDK handles parsing and validation, so you'll never have to deal with malformed JSON or unexpected formats again when working with LLM outputs.
+The gold standard of business news
+Morning Brew
+is transforming the way working professionals consume business news.
+They skip the jargon and lengthy stories, and instead serve up the news impacting your life and career with a hint of wit and humor. This way, you’ll actually enjoy reading the news—and the information sticks.
+Best part?
+Morning Brew’s
+newsletter is completely free. Sign up in just 10 seconds and if you realize that you prefer long, dense, and boring business news—you can always go back to it.
+Join 4.3 Million Readers Now
+First Locally Deployable Computer-use Agent on MacOS
+is an open-source framework for Apple Silicon Macs that offers high-performance virtualization and AI agent capabilities. It creates secure, isolated environments where AI systems can safely interact with desktop applications. Their newly released
+Computer-use agent framework
+lets you run complex workflows across multiple apps in isolated macOS/Linux sandboxes.
+It supports models from OpenAI, Anthropic, and even local VLMs using OmniParser. You can easily switch between different agent loops and models depending on your project needs, all while keeping your main system protected through comprehensive sandboxing.
+Key Highlights:
+Seamless Virtualization
+- Create and run macOS/Linux virtual machines on Apple Silicon with up to 90% of native performance using Apple's Virtualization.Framework. You can spin up a preconfigured macOS image in just one command:
+lume run macos-sequoia-vanilla:latest
+.
+Flexible LLM Support
+- Work with your preferred models without vendor lock-in - deploy with OpenAI's CUA, Claude Computer-Use, or local models. Mix different agent loops (OpenAI/Claude/OmniParser) for specific tasks and easily switch between them with minimal code changes. Support for Ollama coming soon.
+Production-Ready Features
+- Get detailed trajectory logs for debugging, structured responses compatible with other tools, and comprehensive sandbox isolation to protect your main system. The framework handles complex workflows across multiple applications without breaking down.
+Simple Implementation
+- Start building in minutes with straightforward Python code. Install with
+pip install "cua-agent[all]"
+or choose specific providers like
+pip install "cua-agent[openai]"
+and have your first agent running in under 10 lines of code.
+Quick Bites
+Browserbase has released Stagehand V2 that lets you
+build web AI agents with OpenAI and Anthropic's computer use models using just one line of code
+. The new
+stagehand.agent
+primitive removes the complexity of browser automation while maintaining full control over the interaction. This comes alongside faster performance and cross-browser compatibility.
+The future of software development is agentic, and the rapid progress of LLMs is making AI coding agents increasingly capable. Whether it's improved reasoning through "Thinking" modes or just raw power, these agents are starting to seriously rival human developers. Recent benchmark results highlight this progress, with two impressive announcements this week from
+Refact.ai
+Augment Code
+.
+Refact.ai
+Powered by Claude 3.7 Sonnet,
+Refact.ai
+'s agent scored an unprecedented 93.3% (with thinking mode) and 92.9% (without thinking) on Aider's Polyglot Benchmark, establishing a 20-point lead over previous top performers.
+Their agent works fully autonomously with 30-step task completion capability, handling planning, execution, testing, and self-correction across six programming languages without human intervention.
+Augment Code
+Augment Code achieved a 65.4% success rate on SWE-bench Verified through a hybrid approach combining Claude 3.7 Sonnet and OpenAI's O1 models, securing the highest published score for an open-source solution.
+Their SWE-bench solution has been fully open-sourced on GitHub. It includes the technique of using "sequential thinking" tools and simple majority voting ensembling with the O1 model.
+DeepSeek V3 0324 now ranks #5 on the LMArena leaderboard
+, surpassing DeepSeek-R1 and every other open model. It's the #1 opensource model, 2x cheaper than DeepSeek-R1, and top-5 across all categories.
+Tools of the Trade
+Wren Engine
+: A semantic engine for MCP clients and AI agents for LLMs to accurately access and interpret enterprise data from various sources with business context. It creates a semantic layer between the AI and structured business data in cloud warehouses, relational databases, and secure filesystems.
+: Build full-stack web apps with React, Node.js, and Prisma with minimal code and zero configuration. It functions as a Rails-like framework where you can create and deploy production-ready web apps with concise, declarative code and a single CLI command.
+GitDiagram
+: Turn any GitHub repository into an interactive diagram for visualization. Just give a repo’s URL or replace 'hub' with 'diagram' in any Github URL. Click on components to navigate directly to source files and relevant directories. Powered by Claude 3.5 Sonnet.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+Hot Takes
+I no longer think you need to learn how to drive
+Amjad Masad
+don’t learn to code. don’t waste ur time.
+llms are great. you can vibe-code anything. everyone is a builder!
+why waste your time with code, then?
+and don’t worry about mistakes: a few of us already know to code, so we’ll clean after you.
+for a price. ~
+Santiago
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+Subscribe now for FREE!
+Today’s top AI Highlights:
+Build AI agents directly in Airflow with the new AI SDK
+Opensource framework to build Computer-use agents that run locally
+Web AI agents with OpenAI and Anthropic CUA in just one line of code
+AI coding agent combines OpenAI o1 and Caude 3.7 Sonnet to top SWE-bench
+Semantic engine for MCP clients and AI agents
+& so much more!
+Read time: 3 mins
+Today’s top AI Highlights:
+Build AI agents directly in Airflow with the new AI SDK
+Opensource framework to build Computer-use agents that run locally
+Web AI agents with OpenAI and Anthropic CUA in just one line of code
+AI coding agent combines OpenAI o1 and Caude 3.7 Sonnet to top SWE-bench
+Semantic engine for MCP clients and AI agents
+& so much more!
+Read time: 3 mins
+Today’s top AI Highlights:
+Today’s top AI Highlights:
+Build AI agents directly in Airflow with the new AI SDK
+Opensource framework to build Computer-use agents that run locally
+Web AI agents with OpenAI and Anthropic CUA in just one line of code
+AI coding agent combines OpenAI o1 and Caude 3.7 Sonnet to top SWE-bench
+Semantic engine for MCP clients and AI agents
+Build AI agents directly in Airflow with the new AI SDK
+Build AI agents directly in Airflow with the new AI SDK
+Opensource framework to build Computer-use agents that run locally
+Opensource framework to build Computer-use agents that run locally
+Web AI agents with OpenAI and Anthropic CUA in just one line of code
+Web AI agents with OpenAI and Anthropic CUA in just one line of code
+AI coding agent combines OpenAI o1 and Caude 3.7 Sonnet to top SWE-bench
+AI coding agent combines OpenAI o1 and Caude 3.7 Sonnet to top SWE-bench
+Semantic engine for MCP clients and AI agents
+Semantic engine for MCP clients and AI agents
+& so much more!
+& so much more!
+Read time: 3 mins
+Read time: 3 mins
+AI Tutorials
+AI Tutorials
+AI Tutorials
+AI Tutorials
+Voice is the most natural and accessible way for users to interact with any application and we see it being used the most for customer support usecases. But building a voice agent that can access your knowledge base can be complex and time-consuming.
+In this tutorial, we'll build a
+Customer Support Voice Agent
+using OpenAI's SDK that combines GPT-4o with their latest TTS (text-to-speech) model. Our application will crawl documentation websites, process the content into a searchable knowledge base, and provide both text and voice responses to user queries through a clean Streamlit interface.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+Build a Customer Support Voice Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+Voice is the most natural and accessible way for users to interact with any application and we see it being used the most for customer support usecases. But building a voice agent that can access your knowledge base can be complex and time-consuming.
+In this tutorial, we'll build a
+Customer Support Voice Agent
+using OpenAI's SDK that combines GPT-4o with their latest TTS (text-to-speech) model. Our application will crawl documentation websites, process the content into a searchable knowledge base, and provide both text and voice responses to user queries through a clean Streamlit interface.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+Build a Customer Support Voice Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+Voice is the most natural and accessible way for users to interact with any application and we see it being used the most for customer support usecases. But building a voice agent that can access your knowledge base can be complex and time-consuming.
+Voice is the most natural and accessible way for users to interact with any application and we see it being used the most for customer support usecases. But building a voice agent that can access your knowledge base can be complex and time-consuming.
+In this tutorial, we'll build a
+Customer Support Voice Agent
+using OpenAI's SDK that combines GPT-4o with their latest TTS (text-to-speech) model. Our application will crawl documentation websites, process the content into a searchable knowledge base, and provide both text and voice responses to user queries through a clean Streamlit interface.
+In this tutorial, we'll build a
+Customer Support Voice Agent
+using OpenAI's SDK that combines GPT-4o with their latest TTS (text-to-speech) model. Our application will crawl documentation websites, process the content into a searchable knowledge base, and provide both text and voice responses to user queries through a clean Streamlit interface.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+We share hands-on tutorials like this every week, designed to help you stay ahead in the world of AI.
+If you're serious about leveling up your AI skills and staying ahead of the curve, subscribe now and be the first to access our latest tutorials.
+Build a Customer Support Voice Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Build a Customer Support Voice Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Build a Customer Support Voice Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Build a Customer Support Voice Agent
+Build a Customer Support Voice Agent
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Fully functional agentic RAG voice app with step-by-step instructions (100% opensource)
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+LinkedIn
+Threads
+Facebook
+) to support us!
+Latest Developments
+Latest Developments
+Latest Developments
+Latest Developments
+Use LLMs and AI Agents Directly in Airflow Pipelines
+Apache Airflow now has an AI SDK that lets you integrate LLMs directly into your data workflows. The airflow-ai-sdk combines Apache Airflow's scheduling power with language models using Pydantic AI under the hood, enabling you to call LLMs and orchestrate AI agents right inside your pipelines through familiar decorator-based tasks. You can execute everything from simple model calls to complex reasoning chains while leveraging Airflow's robust scheduling, error handling, and monitoring capabilities that data teams have relied on for years.
+Key Highlights:
+LLM tasks made simple
+- Use the
+@task.llm
+decorator to call any language model supported by Pydantic AI (OpenAI, Anthropic, Gemini, Ollama, and others) directly in your workflows. The SDK handles all the communication details while you focus on what matters - getting answers from your models.
+Agent capabilities
+- Need more complex AI reasoning? The
+@task.agent
+decorator lets you create tasks that use AI agents with custom tools. Your agents can search the web, process files, or interact with other systems - all orchestrated by Airflow's battle-tested workflow engine.
+Branching for dynamic workflows
+- The
+@task.llm_branch
+decorator enables your DAGs to adapt based on AI outputs. Route support tickets, choose processing paths, or make decisions within your pipeline using natural language responses - perfect for creating workflows that respond intelligently to your data.
+Structured outputs
+- Get well-formatted, validated responses by specifying Pydantic models as return types. The SDK handles parsing and validation, so you'll never have to deal with malformed JSON or unexpected formats again when working with LLM outputs.
+Use LLMs and AI Agents Directly in Airflow Pipelines
+Apache Airflow now has an AI SDK that lets you integrate LLMs directly into your data workflows. The airflow-ai-sdk combines Apache Airflow's scheduling power with language models using Pydantic AI under the hood, enabling you to call LLMs and orchestrate AI agents right inside your pipelines through familiar decorator-based tasks. You can execute everything from simple model calls to complex reasoning chains while leveraging Airflow's robust scheduling, error handling, and monitoring capabilities that data teams have relied on for years.
+Key Highlights:
+LLM tasks made simple
+- Use the
+@task.llm
+decorator to call any language model supported by Pydantic AI (OpenAI, Anthropic, Gemini, Ollama, and others) directly in your workflows. The SDK handles all the communication details while you focus on what matters - getting answers from your models.
+Agent capabilities
+- Need more complex AI reasoning? The
+@task.agent
+decorator lets you create tasks that use AI agents with custom tools. Your agents can search the web, process files, or interact with other systems - all orchestrated by Airflow's battle-tested workflow engine.
+Branching for dynamic workflows
+- The
+@task.llm_branch
+decorator enables your DAGs to adapt based on AI outputs. Route support tickets, choose processing paths, or make decisions within your pipeline using natural language responses - perfect for creating workflows that respond intelligently to your data.
+Structured outputs
+- Get well-formatted, validated responses by specifying Pydantic models as return types. The SDK handles parsing and validation, so you'll never have to deal with malformed JSON or unexpected formats again when working with LLM outputs.
+Use LLMs and AI Agents Directly in Airflow Pipelines
+Use LLMs and AI Agents Directly in Airflow Pipelines
+Apache Airflow now has an AI SDK that lets you integrate LLMs directly into your data workflows. The airflow-ai-sdk combines Apache Airflow's scheduling power with language models using Pydantic AI under the hood, enabling you to call LLMs and orchestrate AI agents right inside your pipelines through familiar decorator-based tasks. You can execute everything from simple model calls to complex reasoning chains while leveraging Airflow's robust scheduling, error handling, and monitoring capabilities that data teams have relied on for years.
+Apache Airflow now has an AI SDK that lets you integrate LLMs directly into your data workflows. The airflow-ai-sdk combines Apache Airflow's scheduling power with language models using Pydantic AI under the hood, enabling you to call LLMs and orchestrate AI agents right inside your pipelines through familiar decorator-based tasks. You can execute everything from simple model calls to complex reasoning chains while leveraging Airflow's robust scheduling, error handling, and monitoring capabilities that data teams have relied on for years.
+Key Highlights:
+Key Highlights:
+LLM tasks made simple
+- Use the
+@task.llm
+decorator to call any language model supported by Pydantic AI (OpenAI, Anthropic, Gemini, Ollama, and others) directly in your workflows. The SDK handles all the communication details while you focus on what matters - getting answers from your models.
+Agent capabilities
+- Need more complex AI reasoning? The
+@task.agent
+decorator lets you create tasks that use AI agents with custom tools. Your agents can search the web, process files, or interact with other systems - all orchestrated by Airflow's battle-tested workflow engine.
+Branching for dynamic workflows
+- The
+@task.llm_branch
+decorator enables your DAGs to adapt based on AI outputs. Route support tickets, choose processing paths, or make decisions within your pipeline using natural language responses - perfect for creating workflows that respond intelligently to your data.
+Structured outputs
+- Get well-formatted, validated responses by specifying Pydantic models as return types. The SDK handles parsing and validation, so you'll never have to deal with malformed JSON or unexpected formats again when working with LLM outputs.
+LLM tasks made simple
+- Use the
+@task.llm
+decorator to call any language model supported by Pydantic AI (OpenAI, Anthropic, Gemini, Ollama, and others) directly in your workflows. The SDK handles all the communication details while you focus on what matters - getting answers from your models.
+LLM tasks made simple
+- Use the
+@task.llm
+decorator to call any language model supported by Pydantic AI (OpenAI, Anthropic, Gemini, Ollama, and others) directly in your workflows. The SDK handles all the communication details while you focus on what matters - getting answers from your models.
+Agent capabilities
+- Need more complex AI reasoning? The
+@task.agent
+decorator lets you create tasks that use AI agents with custom tools. Your agents can search the web, process files, or interact with other systems - all orchestrated by Airflow's battle-tested workflow engine.
+Agent capabilities
+- Need more complex AI reasoning? The
+@task.agent
+decorator lets you create tasks that use AI agents with custom tools. Your agents can search the web, process files, or interact with other systems - all orchestrated by Airflow's battle-tested workflow engine.
+Branching for dynamic workflows
+- The
+@task.llm_branch
+decorator enables your DAGs to adapt based on AI outputs. Route support tickets, choose processing paths, or make decisions within your pipeline using natural language responses - perfect for creating workflows that respond intelligently to your data.
+Branching for dynamic workflows
+- The
+@task.llm_branch
+decorator enables your DAGs to adapt based on AI outputs. Route support tickets, choose processing paths, or make decisions within your pipeline using natural language responses - perfect for creating workflows that respond intelligently to your data.
+Structured outputs
+- Get well-formatted, validated responses by specifying Pydantic models as return types. The SDK handles parsing and validation, so you'll never have to deal with malformed JSON or unexpected formats again when working with LLM outputs.
+Structured outputs
+- Get well-formatted, validated responses by specifying Pydantic models as return types. The SDK handles parsing and validation, so you'll never have to deal with malformed JSON or unexpected formats again when working with LLM outputs.
+The gold standard of business news
+Morning Brew
+is transforming the way working professionals consume business news.
+They skip the jargon and lengthy stories, and instead serve up the news impacting your life and career with a hint of wit and humor. This way, you’ll actually enjoy reading the news—and the information sticks.
+Best part?
+Morning Brew’s
+newsletter is completely free. Sign up in just 10 seconds and if you realize that you prefer long, dense, and boring business news—you can always go back to it.
+Join 4.3 Million Readers Now
+The gold standard of business news
+Morning Brew
+is transforming the way working professionals consume business news.
+They skip the jargon and lengthy stories, and instead serve up the news impacting your life and career with a hint of wit and humor. This way, you’ll actually enjoy reading the news—and the information sticks.
+Best part?
+Morning Brew’s
+newsletter is completely free. Sign up in just 10 seconds and if you realize that you prefer long, dense, and boring business news—you can always go back to it.
+Join 4.3 Million Readers Now
+The gold standard of business news
+The gold standard of business news
+Morning Brew
+is transforming the way working professionals consume business news.
+Morning Brew
+is transforming the way working professionals consume business news.
+They skip the jargon and lengthy stories, and instead serve up the news impacting your life and career with a hint of wit and humor. This way, you’ll actually enjoy reading the news—and the information sticks.
+They skip the jargon and lengthy stories, and instead serve up the news impacting your life and career with a hint of wit and humor. This way, you’ll actually enjoy reading the news—and the information sticks.
+Best part?
+Morning Brew’s
+newsletter is completely free. Sign up in just 10 seconds and if you realize that you prefer long, dense, and boring business news—you can always go back to it.
+Best part?
+Morning Brew’s
+newsletter is completely free. Sign up in just 10 seconds and if you realize that you prefer long, dense, and boring business news—you can always go back to it.
+Join 4.3 Million Readers Now
+Join 4.3 Million Readers Now
+First Locally Deployable Computer-use Agent on MacOS
+is an open-source framework for Apple Silicon Macs that offers high-performance virtualization and AI agent capabilities. It creates secure, isolated environments where AI systems can safely interact with desktop applications. Their newly released
+Computer-use agent framework
+lets you run complex workflows across multiple apps in isolated macOS/Linux sandboxes.
+It supports models from OpenAI, Anthropic, and even local VLMs using OmniParser. You can easily switch between different agent loops and models depending on your project needs, all while keeping your main system protected through comprehensive sandboxing.
+Key Highlights:
+Seamless Virtualization
+- Create and run macOS/Linux virtual machines on Apple Silicon with up to 90% of native performance using Apple's Virtualization.Framework. You can spin up a preconfigured macOS image in just one command:
+lume run macos-sequoia-vanilla:latest
+.
+Flexible LLM Support
+- Work with your preferred models without vendor lock-in - deploy with OpenAI's CUA, Claude Computer-Use, or local models. Mix different agent loops (OpenAI/Claude/OmniParser) for specific tasks and easily switch between them with minimal code changes. Support for Ollama coming soon.
+Production-Ready Features
+- Get detailed trajectory logs for debugging, structured responses compatible with other tools, and comprehensive sandbox isolation to protect your main system. The framework handles complex workflows across multiple applications without breaking down.
+Simple Implementation
+- Start building in minutes with straightforward Python code. Install with
+pip install "cua-agent[all]"
+or choose specific providers like
+pip install "cua-agent[openai]"
+and have your first agent running in under 10 lines of code.
+First Locally Deployable Computer-use Agent on MacOS
+is an open-source framework for Apple Silicon Macs that offers high-performance virtualization and AI agent capabilities. It creates secure, isolated environments where AI systems can safely interact with desktop applications. Their newly released
+Computer-use agent framework
+lets you run complex workflows across multiple apps in isolated macOS/Linux sandboxes.
+It supports models from OpenAI, Anthropic, and even local VLMs using OmniParser. You can easily switch between different agent loops and models depending on your project needs, all while keeping your main system protected through comprehensive sandboxing.
+Key Highlights:
+Seamless Virtualization
+- Create and run macOS/Linux virtual machines on Apple Silicon with up to 90% of native performance using Apple's Virtualization.Framework. You can spin up a preconfigured macOS image in just one command:
+lume run macos-sequoia-vanilla:latest
+.
+Flexible LLM Support
+- Work with your preferred models without vendor lock-in - deploy with OpenAI's CUA, Claude Computer-Use, or local models. Mix different agent loops (OpenAI/Claude/OmniParser) for specific tasks and easily switch between them with minimal code changes. Support for Ollama coming soon.
+Production-Ready Features
+- Get detailed trajectory logs for debugging, structured responses compatible with other tools, and comprehensive sandbox isolation to protect your main system. The framework handles complex workflows across multiple applications without breaking down.
+Simple Implementation
+- Start building in minutes with straightforward Python code. Install with
+pip install "cua-agent[all]"
+or choose specific providers like
+pip install "cua-agent[openai]"
+and have your first agent running in under 10 lines of code.
+First Locally Deployable Computer-use Agent on MacOS
+First Locally Deployable Computer-use Agent on MacOS
+is an open-source framework for Apple Silicon Macs that offers high-performance virtualization and AI agent capabilities. It creates secure, isolated environments where AI systems can safely interact with desktop applications. Their newly released
+Computer-use agent framework
+lets you run complex workflows across multiple apps in isolated macOS/Linux sandboxes.
+is an open-source framework for Apple Silicon Macs that offers high-performance virtualization and AI agent capabilities. It creates secure, isolated environments where AI systems can safely interact with desktop applications. Their newly released
+Computer-use agent framework
+lets you run complex workflows across multiple apps in isolated macOS/Linux sandboxes.
+It supports models from OpenAI, Anthropic, and even local VLMs using OmniParser. You can easily switch between different agent loops and models depending on your project needs, all while keeping your main system protected through comprehensive sandboxing.
+It supports models from OpenAI, Anthropic, and even local VLMs using OmniParser. You can easily switch between different agent loops and models depending on your project needs, all while keeping your main system protected through comprehensive sandboxing.
+Key Highlights:
+Key Highlights:
+Seamless Virtualization
+- Create and run macOS/Linux virtual machines on Apple Silicon with up to 90% of native performance using Apple's Virtualization.Framework. You can spin up a preconfigured macOS image in just one command:
+lume run macos-sequoia-vanilla:latest
+.
+Flexible LLM Support
+- Work with your preferred models without vendor lock-in - deploy with OpenAI's CUA, Claude Computer-Use, or local models. Mix different agent loops (OpenAI/Claude/OmniParser) for specific tasks and easily switch between them with minimal code changes. Support for Ollama coming soon.
+Production-Ready Features
+- Get detailed trajectory logs for debugging, structured responses compatible with other tools, and comprehensive sandbox isolation to protect your main system. The framework handles complex workflows across multiple applications without breaking down.
+Simple Implementation
+- Start building in minutes with straightforward Python code. Install with
+pip install "cua-agent[all]"
+or choose specific providers like
+pip install "cua-agent[openai]"
+and have your first agent running in under 10 lines of code.
+Seamless Virtualization
+- Create and run macOS/Linux virtual machines on Apple Silicon with up to 90% of native performance using Apple's Virtualization.Framework. You can spin up a preconfigured macOS image in just one command:
+lume run macos-sequoia-vanilla:latest
+.
+Seamless Virtualization
+- Create and run macOS/Linux virtual machines on Apple Silicon with up to 90% of native performance using Apple's Virtualization.Framework. You can spin up a preconfigured macOS image in just one command:
+lume run macos-sequoia-vanilla:latest
+.
+Flexible LLM Support
+- Work with your preferred models without vendor lock-in - deploy with OpenAI's CUA, Claude Computer-Use, or local models. Mix different agent loops (OpenAI/Claude/OmniParser) for specific tasks and easily switch between them with minimal code changes. Support for Ollama coming soon.
+Flexible LLM Support
+- Work with your preferred models without vendor lock-in - deploy with OpenAI's CUA, Claude Computer-Use, or local models. Mix different agent loops (OpenAI/Claude/OmniParser) for specific tasks and easily switch between them with minimal code changes. Support for Ollama coming soon.
+Production-Ready Features
+- Get detailed trajectory logs for debugging, structured responses compatible with other tools, and comprehensive sandbox isolation to protect your main system. The framework handles complex workflows across multiple applications without breaking down.
+Production-Ready Features
+- Get detailed trajectory logs for debugging, structured responses compatible with other tools, and comprehensive sandbox isolation to protect your main system. The framework handles complex workflows across multiple applications without breaking down.
+Simple Implementation
+- Start building in minutes with straightforward Python code. Install with
+pip install "cua-agent[all]"
+or choose specific providers like
+pip install "cua-agent[openai]"
+and have your first agent running in under 10 lines of code.
+Simple Implementation
+- Start building in minutes with straightforward Python code. Install with
+pip install "cua-agent[all]"
+or choose specific providers like
+pip install "cua-agent[openai]"
+and have your first agent running in under 10 lines of code.
+Quick Bites
+Quick Bites
+Quick Bites
+Quick Bites
+Browserbase has released Stagehand V2 that lets you
+build web AI agents with OpenAI and Anthropic's computer use models using just one line of code
+. The new
+stagehand.agent
+primitive removes the complexity of browser automation while maintaining full control over the interaction. This comes alongside faster performance and cross-browser compatibility.
+The future of software development is agentic, and the rapid progress of LLMs is making AI coding agents increasingly capable. Whether it's improved reasoning through "Thinking" modes or just raw power, these agents are starting to seriously rival human developers. Recent benchmark results highlight this progress, with two impressive announcements this week from
+Refact.ai
+Augment Code
+.
+Refact.ai
+Powered by Claude 3.7 Sonnet,
+Refact.ai
+'s agent scored an unprecedented 93.3% (with thinking mode) and 92.9% (without thinking) on Aider's Polyglot Benchmark, establishing a 20-point lead over previous top performers.
+Their agent works fully autonomously with 30-step task completion capability, handling planning, execution, testing, and self-correction across six programming languages without human intervention.
+Augment Code
+Augment Code achieved a 65.4% success rate on SWE-bench Verified through a hybrid approach combining Claude 3.7 Sonnet and OpenAI's O1 models, securing the highest published score for an open-source solution.
+Their SWE-bench solution has been fully open-sourced on GitHub. It includes the technique of using "sequential thinking" tools and simple majority voting ensembling with the O1 model.
+DeepSeek V3 0324 now ranks #5 on the LMArena leaderboard
+, surpassing DeepSeek-R1 and every other open model. It's the #1 opensource model, 2x cheaper than DeepSeek-R1, and top-5 across all categories.
+Browserbase has released Stagehand V2 that lets you
+build web AI agents with OpenAI and Anthropic's computer use models using just one line of code
+. The new
+stagehand.agent
+primitive removes the complexity of browser automation while maintaining full control over the interaction. This comes alongside faster performance and cross-browser compatibility.
+The future of software development is agentic, and the rapid progress of LLMs is making AI coding agents increasingly capable. Whether it's improved reasoning through "Thinking" modes or just raw power, these agents are starting to seriously rival human developers. Recent benchmark results highlight this progress, with two impressive announcements this week from
+Refact.ai
+Augment Code
+.
+Refact.ai
+Powered by Claude 3.7 Sonnet,
+Refact.ai
+'s agent scored an unprecedented 93.3% (with thinking mode) and 92.9% (without thinking) on Aider's Polyglot Benchmark, establishing a 20-point lead over previous top performers.
+Their agent works fully autonomously with 30-step task completion capability, handling planning, execution, testing, and self-correction across six programming languages without human intervention.
+Augment Code
+Augment Code achieved a 65.4% success rate on SWE-bench Verified through a hybrid approach combining Claude 3.7 Sonnet and OpenAI's O1 models, securing the highest published score for an open-source solution.
+Their SWE-bench solution has been fully open-sourced on GitHub. It includes the technique of using "sequential thinking" tools and simple majority voting ensembling with the O1 model.
+DeepSeek V3 0324 now ranks #5 on the LMArena leaderboard
+, surpassing DeepSeek-R1 and every other open model. It's the #1 opensource model, 2x cheaper than DeepSeek-R1, and top-5 across all categories.
+Browserbase has released Stagehand V2 that lets you
+build web AI agents with OpenAI and Anthropic's computer use models using just one line of code
+. The new
+stagehand.agent
+primitive removes the complexity of browser automation while maintaining full control over the interaction. This comes alongside faster performance and cross-browser compatibility.
+Browserbase has released Stagehand V2 that lets you
+build web AI agents with OpenAI and Anthropic's computer use models using just one line of code
+. The new
+stagehand.agent
+primitive removes the complexity of browser automation while maintaining full control over the interaction. This comes alongside faster performance and cross-browser compatibility.
+The future of software development is agentic, and the rapid progress of LLMs is making AI coding agents increasingly capable. Whether it's improved reasoning through "Thinking" modes or just raw power, these agents are starting to seriously rival human developers. Recent benchmark results highlight this progress, with two impressive announcements this week from
+Refact.ai
+Augment Code
+.
+The future of software development is agentic, and the rapid progress of LLMs is making AI coding agents increasingly capable. Whether it's improved reasoning through "Thinking" modes or just raw power, these agents are starting to seriously rival human developers. Recent benchmark results highlight this progress, with two impressive announcements this week from
+Refact.ai
+Augment Code
+.
+Refact.ai
+Refact.ai
+Powered by Claude 3.7 Sonnet,
+Refact.ai
+'s agent scored an unprecedented 93.3% (with thinking mode) and 92.9% (without thinking) on Aider's Polyglot Benchmark, establishing a 20-point lead over previous top performers.
+Their agent works fully autonomously with 30-step task completion capability, handling planning, execution, testing, and self-correction across six programming languages without human intervention.
+Powered by Claude 3.7 Sonnet,
+Refact.ai
+'s agent scored an unprecedented 93.3% (with thinking mode) and 92.9% (without thinking) on Aider's Polyglot Benchmark, establishing a 20-point lead over previous top performers.
+Powered by Claude 3.7 Sonnet,
+Refact.ai
+'s agent scored an unprecedented 93.3% (with thinking mode) and 92.9% (without thinking) on Aider's Polyglot Benchmark, establishing a 20-point lead over previous top performers.
+Their agent works fully autonomously with 30-step task completion capability, handling planning, execution, testing, and self-correction across six programming languages without human intervention.
+Their agent works fully autonomously with 30-step task completion capability, handling planning, execution, testing, and self-correction across six programming languages without human intervention.
+Augment Code
+Augment Code
+Augment Code achieved a 65.4% success rate on SWE-bench Verified through a hybrid approach combining Claude 3.7 Sonnet and OpenAI's O1 models, securing the highest published score for an open-source solution.
+Their SWE-bench solution has been fully open-sourced on GitHub. It includes the technique of using "sequential thinking" tools and simple majority voting ensembling with the O1 model.
+Augment Code achieved a 65.4% success rate on SWE-bench Verified through a hybrid approach combining Claude 3.7 Sonnet and OpenAI's O1 models, securing the highest published score for an open-source solution.
+Augment Code achieved a 65.4% success rate on SWE-bench Verified through a hybrid approach combining Claude 3.7 Sonnet and OpenAI's O1 models, securing the highest published score for an open-source solution.
+Their SWE-bench solution has been fully open-sourced on GitHub. It includes the technique of using "sequential thinking" tools and simple majority voting ensembling with the O1 model.
+Their SWE-bench solution has been fully open-sourced on GitHub. It includes the technique of using "sequential thinking" tools and simple majority voting ensembling with the O1 model.
+DeepSeek V3 0324 now ranks #5 on the LMArena leaderboard
+, surpassing DeepSeek-R1 and every other open model. It's the #1 opensource model, 2x cheaper than DeepSeek-R1, and top-5 across all categories.
+DeepSeek V3 0324 now ranks #5 on the LMArena leaderboard
+, surpassing DeepSeek-R1 and every other open model. It's the #1 opensource model, 2x cheaper than DeepSeek-R1, and top-5 across all categories.
+Tools of the Trade
+Tools of the Trade
+Tools of the Trade
+Tools of the Trade
+Wren Engine
+: A semantic engine for MCP clients and AI agents for LLMs to accurately access and interpret enterprise data from various sources with business context. It creates a semantic layer between the AI and structured business data in cloud warehouses, relational databases, and secure filesystems.
+: Build full-stack web apps with React, Node.js, and Prisma with minimal code and zero configuration. It functions as a Rails-like framework where you can create and deploy production-ready web apps with concise, declarative code and a single CLI command.
+GitDiagram
+: Turn any GitHub repository into an interactive diagram for visualization. Just give a repo’s URL or replace 'hub' with 'diagram' in any Github URL. Click on components to navigate directly to source files and relevant directories. Powered by Claude 3.5 Sonnet.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+Wren Engine
+: A semantic engine for MCP clients and AI agents for LLMs to accurately access and interpret enterprise data from various sources with business context. It creates a semantic layer between the AI and structured business data in cloud warehouses, relational databases, and secure filesystems.
+: Build full-stack web apps with React, Node.js, and Prisma with minimal code and zero configuration. It functions as a Rails-like framework where you can create and deploy production-ready web apps with concise, declarative code and a single CLI command.
+GitDiagram
+: Turn any GitHub repository into an interactive diagram for visualization. Just give a repo’s URL or replace 'hub' with 'diagram' in any Github URL. Click on components to navigate directly to source files and relevant directories. Powered by Claude 3.5 Sonnet.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+Wren Engine
+: A semantic engine for MCP clients and AI agents for LLMs to accurately access and interpret enterprise data from various sources with business context. It creates a semantic layer between the AI and structured business data in cloud warehouses, relational databases, and secure filesystems.
+: Build full-stack web apps with React, Node.js, and Prisma with minimal code and zero configuration. It functions as a Rails-like framework where you can create and deploy production-ready web apps with concise, declarative code and a single CLI command.
+GitDiagram
+: Turn any GitHub repository into an interactive diagram for visualization. Just give a repo’s URL or replace 'hub' with 'diagram' in any Github URL. Click on components to navigate directly to source files and relevant directories. Powered by Claude 3.5 Sonnet.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+Wren Engine
+: A semantic engine for MCP clients and AI agents for LLMs to accurately access and interpret enterprise data from various sources with business context. It creates a semantic layer between the AI and structured business data in cloud warehouses, relational databases, and secure filesystems.
+Wren Engine
+: A semantic engine for MCP clients and AI agents for LLMs to accurately access and interpret enterprise data from various sources with business context. It creates a semantic layer between the AI and structured business data in cloud warehouses, relational databases, and secure filesystems.
+: Build full-stack web apps with React, Node.js, and Prisma with minimal code and zero configuration. It functions as a Rails-like framework where you can create and deploy production-ready web apps with concise, declarative code and a single CLI command.
+: Build full-stack web apps with React, Node.js, and Prisma with minimal code and zero configuration. It functions as a Rails-like framework where you can create and deploy production-ready web apps with concise, declarative code and a single CLI command.
+GitDiagram
+: Turn any GitHub repository into an interactive diagram for visualization. Just give a repo’s URL or replace 'hub' with 'diagram' in any Github URL. Click on components to navigate directly to source files and relevant directories. Powered by Claude 3.5 Sonnet.
+GitDiagram
+: Turn any GitHub repository into an interactive diagram for visualization. Just give a repo’s URL or replace 'hub' with 'diagram' in any Github URL. Click on components to navigate directly to source files and relevant directories. Powered by Claude 3.5 Sonnet.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+Awesome LLM Apps
+: Build awesome LLM apps with RAG, AI agents, and more to interact with data sources like GitHub, Gmail, PDFs, and YouTube videos, and automate complex work.
+Hot Takes
+Hot Takes
+Hot Takes
+Hot Takes
+I no longer think you need to learn how to drive
+Amjad Masad
+don’t learn to code. don’t waste ur time.
+llms are great. you can vibe-code anything. everyone is a builder!
+why waste your time with code, then?
+and don’t worry about mistakes: a few of us already know to code, so we’ll clean after you.
+for a price. ~
+Santiago
+I no longer think you need to learn how to drive
+Amjad Masad
+don’t learn to code. don’t waste ur time.
+llms are great. you can vibe-code anything. everyone is a builder!
+why waste your time with code, then?
+and don’t worry about mistakes: a few of us already know to code, so we’ll clean after you.
+for a price. ~
+Santiago
+I no longer think you need to learn how to drive
+Amjad Masad
+don’t learn to code. don’t waste ur time.
+llms are great. you can vibe-code anything. everyone is a builder!
+why waste your time with code, then?
+and don’t worry about mistakes: a few of us already know to code, so we’ll clean after you.
+for a price. ~
+Santiago
+I no longer think you need to learn how to drive
+Amjad Masad
+I no longer think you need to learn how to drive
+Amjad Masad
+don’t learn to code. don’t waste ur time.
+llms are great. you can vibe-code anything. everyone is a builder!
+why waste your time with code, then?
+and don’t worry about mistakes: a few of us already know to code, so we’ll clean after you.
+for a price. ~
+Santiago
+don’t learn to code. don’t waste ur time.
+llms are great. you can vibe-code anything. everyone is a builder!
+why waste your time with code, then?
+and don’t worry about mistakes: a few of us already know to code, so we’ll clean after you.
+for a price. ~
+Santiago
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+That’s all for today! See you tomorrow with more such AI-filled content.
+That’s all for today! See you tomorrow with more such AI-filled content.
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Don’t forget to share this newsletter on your social channels and tag
+Unwind AI
+to support us!
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Unwind AI
+LinkedIn
+Threads
+Facebook
+Awesome LLM Apps
+Sponsor Us
+Awesome LLM Apps
+Sponsor Us
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+We curate this AI newsletter every day for FREE, your support is what keeps us going. If you find value in what you read, share it with at least one, two (or 20) of your friends
+Subscribe now for FREE!
+Subscribe now for FREE!
+If this email was forwarded to you,
+subscribe here
+to get email from Unwind AI daily for free!
+© 2025 unwind ai
+228 Park Ave S, #29976, New York, New York 10003, United States
+Powered by beehiiv
+If this email was forwarded to you,
+subscribe here
+to get email from Unwind AI daily for free!
+© 2025 unwind ai
+228 Park Ave S, #29976, New York, New York 10003, United States
+Powered by beehiiv
+If this email was forwarded to you,
+subscribe here
+to get email from Unwind AI daily for free!
+If this email was forwarded to you,
+subscribe here
+to get email from Unwind AI daily for free!
+© 2025 unwind ai
+228 Park Ave S, #29976, New York, New York 10003, United States
+Powered by beehiiv
+© 2025 unwind ai
+228 Park Ave S, #29976, New York, New York 10003, United States
+© 2025 unwind ai
+228 Park Ave S, #29976, New York, New York 10003, United States
+Powered by beehiiv
+Powered by beehiiv

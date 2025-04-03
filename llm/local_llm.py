@@ -23,7 +23,7 @@ class LocalLLM:
         if not os.path.isfile(self.model_path):
              logging.error(f"Path '{self.model_path}' is not a GGUF file."); return
         try:
-            n_ctx = 2048; n_gpu_layers = 0; verbose = True
+            n_ctx = 2048; n_gpu_layers = 0; verbose = True #2048 is maximum for mistral ai
             logging.info(f"Loading GGUF model from: {self.model_path}")
             logging.warning(f"Forcing CPU execution with n_gpu_layers={n_gpu_layers}.")
             self.llm = Llama(model_path=self.model_path, n_ctx=n_ctx, n_gpu_layers=n_gpu_layers, verbose=verbose)
@@ -31,8 +31,8 @@ class LocalLLM:
         except Exception as e:
             logging.error(f"Failed to load GGUF model: {e}", exc_info=True); self.llm = None
 
-    def summarize(self, text, max_length=768): # Keep max_tokens high for detailed summary
-        """
+    def summarize(self, text, max_length=50000): #ValueError: Requested tokens (6772) for 40000 chars exceed context window of 2048
+        """# A context window of 2048 means the AI model can process roughly 1500 words or 4000 characters at once.
         Generates a detailed summary for the given email body text.
         """
         if not self.llm: return "Error: GGUF Model not loaded."

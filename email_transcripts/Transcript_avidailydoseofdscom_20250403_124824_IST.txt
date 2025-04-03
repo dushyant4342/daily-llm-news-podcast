@@ -1,0 +1,593 @@
+Subject: 9 RAG, LLM, and AI Agent Cheat Sheets
+From: avi@dailydoseofds.com
+==================== CLEANED CONTENT ====================
+
+1) Transformer vs. Mixture of Experts in LLMs
+Industry ML guides
+In today's newsletter:
+​CodeRabbit: Cut Code Review Time & Bugs in Half!​
+9 RAG, LLM, and AI Agent Cheat Sheets
+​Transformer vs. Mixture of Experts in LLMs​
+5 techniques to fine-tune LLMs​
+RAG vs Agentic RAG
+5 popular Agentic AI design patterns
+5 chunking strategies for RAG
+5 levels of Agentic AI systems
+Traditional RAG vs HyDE
+RAG vs Graph RAG
+KV caching
+Reading time: 3 minutes.
+TODAY'S ISSUE
+Together with Coderabbit
+CodeRabbit: Cut Code Review Time & Bugs in Half!
+Writing code isn’t the bottleneck anymore—reviewing is.
+While the rest of your dev stack runs on AI, code reviews are still stuck in 2010—Slow, manual, and inconsistent.
+We use
+CodeRabbit
+on our ai-engineering-hub repo and it’s like having a principal engineer review every pull request instantly.
+Here’s why we like it:
+It reviews all PRs instantly.
+It adapts to the org’s coding standards.
+It lets me chat with a PR and give suggestions.
+It understands my codebase and respects my lint config.
+It documents the code and fixes pipelines right in the PR.
+It flags bugs, security issues, typos—and even offers one-click fixes.
+CodeRabbit
+is used by 1M+ repos, and it has reviewed over 5M PRs.
+Free for open-source, and has a 2-click setup.
+Integrate CodeRabbit for free
+Integrate CodeRabbit with your projects here for free →
+TODAY'S DAILY DOSE OF DATA SCIENCE
+9 RAG, LLM, and AI Agent Cheat Sheets
+We have published several visual cheat sheets in this newsletter before.
+Here's a recap of them along with links to those specific issues if you want to learn more.
+#1) Transformer vs. Mixture of Experts in LLMs
+Mixture of Experts (MoE) is a popular architecture that uses different "experts" to improve Transformer models.
+The visual below explains how they differ from Transformers.
+#2) 5 techniques to fine-tune LLMs
+Traditional fine-tuning is infeasible with LLMs since they have billions of parameters (and 100s of GBs in size).
+#3) RAG vs Agentic RAG
+Naive RAG retrieves once and generates once, it cannot dynamically search for more info, and it cannot reason through complex queries.
+Agentic RAG solves this.
+#4) 5 popular Agentic AI design patterns
+Agentic behaviors allow LLMs to refine their output by incorporating self-evaluation, planning, and collaboration!
+This visual depicts the 5 popular design patterns for building AI agents.
+#5) 5 chunking strategies for RAG
+In RAG, additional document(s) can be pretty large. Chunking divides large documents into smaller/manageable pieces.
+The visual shows five chunking strategies for RAG.
+#6) 5 levels of Agentic AI systems
+Agentic systems don't just generate text; they make decisions, call functions, and even run autonomous workflows.
+The visual explains 5 levels of AI agency.
+#7) Traditional RAG vs HyDE
+Questions are not semantically similar to answers so the system may retrieve irrelevant context.
+In HyDE, first generate a hypothetical answer (H) to query. Then, use (H) to retrieve relevant context (C).
+#8) RAG vs Graph RAG
+Answering questions that need global context is difficult with traditional RAG since it only retrieves the top-k relevant chunks.
+Graph RAG makes RAG more robust with graph structures.
+#9) KV caching
+KV caching is a technique used to speed up LLM inference.
+Thanks for reading!
+THAT'S A WRAP
+NO-FLUFF DS/ML RESOURCES TO...
+Succeed in DS/ML roles
+All businesses care about
+impact
+. That’s it!
+Can you reduce costs?
+Drive revenue?
+Can you scale ML models?
+Predict trends before they happen?
+We have discussed several other topics (with implementations) in the past that align with such topics.
+Develop Industry ML skills
+Here are some of them:
+Learn how to build Agentic systems in
+this ongoing crash course with 6 parts
+.
+Learn how to build real-world RAG apps, evaluate, and scale them in
+this crash course
+.
+Learn sophisticated graph architectures and how to train them on graph data in
+this crash course
+.
+So many real-world NLP systems rely on pairwise context scoring. Learn scalable approaches
+.
+Learn how to run large models on small devices using
+Quantization techniques
+.
+Learn how to generate prediction intervals or sets with strong statistical guarantees for increasing trust using
+Conformal Predictions
+.
+Learn how to identify causal relationships and answer business questions using causal inference in
+this crash course
+.
+Learn how to scale and implement ML model training in this
+practical guide
+.
+Learn techniques to reliably
+test new models in production
+.
+Learn how to build privacy-first ML systems using
+Federated Learning
+.
+Learn 6 techniques with implementation to
+compress ML models
+.
+All these resources will help you cultivate key skills that businesses and companies care about the most.
+Develop Industry ML skills
+SPONSOR US
+ADVERTISE TO 600k+ Data Professionals
+Our newsletter puts your products and services directly in front of an audience that matters — thousands of leaders, senior data scientists, machine learning engineers, data analysts, etc., around the world.
+Get in touch today by replying to this email.
+Today’s email was brought to you by Avi Chawla and Akshay Pachaar.
+Update your profile
+Looking for more? Unlock our
+premium DS/ML resources
+.
+© 2024 Daily Dose of Data Science
+1) Transformer vs. Mixture of Experts in LLMs
+Industry ML guides
+In today's newsletter:
+​CodeRabbit: Cut Code Review Time & Bugs in Half!​
+9 RAG, LLM, and AI Agent Cheat Sheets
+​Transformer vs. Mixture of Experts in LLMs​
+5 techniques to fine-tune LLMs​
+RAG vs Agentic RAG
+5 popular Agentic AI design patterns
+5 chunking strategies for RAG
+5 levels of Agentic AI systems
+Traditional RAG vs HyDE
+RAG vs Graph RAG
+KV caching
+Reading time: 3 minutes.
+TODAY'S ISSUE
+Together with Coderabbit
+CodeRabbit: Cut Code Review Time & Bugs in Half!
+Writing code isn’t the bottleneck anymore—reviewing is.
+While the rest of your dev stack runs on AI, code reviews are still stuck in 2010—Slow, manual, and inconsistent.
+We use
+CodeRabbit
+on our ai-engineering-hub repo and it’s like having a principal engineer review every pull request instantly.
+Here’s why we like it:
+It reviews all PRs instantly.
+It adapts to the org’s coding standards.
+It lets me chat with a PR and give suggestions.
+It understands my codebase and respects my lint config.
+It documents the code and fixes pipelines right in the PR.
+It flags bugs, security issues, typos—and even offers one-click fixes.
+CodeRabbit
+is used by 1M+ repos, and it has reviewed over 5M PRs.
+Free for open-source, and has a 2-click setup.
+Integrate CodeRabbit for free
+Integrate CodeRabbit with your projects here for free →
+TODAY'S DAILY DOSE OF DATA SCIENCE
+9 RAG, LLM, and AI Agent Cheat Sheets
+We have published several visual cheat sheets in this newsletter before.
+Here's a recap of them along with links to those specific issues if you want to learn more.
+#1) Transformer vs. Mixture of Experts in LLMs
+Mixture of Experts (MoE) is a popular architecture that uses different "experts" to improve Transformer models.
+The visual below explains how they differ from Transformers.
+#2) 5 techniques to fine-tune LLMs
+Traditional fine-tuning is infeasible with LLMs since they have billions of parameters (and 100s of GBs in size).
+#3) RAG vs Agentic RAG
+Naive RAG retrieves once and generates once, it cannot dynamically search for more info, and it cannot reason through complex queries.
+Agentic RAG solves this.
+#4) 5 popular Agentic AI design patterns
+Agentic behaviors allow LLMs to refine their output by incorporating self-evaluation, planning, and collaboration!
+This visual depicts the 5 popular design patterns for building AI agents.
+#5) 5 chunking strategies for RAG
+In RAG, additional document(s) can be pretty large. Chunking divides large documents into smaller/manageable pieces.
+The visual shows five chunking strategies for RAG.
+#6) 5 levels of Agentic AI systems
+Agentic systems don't just generate text; they make decisions, call functions, and even run autonomous workflows.
+The visual explains 5 levels of AI agency.
+#7) Traditional RAG vs HyDE
+Questions are not semantically similar to answers so the system may retrieve irrelevant context.
+In HyDE, first generate a hypothetical answer (H) to query. Then, use (H) to retrieve relevant context (C).
+#8) RAG vs Graph RAG
+Answering questions that need global context is difficult with traditional RAG since it only retrieves the top-k relevant chunks.
+Graph RAG makes RAG more robust with graph structures.
+#9) KV caching
+KV caching is a technique used to speed up LLM inference.
+Thanks for reading!
+THAT'S A WRAP
+NO-FLUFF DS/ML RESOURCES TO...
+Succeed in DS/ML roles
+All businesses care about
+impact
+. That’s it!
+Can you reduce costs?
+Drive revenue?
+Can you scale ML models?
+Predict trends before they happen?
+We have discussed several other topics (with implementations) in the past that align with such topics.
+Develop Industry ML skills
+Here are some of them:
+Learn how to build Agentic systems in
+this ongoing crash course with 6 parts
+.
+Learn how to build real-world RAG apps, evaluate, and scale them in
+this crash course
+.
+Learn sophisticated graph architectures and how to train them on graph data in
+this crash course
+.
+So many real-world NLP systems rely on pairwise context scoring. Learn scalable approaches
+.
+Learn how to run large models on small devices using
+Quantization techniques
+.
+Learn how to generate prediction intervals or sets with strong statistical guarantees for increasing trust using
+Conformal Predictions
+.
+Learn how to identify causal relationships and answer business questions using causal inference in
+this crash course
+.
+Learn how to scale and implement ML model training in this
+practical guide
+.
+Learn techniques to reliably
+test new models in production
+.
+Learn how to build privacy-first ML systems using
+Federated Learning
+.
+Learn 6 techniques with implementation to
+compress ML models
+.
+All these resources will help you cultivate key skills that businesses and companies care about the most.
+Develop Industry ML skills
+SPONSOR US
+ADVERTISE TO 600k+ Data Professionals
+Our newsletter puts your products and services directly in front of an audience that matters — thousands of leaders, senior data scientists, machine learning engineers, data analysts, etc., around the world.
+Get in touch today by replying to this email.
+Today’s email was brought to you by Avi Chawla and Akshay Pachaar.
+Update your profile
+Looking for more? Unlock our
+premium DS/ML resources
+.
+© 2024 Daily Dose of Data Science
+1) Transformer vs. Mixture of Experts in LLMs
+Industry ML guides
+1) Transformer vs. Mixture of Experts in LLMs
+Industry ML guides
+In today's newsletter:
+​CodeRabbit: Cut Code Review Time & Bugs in Half!​
+9 RAG, LLM, and AI Agent Cheat Sheets
+​Transformer vs. Mixture of Experts in LLMs​
+5 techniques to fine-tune LLMs​
+RAG vs Agentic RAG
+5 popular Agentic AI design patterns
+5 chunking strategies for RAG
+5 levels of Agentic AI systems
+Traditional RAG vs HyDE
+RAG vs Graph RAG
+KV caching
+Reading time: 3 minutes.
+In today's newsletter:
+​CodeRabbit: Cut Code Review Time & Bugs in Half!​
+9 RAG, LLM, and AI Agent Cheat Sheets
+​Transformer vs. Mixture of Experts in LLMs​
+5 techniques to fine-tune LLMs​
+RAG vs Agentic RAG
+5 popular Agentic AI design patterns
+5 chunking strategies for RAG
+5 levels of Agentic AI systems
+Traditional RAG vs HyDE
+RAG vs Graph RAG
+KV caching
+​Transformer vs. Mixture of Experts in LLMs​
+5 techniques to fine-tune LLMs​
+RAG vs Agentic RAG
+5 popular Agentic AI design patterns
+5 chunking strategies for RAG
+5 levels of Agentic AI systems
+Traditional RAG vs HyDE
+RAG vs Graph RAG
+KV caching
+Reading time: 3 minutes.
+TODAY'S ISSUE
+TODAY'S ISSUE
+Together with Coderabbit
+CodeRabbit: Cut Code Review Time & Bugs in Half!
+Writing code isn’t the bottleneck anymore—reviewing is.
+While the rest of your dev stack runs on AI, code reviews are still stuck in 2010—Slow, manual, and inconsistent.
+We use
+CodeRabbit
+on our ai-engineering-hub repo and it’s like having a principal engineer review every pull request instantly.
+Here’s why we like it:
+It reviews all PRs instantly.
+It adapts to the org’s coding standards.
+It lets me chat with a PR and give suggestions.
+It understands my codebase and respects my lint config.
+It documents the code and fixes pipelines right in the PR.
+It flags bugs, security issues, typos—and even offers one-click fixes.
+CodeRabbit
+is used by 1M+ repos, and it has reviewed over 5M PRs.
+Free for open-source, and has a 2-click setup.
+Integrate CodeRabbit for free
+Integrate CodeRabbit with your projects here for free →
+Together with Coderabbit
+CodeRabbit: Cut Code Review Time & Bugs in Half!
+Writing code isn’t the bottleneck anymore—reviewing is.
+While the rest of your dev stack runs on AI, code reviews are still stuck in 2010—Slow, manual, and inconsistent.
+We use
+CodeRabbit
+on our ai-engineering-hub repo and it’s like having a principal engineer review every pull request instantly.
+Here’s why we like it:
+It reviews all PRs instantly.
+It adapts to the org’s coding standards.
+It lets me chat with a PR and give suggestions.
+It understands my codebase and respects my lint config.
+It documents the code and fixes pipelines right in the PR.
+It flags bugs, security issues, typos—and even offers one-click fixes.
+CodeRabbit
+is used by 1M+ repos, and it has reviewed over 5M PRs.
+Free for open-source, and has a 2-click setup.
+Integrate CodeRabbit for free
+Integrate CodeRabbit with your projects here for free →
+TODAY'S DAILY DOSE OF DATA SCIENCE
+9 RAG, LLM, and AI Agent Cheat Sheets
+We have published several visual cheat sheets in this newsletter before.
+Here's a recap of them along with links to those specific issues if you want to learn more.
+#1) Transformer vs. Mixture of Experts in LLMs
+Mixture of Experts (MoE) is a popular architecture that uses different "experts" to improve Transformer models.
+The visual below explains how they differ from Transformers.
+#2) 5 techniques to fine-tune LLMs
+Traditional fine-tuning is infeasible with LLMs since they have billions of parameters (and 100s of GBs in size).
+#3) RAG vs Agentic RAG
+Naive RAG retrieves once and generates once, it cannot dynamically search for more info, and it cannot reason through complex queries.
+Agentic RAG solves this.
+#4) 5 popular Agentic AI design patterns
+Agentic behaviors allow LLMs to refine their output by incorporating self-evaluation, planning, and collaboration!
+This visual depicts the 5 popular design patterns for building AI agents.
+#5) 5 chunking strategies for RAG
+In RAG, additional document(s) can be pretty large. Chunking divides large documents into smaller/manageable pieces.
+The visual shows five chunking strategies for RAG.
+#6) 5 levels of Agentic AI systems
+Agentic systems don't just generate text; they make decisions, call functions, and even run autonomous workflows.
+The visual explains 5 levels of AI agency.
+#7) Traditional RAG vs HyDE
+Questions are not semantically similar to answers so the system may retrieve irrelevant context.
+In HyDE, first generate a hypothetical answer (H) to query. Then, use (H) to retrieve relevant context (C).
+#8) RAG vs Graph RAG
+Answering questions that need global context is difficult with traditional RAG since it only retrieves the top-k relevant chunks.
+Graph RAG makes RAG more robust with graph structures.
+#9) KV caching
+KV caching is a technique used to speed up LLM inference.
+Thanks for reading!
+TODAY'S DAILY DOSE OF DATA SCIENCE
+9 RAG, LLM, and AI Agent Cheat Sheets
+We have published several visual cheat sheets in this newsletter before.
+Here's a recap of them along with links to those specific issues if you want to learn more.
+#1) Transformer vs. Mixture of Experts in LLMs
+Mixture of Experts (MoE) is a popular architecture that uses different "experts" to improve Transformer models.
+The visual below explains how they differ from Transformers.
+#2) 5 techniques to fine-tune LLMs
+Traditional fine-tuning is infeasible with LLMs since they have billions of parameters (and 100s of GBs in size).
+#3) RAG vs Agentic RAG
+Naive RAG retrieves once and generates once, it cannot dynamically search for more info, and it cannot reason through complex queries.
+Agentic RAG solves this.
+#4) 5 popular Agentic AI design patterns
+Agentic behaviors allow LLMs to refine their output by incorporating self-evaluation, planning, and collaboration!
+This visual depicts the 5 popular design patterns for building AI agents.
+#5) 5 chunking strategies for RAG
+In RAG, additional document(s) can be pretty large. Chunking divides large documents into smaller/manageable pieces.
+The visual shows five chunking strategies for RAG.
+#6) 5 levels of Agentic AI systems
+Agentic systems don't just generate text; they make decisions, call functions, and even run autonomous workflows.
+The visual explains 5 levels of AI agency.
+#7) Traditional RAG vs HyDE
+Questions are not semantically similar to answers so the system may retrieve irrelevant context.
+In HyDE, first generate a hypothetical answer (H) to query. Then, use (H) to retrieve relevant context (C).
+#8) RAG vs Graph RAG
+Answering questions that need global context is difficult with traditional RAG since it only retrieves the top-k relevant chunks.
+Graph RAG makes RAG more robust with graph structures.
+#9) KV caching
+KV caching is a technique used to speed up LLM inference.
+Thanks for reading!
+THAT'S A WRAP
+THAT'S A WRAP
+NO-FLUFF DS/ML RESOURCES TO...
+Succeed in DS/ML roles
+All businesses care about
+impact
+. That’s it!
+Can you reduce costs?
+Drive revenue?
+Can you scale ML models?
+Predict trends before they happen?
+We have discussed several other topics (with implementations) in the past that align with such topics.
+Develop Industry ML skills
+Here are some of them:
+Learn how to build Agentic systems in
+this ongoing crash course with 6 parts
+.
+Learn how to build real-world RAG apps, evaluate, and scale them in
+this crash course
+.
+Learn sophisticated graph architectures and how to train them on graph data in
+this crash course
+.
+So many real-world NLP systems rely on pairwise context scoring. Learn scalable approaches
+.
+Learn how to run large models on small devices using
+Quantization techniques
+.
+Learn how to generate prediction intervals or sets with strong statistical guarantees for increasing trust using
+Conformal Predictions
+.
+Learn how to identify causal relationships and answer business questions using causal inference in
+this crash course
+.
+Learn how to scale and implement ML model training in this
+practical guide
+.
+Learn techniques to reliably
+test new models in production
+.
+Learn how to build privacy-first ML systems using
+Federated Learning
+.
+Learn 6 techniques with implementation to
+compress ML models
+.
+All these resources will help you cultivate key skills that businesses and companies care about the most.
+Develop Industry ML skills
+NO-FLUFF DS/ML RESOURCES TO...
+Succeed in DS/ML roles
+All businesses care about
+impact
+. That’s it!
+Can you reduce costs?
+Drive revenue?
+Can you scale ML models?
+Predict trends before they happen?
+We have discussed several other topics (with implementations) in the past that align with such topics.
+Develop Industry ML skills
+Here are some of them:
+Learn how to build Agentic systems in
+this ongoing crash course with 6 parts
+.
+Learn how to build real-world RAG apps, evaluate, and scale them in
+this crash course
+.
+Learn sophisticated graph architectures and how to train them on graph data in
+this crash course
+.
+So many real-world NLP systems rely on pairwise context scoring. Learn scalable approaches
+.
+Learn how to run large models on small devices using
+Quantization techniques
+.
+Learn how to generate prediction intervals or sets with strong statistical guarantees for increasing trust using
+Conformal Predictions
+.
+Learn how to identify causal relationships and answer business questions using causal inference in
+this crash course
+.
+Learn how to scale and implement ML model training in this
+practical guide
+.
+Learn techniques to reliably
+test new models in production
+.
+Learn how to build privacy-first ML systems using
+Federated Learning
+.
+Learn 6 techniques with implementation to
+compress ML models
+.
+All these resources will help you cultivate key skills that businesses and companies care about the most.
+Develop Industry ML skills
+NO-FLUFF DS/ML RESOURCES TO...
+Succeed in DS/ML roles
+All businesses care about
+impact
+. That’s it!
+Can you reduce costs?
+Drive revenue?
+Can you scale ML models?
+Predict trends before they happen?
+We have discussed several other topics (with implementations) in the past that align with such topics.
+Develop Industry ML skills
+Here are some of them:
+Learn how to build Agentic systems in
+this ongoing crash course with 6 parts
+.
+Learn how to build real-world RAG apps, evaluate, and scale them in
+this crash course
+.
+Learn sophisticated graph architectures and how to train them on graph data in
+this crash course
+.
+So many real-world NLP systems rely on pairwise context scoring. Learn scalable approaches
+.
+Learn how to run large models on small devices using
+Quantization techniques
+.
+Learn how to generate prediction intervals or sets with strong statistical guarantees for increasing trust using
+Conformal Predictions
+.
+Learn how to identify causal relationships and answer business questions using causal inference in
+this crash course
+.
+Learn how to scale and implement ML model training in this
+practical guide
+.
+Learn techniques to reliably
+test new models in production
+.
+Learn how to build privacy-first ML systems using
+Federated Learning
+.
+Learn 6 techniques with implementation to
+compress ML models
+.
+All these resources will help you cultivate key skills that businesses and companies care about the most.
+Develop Industry ML skills
+NO-FLUFF DS/ML RESOURCES TO...
+Succeed in DS/ML roles
+All businesses care about
+impact
+. That’s it!
+Can you reduce costs?
+Drive revenue?
+Can you scale ML models?
+Predict trends before they happen?
+We have discussed several other topics (with implementations) in the past that align with such topics.
+Develop Industry ML skills
+Here are some of them:
+Learn how to build Agentic systems in
+this ongoing crash course with 6 parts
+.
+Learn how to build real-world RAG apps, evaluate, and scale them in
+this crash course
+.
+Learn sophisticated graph architectures and how to train them on graph data in
+this crash course
+.
+So many real-world NLP systems rely on pairwise context scoring. Learn scalable approaches
+.
+Learn how to run large models on small devices using
+Quantization techniques
+.
+Learn how to generate prediction intervals or sets with strong statistical guarantees for increasing trust using
+Conformal Predictions
+.
+Learn how to identify causal relationships and answer business questions using causal inference in
+this crash course
+.
+Learn how to scale and implement ML model training in this
+practical guide
+.
+Learn techniques to reliably
+test new models in production
+.
+Learn how to build privacy-first ML systems using
+Federated Learning
+.
+Learn 6 techniques with implementation to
+compress ML models
+.
+All these resources will help you cultivate key skills that businesses and companies care about the most.
+Develop Industry ML skills
+SPONSOR US
+ADVERTISE TO 600k+ Data Professionals
+Our newsletter puts your products and services directly in front of an audience that matters — thousands of leaders, senior data scientists, machine learning engineers, data analysts, etc., around the world.
+Get in touch today by replying to this email.
+SPONSOR US
+ADVERTISE TO 600k+ Data Professionals
+Our newsletter puts your products and services directly in front of an audience that matters — thousands of leaders, senior data scientists, machine learning engineers, data analysts, etc., around the world.
+Get in touch today by replying to this email.
+Today’s email was brought to you by Avi Chawla and Akshay Pachaar.
+Update your profile
+Looking for more? Unlock our
+premium DS/ML resources
+.
+© 2024 Daily Dose of Data Science
+Today’s email was brought to you by Avi Chawla and Akshay Pachaar.
+Update your profile
+Looking for more? Unlock our
+premium DS/ML resources
+.
+© 2024 Daily Dose of Data Science
